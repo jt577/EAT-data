@@ -1,0 +1,1701 @@
+Beginning minimization
+__________________________________________________________________________________
+Epoch 1: Loss = 0.5864330293617184, Entropy = 22.111461437674823, eta = 0.05
+
+PBFGS iteration 1: fun = 1.193679771052126, tol = 2.745453833566108
+Optimizing BFGS quadratic form subproblem...
+    Successfully optimized after 0 iterations.
+    Df (must be < 0) = -0.12325541199883322
+Performing line minimization...
+   ->Iteration 1
+   ->Iteration 2
+   ->Iteration 3
+Line minimization succeded after 3 iterations.
+
+PBFGS iteration 2: fun = 0.7818043897396236, tol = 2.5479887190596826
+Optimizing BFGS quadratic form subproblem...
+    Successfully optimized after 0 iterations.
+    Df (must be < 0) = -0.2480054869442753
+Performing line minimization...
+   ->Iteration 1
+   ->Iteration 2
+   ->Iteration 3
+   ->Iteration 4
+Line minimization failed to find minimizing step after 5 iterations
+Line search failed, presumably because of bad curvature. Increasing entropy parameter.
+
+__________________________________________________________________________________
+Epoch 2: Loss = 0.23093995022366282, Entropy = 22.111457216079096, eta = 0.1
+
+PBFGS iteration 1: fun = 1.4875067316073416, tol = 2.7169933980287118
+Optimizing BFGS quadratic form subproblem...
+    Successfully optimized after 0 iterations.
+    Df (must be < 0) = -0.17530520796480126
+Performing line minimization...
+   ->Iteration 1
+   ->Iteration 2
+   ->Iteration 3
+   ->Iteration 4
+Line minimization failed to find minimizing step after 5 iterations
+Line search failed, presumably because of bad curvature. Increasing entropy parameter.
+
+__________________________________________________________________________________
+Epoch 3: Loss = 0.5949544074827421, Entropy = 22.111457216079096, eta = 0.2
+
+PBFGS iteration 1: fun = 3.0327298778907013, tol = 2.298457107281152
+Optimizing BFGS quadratic form subproblem...
+    Successfully optimized after 0 iterations.
+    Df (must be < 0) = -0.15873888191574032
+Performing line minimization...
+   ->Iteration 1
+   ->Iteration 2
+Line minimization succeded after 2 iterations.
+
+PBFGS iteration 2: fun = 2.9797287665473706, tol = 2.5954673030095194
+Optimizing BFGS quadratic form subproblem...
+    Successfully optimized after 0 iterations.
+    Df (must be < 0) = -0.1048085224236371
+Performing line minimization...
+   ->Iteration 1
+Line minimization succeded after 1 iterations.
+
+PBFGS iteration 3: fun = 2.9449468976222564, tol = 1.6038524987632363
+Optimizing BFGS quadratic form subproblem...
+    Successfully optimized after 0 iterations.
+    Df (must be < 0) = -0.007322686979659317
+Performing line minimization...
+   ->Iteration 1
+Line minimization succeded after 1 iterations.
+
+PBFGS iteration 4: fun = 2.9135045348699777, tol = 1.5424202485575231
+Optimizing BFGS quadratic form subproblem...
+    Successfully optimized after 0 iterations.
+    Df (must be < 0) = -0.013475088323883536
+Performing line minimization...
+   ->Iteration 1
+   ->Iteration 2
+   ->Iteration 3
+   ->Iteration 4
+Line minimization failed to find minimizing step after 5 iterations
+Line search failed, presumably because of bad curvature. Increasing entropy parameter.
+
+__________________________________________________________________________________
+Epoch 4: Loss = 0.5539458217961216, Entropy = 22.106718950876534, eta = 0.4
+
+PBFGS iteration 1: fun = 5.223511060253148, tol = 3.1066113504284956
+Optimizing BFGS quadratic form subproblem...
+    Successfully optimized after 0 iterations.
+    Df (must be < 0) = -1.0070537709807252
+Performing line minimization...
+   ->Iteration 1
+   ->Iteration 2
+Line minimization succeded after 2 iterations.
+
+PBFGS iteration 2: fun = 5.162061346302657, tol = 3.379884939328547
+Optimizing BFGS quadratic form subproblem...
+    Successfully optimized after 0 iterations.
+    Df (must be < 0) = -1.2379827786890347
+Performing line minimization...
+   ->Iteration 1
+   ->Iteration 2
+   ->Iteration 3
+   ->Iteration 4
+Line minimization failed to find minimizing step after 5 iterations
+Line search failed, presumably because of bad curvature. Increasing entropy parameter.
+
+__________________________________________________________________________________
+Epoch 5: Loss = 0.6565590025932336, Entropy = 22.105177135314754, eta = 0.8
+
+PBFGS iteration 1: fun = 10.077443364463697, tol = 2.5360205437754155
+Optimizing BFGS quadratic form subproblem...
+    Successfully optimized after 0 iterations.
+    Df (must be < 0) = -0.14095941285441446
+Performing line minimization...
+   ->Iteration 1
+Line minimization succeded after 1 iterations.
+
+PBFGS iteration 2: fun = 10.045064868037032, tol = 2.6744293005389896
+Optimizing BFGS quadratic form subproblem...
+    Successfully optimized after 0 iterations.
+    Df (must be < 0) = -0.03873698035379986
+Performing line minimization...
+   ->Iteration 1
+Line minimization succeded after 1 iterations.
+
+PBFGS iteration 3: fun = 10.044229629466527, tol = 2.9430428711508823
+Optimizing BFGS quadratic form subproblem...
+    Iteration 1: Removing variable 3 from active set.
+    Successfully optimized after 1 iterations.
+    Df (must be < 0) = -2.308268562120605
+Performing line minimization...
+   ->Iteration 1
+Line minimization succeded after 1 iterations.
+
+PBFGS iteration 4: fun = 9.388436420451622, tol = 2.2391321389977095
+Optimizing BFGS quadratic form subproblem...
+    Successfully optimized after 0 iterations.
+    Df (must be < 0) = -0.08694158667414587
+Performing line minimization...
+   ->Iteration 1
+   ->Iteration 2
+   ->Iteration 3
+Line minimization succeded after 3 iterations.
+
+PBFGS iteration 5: fun = 9.380214146262883, tol = 1.9728664366959199
+Optimizing BFGS quadratic form subproblem...
+    Iteration 1: Removing variable 3 from active set.
+    Successfully optimized after 1 iterations.
+    Df (must be < 0) = -0.002710178795706895
+Performing line minimization...
+   ->Iteration 1
+   ->Iteration 2
+   ->Iteration 3
+   ->Iteration 4
+Line minimization failed to find minimizing step after 5 iterations
+Line search failed, presumably because of bad curvature. Increasing entropy parameter.
+
+__________________________________________________________________________________
+Epoch 6: Loss = 0.030577548356260826, Entropy = 21.449728923868996, eta = 1.6
+
+PBFGS iteration 1: fun = 18.731344710519178, tol = 1.289707125269079
+Optimizing BFGS quadratic form subproblem...
+    Iteration 1: Removing variable 3 from active set.
+    Successfully optimized after 1 iterations.
+    Df (must be < 0) = -0.029254401961641315
+Performing line minimization...
+   ->Iteration 1
+Line minimization succeded after 1 iterations.
+
+PBFGS iteration 2: fun = 18.684685959407194, tol = 2.3281160027855536
+Optimizing BFGS quadratic form subproblem...
+    Iteration 1: Removing variable 1 from active set.
+    Iteration 2: Removing variable 7 from active set.
+    Iteration 3: Removing variable 3 from active set.
+    Iteration 4: Removing variable 11 from active set.
+    Successfully optimized after 4 iterations.
+    Df (must be < 0) = -0.8612281272897093
+Performing line minimization...
+   ->Iteration 1
+Line minimization succeded after 1 iterations.
+
+PBFGS iteration 3: fun = 17.90296744695513, tol = 1.735891838453086
+Optimizing BFGS quadratic form subproblem...
+    Iteration 1: Removing variable 1 from active set.
+    Iteration 2: Removing variable 7 from active set.
+    Iteration 3: Removing variable 11 from active set.
+    Iteration 4: Removing variable 3 from active set.
+    Successfully optimized after 4 iterations.
+    Df (must be < 0) = -0.054160941035688755
+Performing line minimization...
+   ->Iteration 1
+Line minimization succeded after 1 iterations.
+
+PBFGS iteration 4: fun = 17.79679675412421, tol = 1.5610378259221693
+Optimizing BFGS quadratic form subproblem...
+    Iteration 1: Removing variable 1 from active set.
+    Iteration 2: Removing variable 7 from active set.
+    Iteration 3: Removing variable 11 from active set.
+    Iteration 4: Removing variable 3 from active set.
+    Iteration 5: Removing variable 38 from active set.
+    Successfully optimized after 5 iterations.
+    Df (must be < 0) = -0.35345105900439533
+Performing line minimization...
+   ->Iteration 1
+Line minimization succeded after 1 iterations.
+
+PBFGS iteration 5: fun = 17.047642170801293, tol = 1.6218652850532578
+Optimizing BFGS quadratic form subproblem...
+    Iteration 1: Removing variable 38 from active set.
+    Iteration 2: Removing variable 1 from active set.
+    Iteration 3: Removing variable 36 from active set.
+    Iteration 4: Removing variable 7 from active set.
+    Iteration 5: Removing variable 11 from active set.
+    Iteration 6: Removing variable 3 from active set.
+    Successfully optimized after 6 iterations.
+    Df (must be < 0) = -0.3332074570939364
+Performing line minimization...
+   ->Iteration 1
+Line minimization succeded after 1 iterations.
+
+PBFGS iteration 6: fun = 16.441778670368283, tol = 1.5724325402189847
+Optimizing BFGS quadratic form subproblem...
+    Iteration 1: Removing variable 42 from active set.
+    Iteration 2: Removing variable 36 from active set.
+    Iteration 3: Removing variable 1 from active set.
+    Iteration 4: Removing variable 38 from active set.
+    Iteration 5: Removing variable 7 from active set.
+    Iteration 6: Removing variable 11 from active set.
+    Iteration 7: Removing variable 3 from active set.
+    Iteration 8: Removing variable 44 from active set.
+    Iteration 9: Removing variable 46 from active set.
+    Successfully optimized after 9 iterations.
+    Df (must be < 0) = -0.477224444942808
+Performing line minimization...
+   ->Iteration 1
+Line minimization succeded after 1 iterations.
+
+PBFGS iteration 7: fun = 15.502659714009196, tol = 1.632908197585851
+Optimizing BFGS quadratic form subproblem...
+    Iteration 1: Removing variable 9 from active set.
+    Iteration 2: Removing variable 46 from active set.
+    Iteration 3: Removing variable 44 from active set.
+    Iteration 4: Removing variable 1 from active set.
+    Iteration 5: Removing variable 60 from active set.
+    Iteration 6: Removing variable 48 from active set.
+    Iteration 7: Removing variable 7 from active set.
+    Iteration 8: Removing variable 42 from active set.
+    Iteration 9: Removing variable 36 from active set.
+    Iteration 10: Removing variable 38 from active set.
+    Iteration 10: Adding variable 9 to active set.
+    Iteration 11: Removing variable 11 from active set.
+    Iteration 12: Removing variable 3 from active set.
+    Iteration 13: Removing variable 9 from active set.
+    Successfully optimized after 13 iterations.
+    Df (must be < 0) = -0.351775449906332
+Performing line minimization...
+   ->Iteration 1
+Line minimization succeded after 1 iterations.
+
+PBFGS iteration 8: fun = 14.883372129459232, tol = 1.3970439099174783
+Optimizing BFGS quadratic form subproblem...
+    Iteration 1: Removing variable 2 from active set.
+    Iteration 2: Removing variable 1 from active set.
+    Iteration 3: Removing variable 9 from active set.
+    Iteration 4: Removing variable 46 from active set.
+    Iteration 5: Removing variable 44 from active set.
+    Iteration 5: Adding variable 2 to active set.
+    Iteration 6: Removing variable 48 from active set.
+    Iteration 7: Removing variable 11 from active set.
+    Iteration 8: Removing variable 60 from active set.
+    Iteration 9: Removing variable 36 from active set.
+    Iteration 10: Removing variable 38 from active set.
+    Iteration 11: Removing variable 42 from active set.
+    Iteration 12: Removing variable 3 from active set.
+    Iteration 13: Removing variable 7 from active set.
+    Successfully optimized after 13 iterations.
+    Df (must be < 0) = -0.5474878896552816
+Performing line minimization...
+   ->Iteration 1
+Line minimization succeded after 1 iterations.
+
+PBFGS iteration 9: fun = 13.64468207258239, tol = 1.3178277499712123
+Optimizing BFGS quadratic form subproblem...
+    Iteration 1: Removing variable 2 from active set.
+    Iteration 2: Removing variable 1 from active set.
+    Iteration 3: Removing variable 46 from active set.
+    Iteration 4: Removing variable 37 from active set.
+    Iteration 5: Removing variable 44 from active set.
+    Iteration 6: Removing variable 9 from active set.
+    Iteration 7: Removing variable 38 from active set.
+    Iteration 8: Removing variable 36 from active set.
+    Iteration 9: Removing variable 61 from active set.
+    Iteration 10: Removing variable 60 from active set.
+    Iteration 11: Removing variable 11 from active set.
+    Iteration 12: Removing variable 7 from active set.
+    Iteration 13: Removing variable 48 from active set.
+    Iteration 14: Removing variable 3 from active set.
+    Iteration 15: Removing variable 42 from active set.
+    Successfully optimized after 15 iterations.
+    Df (must be < 0) = -0.9881000200642187
+Performing line minimization...
+   ->Iteration 1
+Line minimization succeded after 1 iterations.
+
+PBFGS iteration 10: fun = 12.312064256825469, tol = 1.3219193455591935
+Optimizing BFGS quadratic form subproblem...
+    Iteration 1: Removing variable 2 from active set.
+    Iteration 2: Removing variable 1 from active set.
+    Iteration 3: Removing variable 37 from active set.
+    Iteration 4: Removing variable 46 from active set.
+    Iteration 5: Removing variable 44 from active set.
+    Iteration 6: Removing variable 3 from active set.
+    Iteration 7: Removing variable 61 from active set.
+    Iteration 8: Removing variable 38 from active set.
+    Iteration 9: Removing variable 36 from active set.
+    Iteration 10: Removing variable 60 from active set.
+    Iteration 11: Removing variable 7 from active set.
+    Iteration 12: Removing variable 42 from active set.
+    Iteration 13: Removing variable 9 from active set.
+    Iteration 14: Removing variable 11 from active set.
+    Iteration 15: Removing variable 48 from active set.
+    Successfully optimized after 15 iterations.
+    Df (must be < 0) = -0.511200627320026
+Performing line minimization...
+   ->Iteration 1
+Line minimization succeded after 1 iterations.
+
+PBFGS iteration 11: fun = 11.35569747870807, tol = 1.4781241168266068
+Optimizing BFGS quadratic form subproblem...
+    Iteration 1: Removing variable 2 from active set.
+    Iteration 2: Removing variable 62 from active set.
+    Iteration 3: Removing variable 1 from active set.
+    Iteration 4: Removing variable 60 from active set.
+    Iteration 5: Removing variable 61 from active set.
+    Iteration 6: Removing variable 46 from active set.
+    Iteration 7: Removing variable 44 from active set.
+    Iteration 8: Removing variable 45 from active set.
+    Iteration 9: Removing variable 3 from active set.
+    Iteration 10: Removing variable 40 from active set.
+    Iteration 11: Removing variable 36 from active set.
+    Iteration 12: Removing variable 38 from active set.
+    Iteration 13: Removing variable 37 from active set.
+    Iteration 14: Removing variable 34 from active set.
+    Iteration 15: Removing variable 42 from active set.
+    Iteration 16: Removing variable 9 from active set.
+    Iteration 17: Removing variable 11 from active set.
+    Iteration 18: Removing variable 25 from active set.
+    Iteration 19: Removing variable 48 from active set.
+    Successfully optimized after 19 iterations.
+    Df (must be < 0) = -0.6924116732202071
+Performing line minimization...
+   ->Iteration 1
+Line minimization succeded after 1 iterations.
+
+PBFGS iteration 12: fun = 10.359870187489845, tol = 1.1694171666324409
+Optimizing BFGS quadratic form subproblem...
+    Iteration 1: Removing variable 45 from active set.
+    Iteration 2: Removing variable 46 from active set.
+    Iteration 3: Removing variable 44 from active set.
+    Iteration 4: Removing variable 2 from active set.
+    Iteration 5: Removing variable 1 from active set.
+    Iteration 6: Removing variable 62 from active set.
+    Iteration 7: Removing variable 13 from active set.
+    Iteration 8: Removing variable 25 from active set.
+    Iteration 9: Removing variable 3 from active set.
+    Iteration 10: Removing variable 40 from active set.
+    Iteration 11: Removing variable 60 from active set.
+    Iteration 12: Removing variable 61 from active set.
+    Iteration 13: Removing variable 34 from active set.
+    Iteration 14: Removing variable 22 from active set.
+    Iteration 15: Removing variable 42 from active set.
+    Iteration 16: Removing variable 41 from active set.
+    Iteration 17: Removing variable 37 from active set.
+    Iteration 18: Removing variable 38 from active set.
+    Iteration 19: Removing variable 36 from active set.
+    Iteration 20: Removing variable 7 from active set.
+    Iteration 21: Removing variable 9 from active set.
+    Iteration 22: Removing variable 11 from active set.
+    Iteration 23: Removing variable 48 from active set.
+    Iteration 24: Removing variable 30 from active set.
+    Successfully optimized after 24 iterations.
+    Df (must be < 0) = -0.29419329024640944
+Performing line minimization...
+   ->Iteration 1
+Line minimization succeded after 1 iterations.
+
+PBFGS iteration 13: fun = 9.885686227444658, tol = 1.352471552750221
+Optimizing BFGS quadratic form subproblem...
+    Iteration 1: Removing variable 41 from active set.
+    Iteration 2: Removing variable 2 from active set.
+    Iteration 3: Removing variable 1 from active set.
+    Iteration 4: Removing variable 40 from active set.
+    Iteration 5: Removing variable 42 from active set.
+    Iteration 6: Removing variable 46 from active set.
+    Iteration 7: Removing variable 30 from active set.
+    Iteration 8: Removing variable 44 from active set.
+    Iteration 9: Removing variable 45 from active set.
+    Iteration 10: Removing variable 3 from active set.
+    Iteration 11: Removing variable 22 from active set.
+    Iteration 12: Removing variable 17 from active set.
+    Iteration 13: Removing variable 37 from active set.
+    Iteration 14: Removing variable 38 from active set.
+    Iteration 15: Removing variable 36 from active set.
+    Iteration 16: Removing variable 13 from active set.
+    Iteration 17: Removing variable 7 from active set.
+    Iteration 18: Removing variable 9 from active set.
+    Iteration 19: Removing variable 11 from active set.
+    Iteration 20: Removing variable 25 from active set.
+    Iteration 21: Removing variable 48 from active set.
+    Iteration 22: Removing variable 61 from active set.
+    Iteration 23: Removing variable 62 from active set.
+    Iteration 24: Removing variable 60 from active set.
+    Iteration 25: Removing variable 33 from active set.
+    Iteration 26: Removing variable 34 from active set.
+    Iteration 27: Removing variable 52 from active set.
+    Successfully optimized after 27 iterations.
+    Df (must be < 0) = -0.2767420031348342
+Performing line minimization...
+   ->Iteration 1
+Line minimization succeded after 1 iterations.
+
+PBFGS iteration 14: fun = 9.41330033659511, tol = 1.1102714737188168
+Optimizing BFGS quadratic form subproblem...
+    Iteration 1: Removing variable 10 from active set.
+    Iteration 2: Removing variable 41 from active set.
+    Iteration 3: Removing variable 2 from active set.
+    Iteration 4: Removing variable 1 from active set.
+    Iteration 5: Removing variable 40 from active set.
+    Iteration 6: Removing variable 42 from active set.
+    Iteration 7: Removing variable 33 from active set.
+    Iteration 8: Removing variable 21 from active set.
+    Iteration 9: Removing variable 34 from active set.
+    Iteration 10: Removing variable 46 from active set.
+    Iteration 10: Adding variable 10 to active set.
+    Iteration 11: Removing variable 52 from active set.
+    Iteration 12: Removing variable 44 from active set.
+    Iteration 13: Removing variable 45 from active set.
+    Iteration 14: Removing variable 17 from active set.
+    Iteration 15: Removing variable 3 from active set.
+    Iteration 16: Removing variable 22 from active set.
+    Iteration 17: Removing variable 9 from active set.
+    Iteration 18: Removing variable 62 from active set.
+    Iteration 19: Removing variable 61 from active set.
+    Iteration 20: Removing variable 60 from active set.
+    Iteration 21: Removing variable 38 from active set.
+    Iteration 22: Removing variable 37 from active set.
+    Iteration 23: Removing variable 36 from active set.
+    Iteration 24: Removing variable 30 from active set.
+    Iteration 25: Removing variable 13 from active set.
+    Iteration 26: Removing variable 7 from active set.
+    Iteration 27: Removing variable 11 from active set.
+    Iteration 28: Removing variable 25 from active set.
+    Iteration 29: Removing variable 48 from active set.
+    Successfully optimized after 29 iterations.
+    Df (must be < 0) = -0.34385856542161036
+Performing line minimization...
+   ->Iteration 1
+Line minimization succeded after 1 iterations.
+
+PBFGS iteration 15: fun = 8.765366185511775, tol = 1.0678408320074961
+Optimizing BFGS quadratic form subproblem...
+    Iteration 1: Removing variable 10 from active set.
+    Iteration 2: Removing variable 41 from active set.
+    Iteration 3: Removing variable 2 from active set.
+    Iteration 4: Removing variable 1 from active set.
+    Iteration 5: Removing variable 46 from active set.
+    Iteration 6: Removing variable 45 from active set.
+    Iteration 7: Removing variable 44 from active set.
+    Iteration 8: Removing variable 21 from active set.
+    Iteration 9: Removing variable 22 from active set.
+    Iteration 10: Removing variable 9 from active set.
+    Iteration 11: Removing variable 11 from active set.
+    Iteration 12: Removing variable 40 from active set.
+    Iteration 13: Removing variable 42 from active set.
+    Iteration 14: Removing variable 3 from active set.
+    Iteration 15: Removing variable 33 from active set.
+    Iteration 16: Removing variable 34 from active set.
+    Iteration 17: Removing variable 37 from active set.
+    Iteration 18: Removing variable 38 from active set.
+    Iteration 19: Removing variable 36 from active set.
+    Iteration 20: Removing variable 30 from active set.
+    Iteration 21: Removing variable 62 from active set.
+    Iteration 22: Removing variable 60 from active set.
+    Iteration 23: Removing variable 61 from active set.
+    Iteration 24: Removing variable 17 from active set.
+    Iteration 25: Removing variable 52 from active set.
+    Iteration 26: Removing variable 13 from active set.
+    Iteration 27: Removing variable 25 from active set.
+    Iteration 28: Removing variable 7 from active set.
+    Iteration 29: Removing variable 48 from active set.
+    Successfully optimized after 29 iterations.
+    Df (must be < 0) = -0.24905290315784084
+Performing line minimization...
+   ->Iteration 1
+Line minimization succeded after 1 iterations.
+
+PBFGS did not converge after 15 iterations: fun = 8.343762352332478, tol = 1.0208536053890043
+
+__________________________________________________________________________________
+Epoch 7: Loss = 0.029220168976645353, Entropy = 8.428607348718653, eta = 3.2
+
+PBFGS iteration 1: fun = 16.67017938802846, tol = 1.5328187865712861
+Optimizing BFGS quadratic form subproblem...
+    Iteration 1: Removing variable 48 from active set.
+    Iteration 2: Removing variable 2 from active set.
+    Iteration 3: Removing variable 1 from active set.
+    Iteration 4: Removing variable 3 from active set.
+    Iteration 5: Removing variable 7 from active set.
+    Iteration 6: Removing variable 52 from active set.
+    Iteration 7: Removing variable 11 from active set.
+    Iteration 8: Removing variable 9 from active set.
+    Iteration 9: Removing variable 10 from active set.
+    Iteration 10: Removing variable 60 from active set.
+    Iteration 11: Removing variable 62 from active set.
+    Iteration 12: Removing variable 61 from active set.
+    Iteration 13: Removing variable 56 from active set.
+    Iteration 14: Removing variable 45 from active set.
+    Iteration 15: Removing variable 46 from active set.
+    Iteration 16: Removing variable 44 from active set.
+    Iteration 17: Removing variable 37 from active set.
+    Iteration 18: Removing variable 38 from active set.
+    Iteration 19: Removing variable 36 from active set.
+    Iteration 20: Removing variable 41 from active set.
+    Iteration 21: Removing variable 42 from active set.
+    Iteration 22: Removing variable 40 from active set.
+    Iteration 23: Removing variable 33 from active set.
+    Iteration 24: Removing variable 34 from active set.
+    Iteration 25: Removing variable 17 from active set.
+    Iteration 26: Removing variable 21 from active set.
+    Iteration 27: Removing variable 22 from active set.
+    Iteration 28: Removing variable 25 from active set.
+    Iteration 29: Removing variable 13 from active set.
+    Iteration 30: Removing variable 30 from active set.
+    Successfully optimized after 30 iterations.
+    Df (must be < 0) = -0.17369896154116754
+Performing line minimization...
+   ->Iteration 1
+Line minimization succeded after 1 iterations.
+
+PBFGS iteration 2: fun = 16.40770416725814, tol = 1.7375607567161084
+Optimizing BFGS quadratic form subproblem...
+    Iteration 1: Removing variable 54 from active set.
+    Iteration 2: Removing variable 32 from active set.
+    Iteration 3: Removing variable 52 from active set.
+    Iteration 4: Removing variable 7 from active set.
+    Iteration 5: Removing variable 22 from active set.
+    Iteration 6: Removing variable 21 from active set.
+    Iteration 7: Removing variable 33 from active set.
+    Iteration 8: Removing variable 34 from active set.
+    Iteration 9: Removing variable 2 from active set.
+    Iteration 10: Removing variable 1 from active set.
+    Iteration 11: Removing variable 48 from active set.
+    Iteration 12: Removing variable 56 from active set.
+    Iteration 13: Removing variable 3 from active set.
+    Iteration 14: Removing variable 11 from active set.
+    Iteration 15: Removing variable 9 from active set.
+    Iteration 16: Removing variable 10 from active set.
+    Iteration 17: Removing variable 60 from active set.
+    Iteration 18: Removing variable 62 from active set.
+    Iteration 19: Removing variable 61 from active set.
+    Iteration 20: Removing variable 45 from active set.
+    Iteration 21: Removing variable 46 from active set.
+    Iteration 22: Removing variable 44 from active set.
+    Iteration 23: Removing variable 17 from active set.
+    Iteration 24: Removing variable 30 from active set.
+    Iteration 25: Removing variable 13 from active set.
+    Iteration 26: Removing variable 25 from active set.
+    Iteration 27: Removing variable 37 from active set.
+    Iteration 28: Removing variable 41 from active set.
+    Iteration 29: Removing variable 38 from active set.
+    Iteration 30: Removing variable 36 from active set.
+    Iteration 31: Removing variable 42 from active set.
+    Iteration 32: Removing variable 40 from active set.
+    Successfully optimized after 32 iterations.
+    Df (must be < 0) = -0.6611633161589352
+Performing line minimization...
+   ->Iteration 1
+Line minimization succeded after 1 iterations.
+
+PBFGS iteration 3: fun = 15.653407774371276, tol = 1.5890668269481876
+Optimizing BFGS quadratic form subproblem...
+    Iteration 1: Removing variable 26 from active set.
+    Iteration 2: Removing variable 54 from active set.
+    Iteration 3: Removing variable 32 from active set.
+    Iteration 4: Removing variable 25 from active set.
+    Iteration 5: Removing variable 34 from active set.
+    Iteration 6: Removing variable 33 from active set.
+    Iteration 7: Removing variable 40 from active set.
+    Iteration 8: Removing variable 42 from active set.
+    Iteration 9: Removing variable 41 from active set.
+    Iteration 10: Removing variable 36 from active set.
+    Iteration 11: Removing variable 38 from active set.
+    Iteration 12: Removing variable 37 from active set.
+    Iteration 13: Removing variable 10 from active set.
+    Iteration 14: Removing variable 9 from active set.
+    Iteration 15: Removing variable 11 from active set.
+    Iteration 16: Removing variable 30 from active set.
+    Iteration 17: Removing variable 2 from active set.
+    Iteration 18: Removing variable 3 from active set.
+    Iteration 19: Removing variable 1 from active set.
+    Iteration 20: Removing variable 13 from active set.
+    Iteration 21: Removing variable 44 from active set.
+    Iteration 22: Removing variable 46 from active set.
+    Iteration 23: Removing variable 45 from active set.
+    Iteration 24: Removing variable 17 from active set.
+    Iteration 25: Removing variable 21 from active set.
+    Iteration 26: Removing variable 22 from active set.
+    Iteration 27: Removing variable 61 from active set.
+    Iteration 28: Removing variable 62 from active set.
+    Iteration 29: Removing variable 60 from active set.
+    Iteration 30: Removing variable 52 from active set.
+    Iteration 31: Removing variable 48 from active set.
+    Iteration 32: Removing variable 56 from active set.
+    Successfully optimized after 32 iterations.
+    Df (must be < 0) = -0.23699774182206773
+Performing line minimization...
+   ->Iteration 1
+Line minimization succeded after 1 iterations.
+
+PBFGS iteration 4: fun = 15.18595867176284, tol = 1.4745483272820423
+Optimizing BFGS quadratic form subproblem...
+    Iteration 1: Removing variable 5 from active set.
+    Iteration 2: Removing variable 29 from active set.
+    Iteration 3: Removing variable 26 from active set.
+    Iteration 4: Removing variable 49 from active set.
+    Iteration 5: Removing variable 32 from active set.
+    Iteration 6: Removing variable 30 from active set.
+    Iteration 7: Removing variable 25 from active set.
+    Iteration 8: Removing variable 54 from active set.
+    Iteration 9: Removing variable 7 from active set.
+    Iteration 10: Removing variable 52 from active set.
+    Iteration 11: Removing variable 48 from active set.
+    Iteration 12: Removing variable 34 from active set.
+    Iteration 13: Removing variable 33 from active set.
+    Iteration 14: Removing variable 3 from active set.
+    Iteration 15: Removing variable 1 from active set.
+    Iteration 16: Removing variable 2 from active set.
+    Iteration 17: Removing variable 60 from active set.
+    Iteration 18: Removing variable 62 from active set.
+    Iteration 19: Removing variable 61 from active set.
+    Iteration 20: Removing variable 44 from active set.
+    Iteration 21: Removing variable 46 from active set.
+    Iteration 22: Removing variable 45 from active set.
+    Iteration 23: Removing variable 42 from active set.
+    Iteration 24: Removing variable 40 from active set.
+    Iteration 25: Removing variable 41 from active set.
+    Iteration 26: Removing variable 36 from active set.
+    Iteration 27: Removing variable 38 from active set.
+    Iteration 28: Removing variable 37 from active set.
+    Iteration 29: Removing variable 56 from active set.
+    Iteration 30: Removing variable 11 from active set.
+    Iteration 31: Removing variable 9 from active set.
+    Iteration 32: Removing variable 10 from active set.
+    Iteration 33: Removing variable 17 from active set.
+    Iteration 34: Removing variable 21 from active set.
+    Iteration 35: Removing variable 22 from active set.
+    Iteration 36: Removing variable 13 from active set.
+    Successfully optimized after 36 iterations.
+    Df (must be < 0) = -1.0068696778445667
+Performing line minimization...
+   ->Iteration 1
+Line minimization succeded after 1 iterations.
+
+PBFGS iteration 5: fun = 14.016720906845304, tol = 1.4776703349780864
+Optimizing BFGS quadratic form subproblem...
+    Iteration 1: Removing variable 5 from active set.
+    Iteration 2: Removing variable 49 from active set.
+    Iteration 3: Removing variable 29 from active set.
+    Iteration 4: Removing variable 7 from active set.
+    Iteration 5: Removing variable 54 from active set.
+    Iteration 6: Removing variable 48 from active set.
+    Iteration 7: Removing variable 52 from active set.
+    Iteration 8: Removing variable 30 from active set.
+    Iteration 9: Removing variable 26 from active set.
+    Iteration 10: Removing variable 22 from active set.
+    Iteration 11: Removing variable 21 from active set.
+    Iteration 12: Removing variable 25 from active set.
+    Iteration 13: Removing variable 2 from active set.
+    Iteration 14: Removing variable 1 from active set.
+    Iteration 15: Removing variable 3 from active set.
+    Iteration 16: Removing variable 11 from active set.
+    Iteration 17: Removing variable 9 from active set.
+    Iteration 18: Removing variable 10 from active set.
+    Iteration 19: Removing variable 13 from active set.
+    Iteration 20: Removing variable 17 from active set.
+    Iteration 21: Removing variable 61 from active set.
+    Iteration 22: Removing variable 60 from active set.
+    Iteration 23: Removing variable 62 from active set.
+    Iteration 24: Removing variable 45 from active set.
+    Iteration 25: Removing variable 46 from active set.
+    Iteration 26: Removing variable 44 from active set.
+    Iteration 27: Removing variable 41 from active set.
+    Iteration 28: Removing variable 42 from active set.
+    Iteration 29: Removing variable 40 from active set.
+    Iteration 30: Removing variable 37 from active set.
+    Iteration 31: Removing variable 38 from active set.
+    Iteration 32: Removing variable 36 from active set.
+    Iteration 33: Removing variable 32 from active set.
+    Iteration 34: Removing variable 33 from active set.
+    Iteration 35: Removing variable 34 from active set.
+    Iteration 36: Removing variable 56 from active set.
+    Successfully optimized after 36 iterations.
+    Df (must be < 0) = -0.2299170331536974
+Performing line minimization...
+   ->Iteration 1
+Line minimization succeded after 1 iterations.
+
+PBFGS iteration 6: fun = 13.550675475162814, tol = 1.397121997481402
+Optimizing BFGS quadratic form subproblem...
+    Iteration 1: Removing variable 5 from active set.
+    Iteration 2: Removing variable 12 from active set.
+    Iteration 3: Removing variable 29 from active set.
+    Iteration 4: Removing variable 26 from active set.
+    Iteration 5: Removing variable 49 from active set.
+    Iteration 6: Removing variable 13 from active set.
+    Iteration 7: Removing variable 7 from active set.
+    Iteration 8: Removing variable 25 from active set.
+    Iteration 9: Removing variable 22 from active set.
+    Iteration 10: Removing variable 21 from active set.
+    Iteration 11: Removing variable 30 from active set.
+    Iteration 12: Removing variable 2 from active set.
+    Iteration 13: Removing variable 1 from active set.
+    Iteration 14: Removing variable 3 from active set.
+    Iteration 15: Removing variable 54 from active set.
+    Iteration 16: Removing variable 52 from active set.
+    Iteration 17: Removing variable 48 from active set.
+    Iteration 18: Removing variable 10 from active set.
+    Iteration 19: Removing variable 9 from active set.
+    Iteration 20: Removing variable 11 from active set.
+    Iteration 21: Removing variable 17 from active set.
+    Iteration 22: Removing variable 45 from active set.
+    Iteration 23: Removing variable 46 from active set.
+    Iteration 24: Removing variable 44 from active set.
+    Iteration 25: Removing variable 61 from active set.
+    Iteration 26: Removing variable 62 from active set.
+    Iteration 27: Removing variable 60 from active set.
+    Iteration 28: Removing variable 37 from active set.
+    Iteration 29: Removing variable 38 from active set.
+    Iteration 30: Removing variable 36 from active set.
+    Iteration 31: Removing variable 41 from active set.
+    Iteration 32: Removing variable 42 from active set.
+    Iteration 33: Removing variable 40 from active set.
+    Iteration 34: Removing variable 32 from active set.
+    Iteration 35: Removing variable 33 from active set.
+    Iteration 36: Removing variable 34 from active set.
+    Iteration 37: Removing variable 56 from active set.
+    Successfully optimized after 37 iterations.
+    Df (must be < 0) = -0.430577458284328
+Performing line minimization...
+   ->Iteration 1
+Line minimization succeded after 1 iterations.
+
+PBFGS iteration 7: fun = 12.854618494613016, tol = 1.3342199481623038
+Optimizing BFGS quadratic form subproblem...
+    Iteration 1: Removing variable 15 from active set.
+    Iteration 2: Removing variable 5 from active set.
+    Iteration 3: Removing variable 12 from active set.
+    Iteration 4: Removing variable 29 from active set.
+    Iteration 5: Removing variable 13 from active set.
+    Iteration 6: Removing variable 49 from active set.
+    Iteration 7: Removing variable 32 from active set.
+    Iteration 8: Removing variable 30 from active set.
+    Iteration 9: Removing variable 52 from active set.
+    Iteration 10: Removing variable 54 from active set.
+    Iteration 11: Removing variable 7 from active set.
+    Iteration 12: Removing variable 2 from active set.
+    Iteration 13: Removing variable 48 from active set.
+    Iteration 14: Removing variable 1 from active set.
+    Iteration 15: Removing variable 3 from active set.
+    Iteration 16: Removing variable 33 from active set.
+    Iteration 17: Removing variable 34 from active set.
+    Iteration 18: Removing variable 11 from active set.
+    Iteration 19: Removing variable 9 from active set.
+    Iteration 20: Removing variable 10 from active set.
+    Iteration 21: Removing variable 22 from active set.
+    Iteration 22: Removing variable 21 from active set.
+    Iteration 23: Removing variable 60 from active set.
+    Iteration 24: Removing variable 62 from active set.
+    Iteration 25: Removing variable 61 from active set.
+    Iteration 26: Removing variable 45 from active set.
+    Iteration 27: Removing variable 46 from active set.
+    Iteration 28: Removing variable 44 from active set.
+    Iteration 29: Removing variable 56 from active set.
+    Iteration 30: Removing variable 37 from active set.
+    Iteration 31: Removing variable 38 from active set.
+    Iteration 32: Removing variable 36 from active set.
+    Iteration 33: Removing variable 17 from active set.
+    Iteration 34: Removing variable 41 from active set.
+    Iteration 35: Removing variable 42 from active set.
+    Iteration 36: Removing variable 40 from active set.
+    Iteration 37: Removing variable 25 from active set.
+    Iteration 38: Removing variable 26 from active set.
+    Successfully optimized after 38 iterations.
+    Df (must be < 0) = -0.9222656268935985
+Performing line minimization...
+   ->Iteration 1
+Line minimization succeded after 1 iterations.
+
+PBFGS iteration 8: fun = 11.312531289834821, tol = 1.3070730841987883
+Optimizing BFGS quadratic form subproblem...
+    Iteration 1: Removing variable 15 from active set.
+    Iteration 2: Removing variable 5 from active set.
+    Iteration 3: Removing variable 26 from active set.
+    Iteration 4: Removing variable 13 from active set.
+    Iteration 5: Removing variable 12 from active set.
+    Iteration 6: Removing variable 49 from active set.
+    Iteration 7: Removing variable 32 from active set.
+    Iteration 8: Removing variable 29 from active set.
+    Iteration 9: Removing variable 48 from active set.
+    Iteration 10: Removing variable 54 from active set.
+    Iteration 11: Removing variable 7 from active set.
+    Iteration 12: Removing variable 52 from active set.
+    Iteration 13: Removing variable 11 from active set.
+    Iteration 14: Removing variable 56 from active set.
+    Iteration 15: Removing variable 9 from active set.
+    Iteration 16: Removing variable 10 from active set.
+    Iteration 17: Removing variable 34 from active set.
+    Iteration 18: Removing variable 33 from active set.
+    Iteration 19: Removing variable 60 from active set.
+    Iteration 20: Removing variable 62 from active set.
+    Iteration 21: Removing variable 61 from active set.
+    Iteration 22: Removing variable 3 from active set.
+    Iteration 23: Removing variable 2 from active set.
+    Iteration 24: Removing variable 1 from active set.
+    Iteration 25: Removing variable 25 from active set.
+    Iteration 26: Removing variable 42 from active set.
+    Iteration 27: Removing variable 40 from active set.
+    Iteration 28: Removing variable 41 from active set.
+    Iteration 29: Removing variable 38 from active set.
+    Iteration 30: Removing variable 36 from active set.
+    Iteration 31: Removing variable 37 from active set.
+    Iteration 32: Removing variable 46 from active set.
+    Iteration 33: Removing variable 44 from active set.
+    Iteration 34: Removing variable 45 from active set.
+    Iteration 35: Removing variable 17 from active set.
+    Iteration 36: Removing variable 30 from active set.
+    Iteration 37: Removing variable 21 from active set.
+    Iteration 38: Removing variable 22 from active set.
+    Successfully optimized after 38 iterations.
+    Df (must be < 0) = -0.3513720616058694
+Performing line minimization...
+   ->Iteration 1
+Line minimization succeded after 1 iterations.
+
+PBFGS iteration 9: fun = 10.736505136200938, tol = 1.166528420825988
+Optimizing BFGS quadratic form subproblem...
+    Iteration 1: Removing variable 15 from active set.
+    Iteration 2: Removing variable 5 from active set.
+    Iteration 3: Removing variable 50 from active set.
+    Iteration 4: Removing variable 59 from active set.
+    Iteration 5: Removing variable 26 from active set.
+    Iteration 5: Adding variable 50 to active set.
+    Iteration 6: Removing variable 29 from active set.
+    Iteration 7: Removing variable 12 from active set.
+    Iteration 8: Removing variable 56 from active set.
+    Iteration 9: Removing variable 13 from active set.
+    Iteration 10: Removing variable 30 from active set.
+    Iteration 11: Removing variable 32 from active set.
+    Iteration 12: Removing variable 25 from active set.
+    Iteration 13: Removing variable 22 from active set.
+    Iteration 14: Removing variable 21 from active set.
+    Iteration 15: Removing variable 49 from active set.
+    Iteration 16: Removing variable 10 from active set.
+    Iteration 17: Removing variable 9 from active set.
+    Iteration 18: Removing variable 7 from active set.
+    Iteration 19: Removing variable 11 from active set.
+    Iteration 20: Removing variable 33 from active set.
+    Iteration 21: Removing variable 34 from active set.
+    Iteration 22: Removing variable 2 from active set.
+    Iteration 23: Removing variable 1 from active set.
+    Iteration 24: Removing variable 3 from active set.
+    Iteration 25: Removing variable 52 from active set.
+    Iteration 26: Removing variable 54 from active set.
+    Iteration 27: Removing variable 44 from active set.
+    Iteration 28: Removing variable 46 from active set.
+    Iteration 29: Removing variable 45 from active set.
+    Iteration 30: Removing variable 17 from active set.
+    Iteration 31: Removing variable 37 from active set.
+    Iteration 32: Removing variable 38 from active set.
+    Iteration 33: Removing variable 36 from active set.
+    Iteration 34: Removing variable 61 from active set.
+    Iteration 35: Removing variable 41 from active set.
+    Iteration 36: Removing variable 42 from active set.
+    Iteration 37: Removing variable 40 from active set.
+    Iteration 38: Removing variable 62 from active set.
+    Iteration 39: Removing variable 60 from active set.
+    Iteration 40: Removing variable 48 from active set.
+    Successfully optimized after 40 iterations.
+    Df (must be < 0) = -0.8409100365199125
+Performing line minimization...
+   ->Iteration 1
+Line minimization succeded after 1 iterations.
+
+PBFGS iteration 10: fun = 9.176199006204953, tol = 0.9975950598761543
+Optimizing BFGS quadratic form subproblem...
+    Iteration 1: Removing variable 15 from active set.
+    Iteration 2: Removing variable 50 from active set.
+    Iteration 3: Removing variable 49 from active set.
+    Iteration 4: Removing variable 48 from active set.
+    Iteration 5: Removing variable 26 from active set.
+    Iteration 6: Removing variable 32 from active set.
+    Iteration 7: Removing variable 59 from active set.
+    Iteration 8: Removing variable 29 from active set.
+    Iteration 9: Removing variable 12 from active set.
+    Iteration 10: Removing variable 13 from active set.
+    Iteration 11: Removing variable 56 from active set.
+    Iteration 12: Removing variable 5 from active set.
+    Iteration 13: Removing variable 7 from active set.
+    Iteration 14: Removing variable 54 from active set.
+    Iteration 15: Removing variable 52 from active set.
+    Iteration 16: Removing variable 30 from active set.
+    Iteration 17: Removing variable 22 from active set.
+    Iteration 18: Removing variable 21 from active set.
+    Iteration 19: Removing variable 25 from active set.
+    Iteration 20: Removing variable 2 from active set.
+    Iteration 21: Removing variable 1 from active set.
+    Iteration 22: Removing variable 3 from active set.
+    Iteration 23: Removing variable 33 from active set.
+    Iteration 24: Removing variable 34 from active set.
+    Iteration 25: Removing variable 11 from active set.
+    Iteration 26: Removing variable 9 from active set.
+    Iteration 27: Removing variable 10 from active set.
+    Iteration 28: Removing variable 60 from active set.
+    Iteration 29: Removing variable 62 from active set.
+    Iteration 30: Removing variable 61 from active set.
+    Iteration 31: Removing variable 17 from active set.
+    Iteration 32: Removing variable 45 from active set.
+    Iteration 33: Removing variable 46 from active set.
+    Iteration 34: Removing variable 44 from active set.
+    Iteration 35: Removing variable 37 from active set.
+    Iteration 36: Removing variable 38 from active set.
+    Iteration 37: Removing variable 36 from active set.
+    Iteration 38: Removing variable 41 from active set.
+    Iteration 39: Removing variable 42 from active set.
+    Iteration 40: Removing variable 40 from active set.
+    Successfully optimized after 40 iterations.
+    Df (must be < 0) = -0.49058520614585094
+Performing line minimization...
+   ->Iteration 1
+Line minimization succeded after 1 iterations.
+
+PBFGS iteration 11: fun = 8.462799450191971, tol = 1.1306021704989753
+Optimizing BFGS quadratic form subproblem...
+    Iteration 1: Removing variable 15 from active set.
+    Iteration 2: Removing variable 50 from active set.
+    Iteration 3: Removing variable 49 from active set.
+    Iteration 4: Removing variable 58 from active set.
+    Iteration 5: Removing variable 26 from active set.
+    Iteration 6: Removing variable 48 from active set.
+    Iteration 7: Removing variable 32 from active set.
+    Iteration 8: Removing variable 59 from active set.
+    Iteration 9: Removing variable 56 from active set.
+    Iteration 10: Removing variable 29 from active set.
+    Iteration 11: Removing variable 12 from active set.
+    Iteration 12: Removing variable 13 from active set.
+    Iteration 13: Removing variable 5 from active set.
+    Iteration 14: Removing variable 7 from active set.
+    Iteration 15: Removing variable 54 from active set.
+    Iteration 16: Removing variable 52 from active set.
+    Iteration 17: Removing variable 30 from active set.
+    Iteration 18: Removing variable 25 from active set.
+    Iteration 19: Removing variable 22 from active set.
+    Iteration 20: Removing variable 21 from active set.
+    Iteration 21: Removing variable 2 from active set.
+    Iteration 22: Removing variable 1 from active set.
+    Iteration 23: Removing variable 3 from active set.
+    Iteration 24: Removing variable 33 from active set.
+    Iteration 25: Removing variable 34 from active set.
+    Iteration 26: Removing variable 11 from active set.
+    Iteration 27: Removing variable 9 from active set.
+    Iteration 28: Removing variable 10 from active set.
+    Iteration 29: Removing variable 60 from active set.
+    Iteration 30: Removing variable 62 from active set.
+    Iteration 31: Removing variable 61 from active set.
+    Iteration 32: Removing variable 17 from active set.
+    Iteration 33: Removing variable 45 from active set.
+    Iteration 34: Removing variable 46 from active set.
+    Iteration 35: Removing variable 44 from active set.
+    Iteration 36: Removing variable 41 from active set.
+    Iteration 37: Removing variable 42 from active set.
+    Iteration 38: Removing variable 40 from active set.
+    Iteration 39: Removing variable 37 from active set.
+    Iteration 40: Removing variable 38 from active set.
+    Iteration 41: Removing variable 36 from active set.
+    Successfully optimized after 41 iterations.
+    Df (must be < 0) = -0.3997005826326786
+Performing line minimization...
+   ->Iteration 1
+Line minimization succeded after 1 iterations.
+
+PBFGS iteration 12: fun = 7.886673944159428, tol = 1.0764077203078541
+Optimizing BFGS quadratic form subproblem...
+    Iteration 1: Removing variable 15 from active set.
+    Iteration 2: Removing variable 58 from active set.
+    Iteration 3: Removing variable 5 from active set.
+    Iteration 4: Removing variable 50 from active set.
+    Iteration 5: Removing variable 49 from active set.
+    Iteration 6: Removing variable 59 from active set.
+    Iteration 7: Removing variable 56 from active set.
+    Iteration 8: Removing variable 26 from active set.
+    Iteration 9: Removing variable 29 from active set.
+    Iteration 10: Removing variable 12 from active set.
+    Iteration 11: Removing variable 13 from active set.
+    Iteration 12: Removing variable 32 from active set.
+    Iteration 13: Removing variable 48 from active set.
+    Iteration 14: Removing variable 30 from active set.
+    Iteration 15: Removing variable 25 from active set.
+    Iteration 16: Removing variable 7 from active set.
+    Iteration 17: Removing variable 54 from active set.
+    Iteration 18: Removing variable 52 from active set.
+    Iteration 19: Removing variable 22 from active set.
+    Iteration 20: Removing variable 21 from active set.
+    Iteration 21: Removing variable 2 from active set.
+    Iteration 22: Removing variable 1 from active set.
+    Iteration 23: Removing variable 3 from active set.
+    Iteration 24: Removing variable 33 from active set.
+    Iteration 25: Removing variable 34 from active set.
+    Iteration 26: Removing variable 10 from active set.
+    Iteration 27: Removing variable 9 from active set.
+    Iteration 28: Removing variable 11 from active set.
+    Iteration 29: Removing variable 17 from active set.
+    Iteration 30: Removing variable 61 from active set.
+    Iteration 31: Removing variable 62 from active set.
+    Iteration 32: Removing variable 60 from active set.
+    Iteration 33: Removing variable 45 from active set.
+    Iteration 34: Removing variable 46 from active set.
+    Iteration 35: Removing variable 44 from active set.
+    Iteration 36: Removing variable 37 from active set.
+    Iteration 37: Removing variable 38 from active set.
+    Iteration 38: Removing variable 36 from active set.
+    Iteration 39: Removing variable 41 from active set.
+    Iteration 40: Removing variable 42 from active set.
+    Iteration 41: Removing variable 40 from active set.
+    Successfully optimized after 41 iterations.
+    Df (must be < 0) = -0.3091157759086369
+Performing line minimization...
+   ->Iteration 1
+Line minimization succeded after 1 iterations.
+
+PBFGS iteration 13: fun = 7.219635352039809, tol = 0.9197701371129847
+Optimizing BFGS quadratic form subproblem...
+    Iteration 1: Removing variable 15 from active set.
+    Iteration 2: Removing variable 6 from active set.
+    Iteration 3: Removing variable 5 from active set.
+    Iteration 4: Removing variable 50 from active set.
+    Iteration 5: Removing variable 58 from active set.
+    Iteration 6: Removing variable 49 from active set.
+    Iteration 7: Removing variable 59 from active set.
+    Iteration 8: Removing variable 56 from active set.
+    Iteration 9: Removing variable 26 from active set.
+    Iteration 10: Removing variable 7 from active set.
+    Iteration 11: Removing variable 32 from active set.
+    Iteration 12: Removing variable 29 from active set.
+    Iteration 13: Removing variable 12 from active set.
+    Iteration 14: Removing variable 13 from active set.
+    Iteration 15: Removing variable 48 from active set.
+    Iteration 16: Removing variable 54 from active set.
+    Iteration 17: Removing variable 52 from active set.
+    Iteration 18: Removing variable 30 from active set.
+    Iteration 19: Removing variable 25 from active set.
+    Iteration 20: Removing variable 22 from active set.
+    Iteration 21: Removing variable 21 from active set.
+    Iteration 22: Removing variable 2 from active set.
+    Iteration 23: Removing variable 1 from active set.
+    Iteration 24: Removing variable 3 from active set.
+    Iteration 25: Removing variable 33 from active set.
+    Iteration 26: Removing variable 34 from active set.
+    Iteration 27: Removing variable 10 from active set.
+    Iteration 28: Removing variable 9 from active set.
+    Iteration 29: Removing variable 11 from active set.
+    Iteration 30: Removing variable 17 from active set.
+    Iteration 31: Removing variable 61 from active set.
+    Iteration 32: Removing variable 62 from active set.
+    Iteration 33: Removing variable 60 from active set.
+    Iteration 34: Removing variable 45 from active set.
+    Iteration 35: Removing variable 46 from active set.
+    Iteration 36: Removing variable 44 from active set.
+    Iteration 37: Removing variable 37 from active set.
+    Iteration 38: Removing variable 38 from active set.
+    Iteration 39: Removing variable 36 from active set.
+    Iteration 40: Removing variable 41 from active set.
+    Iteration 41: Removing variable 42 from active set.
+    Iteration 42: Removing variable 40 from active set.
+    Successfully optimized after 42 iterations.
+    Df (must be < 0) = -1.1546841350437052
+Performing line minimization...
+   ->Iteration 1
+Line minimization succeded after 1 iterations.
+
+PBFGS iteration 14: fun = 5.559351102535893, tol = 0.8406430673302431
+Optimizing BFGS quadratic form subproblem...
+    Iteration 1: Removing variable 6 from active set.
+    Iteration 2: Removing variable 15 from active set.
+    Iteration 3: Removing variable 5 from active set.
+    Iteration 4: Removing variable 50 from active set.
+    Iteration 5: Removing variable 49 from active set.
+    Iteration 6: Removing variable 7 from active set.
+    Iteration 7: Removing variable 58 from active set.
+    Iteration 8: Removing variable 26 from active set.
+    Iteration 9: Removing variable 59 from active set.
+    Iteration 10: Removing variable 56 from active set.
+    Iteration 11: Removing variable 32 from active set.
+    Iteration 12: Removing variable 29 from active set.
+    Iteration 13: Removing variable 12 from active set.
+    Iteration 14: Removing variable 13 from active set.
+    Iteration 15: Removing variable 48 from active set.
+    Iteration 16: Removing variable 30 from active set.
+    Iteration 17: Removing variable 31 from active set.
+    Iteration 18: Removing variable 54 from active set.
+    Iteration 19: Removing variable 52 from active set.
+    Iteration 20: Removing variable 22 from active set.
+    Iteration 21: Removing variable 21 from active set.
+    Iteration 22: Removing variable 25 from active set.
+    Iteration 23: Removing variable 2 from active set.
+    Iteration 24: Removing variable 1 from active set.
+    Iteration 25: Removing variable 3 from active set.
+    Iteration 26: Removing variable 33 from active set.
+    Iteration 27: Removing variable 34 from active set.
+    Iteration 28: Removing variable 10 from active set.
+    Iteration 29: Removing variable 9 from active set.
+    Iteration 30: Removing variable 11 from active set.
+    Iteration 31: Removing variable 17 from active set.
+    Iteration 32: Removing variable 61 from active set.
+    Iteration 33: Removing variable 62 from active set.
+    Iteration 34: Removing variable 60 from active set.
+    Iteration 35: Removing variable 45 from active set.
+    Iteration 36: Removing variable 46 from active set.
+    Iteration 37: Removing variable 44 from active set.
+    Iteration 38: Removing variable 37 from active set.
+    Iteration 39: Removing variable 38 from active set.
+    Iteration 40: Removing variable 36 from active set.
+    Iteration 41: Removing variable 41 from active set.
+    Iteration 42: Removing variable 42 from active set.
+    Iteration 43: Removing variable 40 from active set.
+    Successfully optimized after 43 iterations.
+    Df (must be < 0) = -0.25702897989664597
+Performing line minimization...
+   ->Iteration 1
+Line minimization succeded after 1 iterations.
+
+PBFGS iteration 15: fun = 5.117346789132429, tol = 0.8026603399111749
+Optimizing BFGS quadratic form subproblem...
+    Iteration 1: Removing variable 31 from active set.
+    Iteration 2: Removing variable 15 from active set.
+    Iteration 3: Removing variable 5 from active set.
+    Iteration 4: Removing variable 50 from active set.
+    Iteration 5: Removing variable 6 from active set.
+    Iteration 6: Removing variable 29 from active set.
+    Iteration 7: Removing variable 49 from active set.
+    Iteration 8: Removing variable 30 from active set.
+    Iteration 9: Removing variable 58 from active set.
+    Iteration 10: Removing variable 59 from active set.
+    Iteration 11: Removing variable 12 from active set.
+    Iteration 12: Removing variable 7 from active set.
+    Iteration 13: Removing variable 56 from active set.
+    Iteration 14: Removing variable 13 from active set.
+    Iteration 15: Removing variable 48 from active set.
+    Iteration 16: Removing variable 54 from active set.
+    Iteration 17: Removing variable 52 from active set.
+    Iteration 18: Removing variable 22 from active set.
+    Iteration 19: Removing variable 21 from active set.
+    Iteration 20: Removing variable 26 from active set.
+    Iteration 21: Removing variable 25 from active set.
+    Iteration 22: Removing variable 2 from active set.
+    Iteration 23: Removing variable 1 from active set.
+    Iteration 24: Removing variable 3 from active set.
+    Iteration 25: Removing variable 17 from active set.
+    Iteration 26: Removing variable 10 from active set.
+    Iteration 27: Removing variable 9 from active set.
+    Iteration 28: Removing variable 11 from active set.
+    Iteration 29: Removing variable 61 from active set.
+    Iteration 30: Removing variable 60 from active set.
+    Iteration 31: Removing variable 62 from active set.
+    Iteration 32: Removing variable 45 from active set.
+    Iteration 33: Removing variable 46 from active set.
+    Iteration 34: Removing variable 44 from active set.
+    Iteration 35: Removing variable 33 from active set.
+    Iteration 36: Removing variable 32 from active set.
+    Iteration 37: Removing variable 34 from active set.
+    Iteration 38: Removing variable 41 from active set.
+    Iteration 39: Removing variable 42 from active set.
+    Iteration 40: Removing variable 40 from active set.
+    Iteration 41: Removing variable 37 from active set.
+    Iteration 42: Removing variable 38 from active set.
+    Iteration 43: Removing variable 36 from active set.
+    Successfully optimized after 43 iterations.
+    Df (must be < 0) = -0.1080268003575043
+Performing line minimization...
+   ->Iteration 1
+Line minimization succeded after 1 iterations.
+
+PBFGS did not converge after 15 iterations: fun = 4.888402078033323, tol = 0.77823727498213
+
+__________________________________________________________________________________
+Epoch 8: Loss = 0.02446324623398753, Entropy = 2.374934682429781, eta = 6.4
+
+PBFGS iteration 1: fun = 9.753993810163008, tol = 0.8221161005528662
+Optimizing BFGS quadratic form subproblem...
+    Iteration 1: Removing variable 59 from active set.
+    Iteration 2: Removing variable 58 from active set.
+    Iteration 3: Removing variable 56 from active set.
+    Iteration 4: Removing variable 2 from active set.
+    Iteration 5: Removing variable 1 from active set.
+    Iteration 6: Removing variable 3 from active set.
+    Iteration 7: Removing variable 22 from active set.
+    Iteration 8: Removing variable 21 from active set.
+    Iteration 9: Removing variable 26 from active set.
+    Iteration 10: Removing variable 25 from active set.
+    Iteration 11: Removing variable 30 from active set.
+    Iteration 12: Removing variable 29 from active set.
+    Iteration 13: Removing variable 31 from active set.
+    Iteration 14: Removing variable 6 from active set.
+    Iteration 15: Removing variable 5 from active set.
+    Iteration 16: Removing variable 7 from active set.
+    Iteration 17: Removing variable 12 from active set.
+    Iteration 18: Removing variable 13 from active set.
+    Iteration 19: Removing variable 15 from active set.
+    Iteration 20: Removing variable 10 from active set.
+    Iteration 21: Removing variable 9 from active set.
+    Iteration 22: Removing variable 11 from active set.
+    Iteration 23: Removing variable 45 from active set.
+    Iteration 24: Removing variable 46 from active set.
+    Iteration 25: Removing variable 44 from active set.
+    Iteration 26: Removing variable 17 from active set.
+    Iteration 27: Removing variable 33 from active set.
+    Iteration 28: Removing variable 34 from active set.
+    Iteration 29: Removing variable 32 from active set.
+    Iteration 30: Removing variable 48 from active set.
+    Iteration 31: Removing variable 50 from active set.
+    Iteration 32: Removing variable 49 from active set.
+    Iteration 33: Removing variable 41 from active set.
+    Iteration 34: Removing variable 42 from active set.
+    Iteration 35: Removing variable 40 from active set.
+    Iteration 36: Removing variable 37 from active set.
+    Iteration 37: Removing variable 38 from active set.
+    Iteration 38: Removing variable 36 from active set.
+    Iteration 39: Removing variable 61 from active set.
+    Iteration 40: Removing variable 62 from active set.
+    Iteration 41: Removing variable 60 from active set.
+    Iteration 42: Removing variable 54 from active set.
+    Iteration 43: Removing variable 52 from active set.
+    Successfully optimized after 43 iterations.
+    Df (must be < 0) = -0.21558821943245898
+Performing line minimization...
+   ->Iteration 1
+Line minimization succeded after 1 iterations.
+
+PBFGS iteration 2: fun = 9.304626738785371, tol = 0.7949732164536126
+Optimizing BFGS quadratic form subproblem...
+    Iteration 1: Removing variable 15 from active set.
+    Iteration 2: Removing variable 13 from active set.
+    Iteration 3: Removing variable 12 from active set.
+    Iteration 4: Removing variable 56 from active set.
+    Iteration 5: Removing variable 58 from active set.
+    Iteration 6: Removing variable 59 from active set.
+    Iteration 7: Removing variable 7 from active set.
+    Iteration 8: Removing variable 5 from active set.
+    Iteration 9: Removing variable 6 from active set.
+    Iteration 10: Removing variable 11 from active set.
+    Iteration 11: Removing variable 9 from active set.
+    Iteration 12: Removing variable 10 from active set.
+    Iteration 13: Removing variable 26 from active set.
+    Iteration 14: Removing variable 25 from active set.
+    Iteration 15: Removing variable 2 from active set.
+    Iteration 16: Removing variable 1 from active set.
+    Iteration 17: Removing variable 3 from active set.
+    Iteration 18: Removing variable 31 from active set.
+    Iteration 19: Removing variable 29 from active set.
+    Iteration 20: Removing variable 30 from active set.
+    Iteration 21: Removing variable 52 from active set.
+    Iteration 22: Removing variable 54 from active set.
+    Iteration 23: Removing variable 60 from active set.
+    Iteration 24: Removing variable 62 from active set.
+    Iteration 25: Removing variable 61 from active set.
+    Iteration 26: Removing variable 44 from active set.
+    Iteration 27: Removing variable 46 from active set.
+    Iteration 28: Removing variable 45 from active set.
+    Iteration 29: Removing variable 32 from active set.
+    Iteration 30: Removing variable 34 from active set.
+    Iteration 31: Removing variable 33 from active set.
+    Iteration 32: Removing variable 48 from active set.
+    Iteration 33: Removing variable 50 from active set.
+    Iteration 34: Removing variable 49 from active set.
+    Iteration 35: Removing variable 40 from active set.
+    Iteration 36: Removing variable 42 from active set.
+    Iteration 37: Removing variable 41 from active set.
+    Iteration 38: Removing variable 36 from active set.
+    Iteration 39: Removing variable 38 from active set.
+    Iteration 40: Removing variable 37 from active set.
+    Iteration 41: Removing variable 17 from active set.
+    Iteration 42: Removing variable 21 from active set.
+    Iteration 43: Removing variable 22 from active set.
+    Iteration 44: Removing variable 23 from active set.
+    Successfully optimized after 44 iterations.
+    Df (must be < 0) = -1.2529614320255764
+Performing line minimization...
+   ->Iteration 1
+Line minimization succeded after 1 iterations.
+
+PBFGS iteration 3: fun = 6.538797074281532, tol = 0.6788359845329671
+Optimizing BFGS quadratic form subproblem...
+    Iteration 1: Removing variable 23 from active set.
+    Iteration 2: Removing variable 21 from active set.
+    Iteration 3: Removing variable 22 from active set.
+    Iteration 4: Removing variable 15 from active set.
+    Iteration 5: Removing variable 13 from active set.
+    Iteration 6: Removing variable 12 from active set.
+    Iteration 7: Removing variable 56 from active set.
+    Iteration 8: Removing variable 58 from active set.
+    Iteration 9: Removing variable 59 from active set.
+    Iteration 10: Removing variable 31 from active set.
+    Iteration 11: Removing variable 29 from active set.
+    Iteration 12: Removing variable 30 from active set.
+    Iteration 13: Removing variable 2 from active set.
+    Iteration 14: Removing variable 1 from active set.
+    Iteration 15: Removing variable 3 from active set.
+    Iteration 16: Removing variable 11 from active set.
+    Iteration 17: Removing variable 9 from active set.
+    Iteration 18: Removing variable 10 from active set.
+    Iteration 19: Removing variable 7 from active set.
+    Iteration 20: Removing variable 5 from active set.
+    Iteration 21: Removing variable 6 from active set.
+    Iteration 22: Removing variable 48 from active set.
+    Iteration 23: Removing variable 50 from active set.
+    Iteration 24: Removing variable 49 from active set.
+    Iteration 25: Removing variable 52 from active set.
+    Iteration 26: Removing variable 54 from active set.
+    Iteration 27: Removing variable 60 from active set.
+    Iteration 28: Removing variable 62 from active set.
+    Iteration 29: Removing variable 61 from active set.
+    Iteration 30: Removing variable 34 from active set.
+    Iteration 31: Removing variable 32 from active set.
+    Iteration 32: Removing variable 33 from active set.
+    Iteration 33: Removing variable 45 from active set.
+    Iteration 34: Removing variable 46 from active set.
+    Iteration 35: Removing variable 44 from active set.
+    Iteration 36: Removing variable 40 from active set.
+    Iteration 37: Removing variable 42 from active set.
+    Iteration 38: Removing variable 41 from active set.
+    Iteration 39: Removing variable 36 from active set.
+    Iteration 40: Removing variable 38 from active set.
+    Iteration 41: Removing variable 37 from active set.
+    Iteration 42: Removing variable 17 from active set.
+    Iteration 43: Removing variable 16 from active set.
+    Iteration 44: Removing variable 25 from active set.
+    Iteration 45: Removing variable 26 from active set.
+    Successfully optimized after 45 iterations.
+    Df (must be < 0) = -0.4319374567494911
+Performing line minimization...
+   ->Iteration 1
+Line minimization succeded after 1 iterations.
+
+PBFGS iteration 4: fun = 5.7233743058613245, tol = 0.6407928575015236
+Optimizing BFGS quadratic form subproblem...
+    Iteration 1: Removing variable 19 from active set.
+    Iteration 2: Removing variable 23 from active set.
+    Iteration 3: Removing variable 16 from active set.
+    Iteration 4: Removing variable 17 from active set.
+    Iteration 5: Removing variable 21 from active set.
+    Iteration 6: Removing variable 22 from active set.
+    Iteration 7: Removing variable 15 from active set.
+    Iteration 8: Removing variable 13 from active set.
+    Iteration 9: Removing variable 12 from active set.
+    Iteration 10: Removing variable 11 from active set.
+    Iteration 11: Removing variable 9 from active set.
+    Iteration 12: Removing variable 10 from active set.
+    Iteration 13: Removing variable 7 from active set.
+    Iteration 14: Removing variable 5 from active set.
+    Iteration 15: Removing variable 6 from active set.
+    Iteration 16: Removing variable 56 from active set.
+    Iteration 17: Removing variable 58 from active set.
+    Iteration 18: Removing variable 59 from active set.
+    Iteration 19: Removing variable 52 from active set.
+    Iteration 20: Removing variable 54 from active set.
+    Iteration 21: Removing variable 2 from active set.
+    Iteration 22: Removing variable 3 from active set.
+    Iteration 23: Removing variable 1 from active set.
+    Iteration 24: Removing variable 60 from active set.
+    Iteration 25: Removing variable 62 from active set.
+    Iteration 26: Removing variable 61 from active set.
+    Iteration 27: Removing variable 48 from active set.
+    Iteration 28: Removing variable 50 from active set.
+    Iteration 29: Removing variable 49 from active set.
+    Iteration 30: Removing variable 32 from active set.
+    Iteration 31: Removing variable 34 from active set.
+    Iteration 32: Removing variable 33 from active set.
+    Iteration 33: Removing variable 46 from active set.
+    Iteration 34: Removing variable 44 from active set.
+    Iteration 35: Removing variable 45 from active set.
+    Iteration 36: Removing variable 40 from active set.
+    Iteration 37: Removing variable 42 from active set.
+    Iteration 38: Removing variable 41 from active set.
+    Iteration 39: Removing variable 36 from active set.
+    Iteration 40: Removing variable 38 from active set.
+    Iteration 41: Removing variable 37 from active set.
+    Iteration 42: Removing variable 31 from active set.
+    Iteration 43: Removing variable 29 from active set.
+    Iteration 44: Removing variable 30 from active set.
+    Iteration 45: Removing variable 25 from active set.
+    Iteration 46: Removing variable 26 from active set.
+    Successfully optimized after 46 iterations.
+    Df (must be < 0) = -0.33070016721819046
+Performing line minimization...
+   ->Iteration 1
+Line minimization succeded after 1 iterations.
+
+PBFGS iteration 5: fun = 5.294222592265418, tol = 0.6083307265988226
+Optimizing BFGS quadratic form subproblem...
+    Iteration 1: Removing variable 19 from active set.
+    Iteration 2: Removing variable 23 from active set.
+    Iteration 3: Removing variable 16 from active set.
+    Iteration 4: Removing variable 17 from active set.
+    Iteration 5: Removing variable 22 from active set.
+    Iteration 6: Removing variable 21 from active set.
+    Iteration 7: Removing variable 2 from active set.
+    Iteration 8: Removing variable 1 from active set.
+    Iteration 9: Removing variable 3 from active set.
+    Iteration 10: Removing variable 15 from active set.
+    Iteration 11: Removing variable 13 from active set.
+    Iteration 12: Removing variable 12 from active set.
+    Iteration 13: Removing variable 59 from active set.
+    Iteration 14: Removing variable 58 from active set.
+    Iteration 15: Removing variable 56 from active set.
+    Iteration 16: Removing variable 30 from active set.
+    Iteration 17: Removing variable 29 from active set.
+    Iteration 18: Removing variable 31 from active set.
+    Iteration 19: Removing variable 60 from active set.
+    Iteration 20: Removing variable 62 from active set.
+    Iteration 21: Removing variable 61 from active set.
+    Iteration 22: Removing variable 10 from active set.
+    Iteration 23: Removing variable 9 from active set.
+    Iteration 24: Removing variable 11 from active set.
+    Iteration 25: Removing variable 48 from active set.
+    Iteration 26: Removing variable 50 from active set.
+    Iteration 27: Removing variable 49 from active set.
+    Iteration 28: Removing variable 6 from active set.
+    Iteration 29: Removing variable 5 from active set.
+    Iteration 30: Removing variable 7 from active set.
+    Iteration 31: Removing variable 54 from active set.
+    Iteration 32: Removing variable 52 from active set.
+    Iteration 33: Removing variable 41 from active set.
+    Iteration 34: Removing variable 42 from active set.
+    Iteration 35: Removing variable 40 from active set.
+    Iteration 36: Removing variable 37 from active set.
+    Iteration 37: Removing variable 38 from active set.
+    Iteration 38: Removing variable 36 from active set.
+    Iteration 39: Removing variable 25 from active set.
+    Iteration 40: Removing variable 26 from active set.
+    Iteration 41: Removing variable 45 from active set.
+    Iteration 42: Removing variable 46 from active set.
+    Iteration 43: Removing variable 44 from active set.
+    Iteration 44: Removing variable 33 from active set.
+    Iteration 45: Removing variable 34 from active set.
+    Iteration 46: Removing variable 32 from active set.
+    Successfully optimized after 46 iterations.
+    Df (must be < 0) = -0.126983386920798
+Performing line minimization...
+   ->Iteration 1
+Line minimization succeded after 1 iterations.
+
+PBFGS iteration 6: fun = 5.012474656628323, tol = 0.5660256954107424
+Optimizing BFGS quadratic form subproblem...
+    Iteration 1: Removing variable 55 from active set.
+    Iteration 2: Removing variable 19 from active set.
+    Iteration 3: Removing variable 23 from active set.
+    Iteration 4: Removing variable 16 from active set.
+    Iteration 5: Removing variable 17 from active set.
+    Iteration 5: Adding variable 55 to active set.
+    Iteration 6: Removing variable 22 from active set.
+    Iteration 7: Removing variable 21 from active set.
+    Iteration 8: Removing variable 26 from active set.
+    Iteration 9: Removing variable 25 from active set.
+    Iteration 10: Removing variable 3 from active set.
+    Iteration 11: Removing variable 1 from active set.
+    Iteration 12: Removing variable 2 from active set.
+    Iteration 13: Removing variable 12 from active set.
+    Iteration 14: Removing variable 13 from active set.
+    Iteration 15: Removing variable 15 from active set.
+    Iteration 16: Removing variable 59 from active set.
+    Iteration 17: Removing variable 58 from active set.
+    Iteration 18: Removing variable 56 from active set.
+    Iteration 19: Removing variable 6 from active set.
+    Iteration 20: Removing variable 5 from active set.
+    Iteration 21: Removing variable 7 from active set.
+    Iteration 22: Removing variable 10 from active set.
+    Iteration 23: Removing variable 9 from active set.
+    Iteration 24: Removing variable 11 from active set.
+    Iteration 25: Removing variable 32 from active set.
+    Iteration 26: Removing variable 34 from active set.
+    Iteration 27: Removing variable 33 from active set.
+    Iteration 28: Removing variable 44 from active set.
+    Iteration 29: Removing variable 46 from active set.
+    Iteration 30: Removing variable 45 from active set.
+    Iteration 31: Removing variable 36 from active set.
+    Iteration 32: Removing variable 38 from active set.
+    Iteration 33: Removing variable 37 from active set.
+    Iteration 34: Removing variable 40 from active set.
+    Iteration 35: Removing variable 42 from active set.
+    Iteration 36: Removing variable 41 from active set.
+    Iteration 37: Removing variable 30 from active set.
+    Iteration 38: Removing variable 29 from active set.
+    Iteration 39: Removing variable 31 from active set.
+    Iteration 40: Removing variable 49 from active set.
+    Iteration 41: Removing variable 50 from active set.
+    Iteration 42: Removing variable 48 from active set.
+    Iteration 43: Removing variable 61 from active set.
+    Iteration 44: Removing variable 62 from active set.
+    Iteration 45: Removing variable 60 from active set.
+    Iteration 46: Removing variable 54 from active set.
+    Iteration 47: Removing variable 52 from active set.
+    Successfully optimized after 47 iterations.
+    Df (must be < 0) = -0.8638766362681014
+Performing line minimization...
+   ->Iteration 1
+Line minimization succeded after 1 iterations.
+
+PBFGS iteration 7: fun = 2.7509285316722534, tol = 0.3521523060290884
+Optimizing BFGS quadratic form subproblem...
+    Iteration 1: Removing variable 55 from active set.
+    Iteration 2: Removing variable 23 from active set.
+    Iteration 3: Removing variable 19 from active set.
+    Iteration 4: Removing variable 16 from active set.
+    Iteration 5: Removing variable 17 from active set.
+    Iteration 6: Removing variable 54 from active set.
+    Iteration 7: Removing variable 52 from active set.
+    Iteration 8: Removing variable 22 from active set.
+    Iteration 9: Removing variable 21 from active set.
+    Iteration 10: Removing variable 15 from active set.
+    Iteration 11: Removing variable 13 from active set.
+    Iteration 12: Removing variable 12 from active set.
+    Iteration 13: Removing variable 2 from active set.
+    Iteration 14: Removing variable 1 from active set.
+    Iteration 15: Removing variable 3 from active set.
+    Iteration 16: Removing variable 56 from active set.
+    Iteration 17: Removing variable 58 from active set.
+    Iteration 18: Removing variable 59 from active set.
+    Iteration 19: Removing variable 40 from active set.
+    Iteration 20: Removing variable 42 from active set.
+    Iteration 21: Removing variable 41 from active set.
+    Iteration 22: Removing variable 36 from active set.
+    Iteration 23: Removing variable 38 from active set.
+    Iteration 24: Removing variable 37 from active set.
+    Iteration 25: Removing variable 7 from active set.
+    Iteration 26: Removing variable 5 from active set.
+    Iteration 27: Removing variable 6 from active set.
+    Iteration 28: Removing variable 11 from active set.
+    Iteration 29: Removing variable 9 from active set.
+    Iteration 30: Removing variable 10 from active set.
+    Iteration 31: Removing variable 32 from active set.
+    Iteration 32: Removing variable 34 from active set.
+    Iteration 33: Removing variable 33 from active set.
+    Iteration 34: Removing variable 60 from active set.
+    Iteration 35: Removing variable 62 from active set.
+    Iteration 36: Removing variable 61 from active set.
+    Iteration 37: Removing variable 31 from active set.
+    Iteration 38: Removing variable 29 from active set.
+    Iteration 39: Removing variable 30 from active set.
+    Iteration 40: Removing variable 44 from active set.
+    Iteration 41: Removing variable 46 from active set.
+    Iteration 42: Removing variable 45 from active set.
+    Iteration 43: Removing variable 48 from active set.
+    Iteration 44: Removing variable 50 from active set.
+    Iteration 45: Removing variable 49 from active set.
+    Iteration 46: Removing variable 26 from active set.
+    Iteration 47: Removing variable 25 from active set.
+    Successfully optimized after 47 iterations.
+    Df (must be < 0) = -0.4817393140541243
+Performing line minimization...
+   ->Iteration 1
+Line minimization succeded after 1 iterations.
+
+PBFGS iteration 8: fun = 2.1905367383499463, tol = 0.30607312121716074
+Optimizing BFGS quadratic form subproblem...
+    Iteration 1: Removing variable 55 from active set.
+    Iteration 2: Removing variable 23 from active set.
+    Iteration 3: Removing variable 19 from active set.
+    Iteration 4: Removing variable 16 from active set.
+    Iteration 5: Removing variable 17 from active set.
+    Iteration 6: Removing variable 52 from active set.
+    Iteration 7: Removing variable 54 from active set.
+    Iteration 8: Removing variable 21 from active set.
+    Iteration 9: Removing variable 22 from active set.
+    Iteration 10: Removing variable 7 from active set.
+    Iteration 11: Removing variable 5 from active set.
+    Iteration 12: Removing variable 6 from active set.
+    Iteration 13: Removing variable 11 from active set.
+    Iteration 14: Removing variable 9 from active set.
+    Iteration 15: Removing variable 10 from active set.
+    Iteration 16: Removing variable 15 from active set.
+    Iteration 17: Removing variable 13 from active set.
+    Iteration 18: Removing variable 12 from active set.
+    Iteration 19: Removing variable 48 from active set.
+    Iteration 20: Removing variable 50 from active set.
+    Iteration 21: Removing variable 49 from active set.
+    Iteration 22: Removing variable 56 from active set.
+    Iteration 23: Removing variable 58 from active set.
+    Iteration 24: Removing variable 59 from active set.
+    Iteration 25: Removing variable 60 from active set.
+    Iteration 26: Removing variable 62 from active set.
+    Iteration 27: Removing variable 61 from active set.
+    Iteration 28: Removing variable 44 from active set.
+    Iteration 29: Removing variable 46 from active set.
+    Iteration 30: Removing variable 45 from active set.
+    Iteration 31: Removing variable 31 from active set.
+    Iteration 32: Removing variable 29 from active set.
+    Iteration 33: Removing variable 30 from active set.
+    Iteration 34: Removing variable 32 from active set.
+    Iteration 35: Removing variable 34 from active set.
+    Iteration 36: Removing variable 33 from active set.
+    Iteration 37: Removing variable 3 from active set.
+    Iteration 38: Removing variable 2 from active set.
+    Iteration 39: Removing variable 1 from active set.
+    Iteration 40: Removing variable 38 from active set.
+    Iteration 41: Removing variable 36 from active set.
+    Iteration 42: Removing variable 37 from active set.
+    Iteration 43: Removing variable 42 from active set.
+    Iteration 44: Removing variable 40 from active set.
+    Iteration 45: Removing variable 41 from active set.
+    Iteration 46: Removing variable 25 from active set.
+    Iteration 47: Removing variable 26 from active set.
+    Successfully optimized after 47 iterations.
+    Df (must be < 0) = -0.16725463633257623
+Performing line minimization...
+   ->Iteration 1
+Line minimization succeded after 1 iterations.
+
+PBFGS iteration 9: fun = 1.8024848762097987, tol = 0.23528563295291038
+Optimizing BFGS quadratic form subproblem...
+    Iteration 1: Removing variable 24 from active set.
+    Iteration 2: Removing variable 55 from active set.
+    Iteration 3: Removing variable 23 from active set.
+    Iteration 4: Removing variable 19 from active set.
+    Iteration 5: Removing variable 16 from active set.
+    Iteration 6: Removing variable 17 from active set.
+    Iteration 7: Removing variable 54 from active set.
+    Iteration 8: Removing variable 52 from active set.
+    Iteration 9: Removing variable 22 from active set.
+    Iteration 10: Removing variable 21 from active set.
+    Iteration 11: Removing variable 59 from active set.
+    Iteration 12: Removing variable 58 from active set.
+    Iteration 13: Removing variable 56 from active set.
+    Iteration 14: Removing variable 25 from active set.
+    Iteration 15: Removing variable 26 from active set.
+    Iteration 16: Removing variable 2 from active set.
+    Iteration 17: Removing variable 1 from active set.
+    Iteration 18: Removing variable 3 from active set.
+    Iteration 19: Removing variable 46 from active set.
+    Iteration 20: Removing variable 44 from active set.
+    Iteration 21: Removing variable 45 from active set.
+    Iteration 22: Removing variable 11 from active set.
+    Iteration 23: Removing variable 9 from active set.
+    Iteration 24: Removing variable 10 from active set.
+    Iteration 25: Removing variable 50 from active set.
+    Iteration 26: Removing variable 48 from active set.
+    Iteration 27: Removing variable 49 from active set.
+    Iteration 28: Removing variable 12 from active set.
+    Iteration 29: Removing variable 13 from active set.
+    Iteration 30: Removing variable 15 from active set.
+    Iteration 31: Removing variable 34 from active set.
+    Iteration 32: Removing variable 32 from active set.
+    Iteration 33: Removing variable 33 from active set.
+    Iteration 34: Removing variable 38 from active set.
+    Iteration 35: Removing variable 36 from active set.
+    Iteration 36: Removing variable 37 from active set.
+    Iteration 37: Removing variable 42 from active set.
+    Iteration 38: Removing variable 40 from active set.
+    Iteration 39: Removing variable 41 from active set.
+    Iteration 40: Removing variable 7 from active set.
+    Iteration 41: Removing variable 5 from active set.
+    Iteration 42: Removing variable 6 from active set.
+    Iteration 43: Removing variable 31 from active set.
+    Iteration 44: Removing variable 29 from active set.
+    Iteration 45: Removing variable 30 from active set.
+    Iteration 46: Removing variable 61 from active set.
+    Iteration 47: Removing variable 62 from active set.
+    Iteration 48: Removing variable 60 from active set.
+    Successfully optimized after 48 iterations.
+    Df (must be < 0) = -0.950079200613872
+Performing line minimization...
+   ->Iteration 1
+Line minimization succeded after 1 iterations.
+
+PBFGS converged after 10 iterations: fun = 0.022693117199194243, tol = 6.609091551696232e-16
+x = [1.00000000e+00 8.32667268e-17 8.32667268e-17 8.32667268e-17
+ 1.00000000e+00 1.11022302e-16 1.11022302e-16 1.11022302e-16
+ 1.00000000e+00 5.55111512e-17 5.55111512e-17 5.55111512e-17
+ 0.00000000e+00 0.00000000e+00 1.00000000e+00 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 1.00000000e+00 0.00000000e+00
+ 1.00000000e+00 5.55111512e-17 5.55111512e-17 5.55111512e-17
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 1.00000000e+00
+ 1.00000000e+00 5.55111512e-17 5.55111512e-17 5.55111512e-17
+ 5.55111512e-17 5.55111512e-17 5.55111512e-17 1.00000000e+00
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 1.00000000e+00
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 1.00000000e+00
+ 5.55111512e-17 5.55111512e-17 5.55111512e-17 1.00000000e+00
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 1.00000000e+00
+ 1.11022302e-16 1.00000000e+00 1.11022302e-16 1.11022302e-16
+ 1.11022302e-16 1.00000000e+00 1.11022302e-16 1.11022302e-16
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 1.00000000e+00]
+
+__________________________________________________________________________________
+FINAL: Loss = 0.02269311719917577, Entropy = -1.5999502017239338e-09, eta = 12.8
