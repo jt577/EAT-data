@@ -1,0 +1,395 @@
+/var/spool/slurmd/job44519/slurm_script: line 9: module: command not found
+/var/spool/slurmd/job44519/slurm_script: line 10: module: command not found
+
+*************** JDFTx 1.7.0  ***************
+
+Start date and time: Tue May 20 16:41:22 2025
+Executable /data2/jt577/jdftx_eat_withLibXC/build/jdftx with command-line: -i /data2/jt577/May_2025/Relax_Mag_litU/rel12+1_6/O/runs/calc_/run.in
+Running on hosts (process indices):  node3402 (0-8)
+Divided in process groups (process indices):  0 (0)  1 (1)  2 (2)  3 (3)  4 (4)  5 (5)  6 (6)  7 (7)  8 (8)
+Resource initialization completed at t[s]:      0.00
+Run totals: 9 processes, 90 threads, 0 GPUs
+
+
+Input parsed successfully to the following command list (including defaults):
+
+add-mix 
+add-U 	Ni d 0.235196 \
+	Co d 0.121273 \
+	V d 0.113923
+basis kpoint-dependent
+coords-type Lattice
+core-overlap-check vector
+coulomb-interaction Periodic
+davidson-band-ratio 1.1
+dump End IonicPositions Lattice Ecomponents
+dump-name run.$VAR
+elec-cutoff 30
+elec-eigen-algo Davidson
+elec-ex-corr gga-x-rpbe gga-c-pbe
+elec-smearing Fermi 0.001
+electronic-minimize  \
+	dirUpdateScheme      FletcherReeves \
+	linminMethod         DirUpdateRecommended \
+	nIterations          1000 \
+	history              15 \
+	knormThreshold       0 \
+	energyDiffThreshold  1e-06 \
+	nEnergyDiff          5 \
+	alphaTstart          1 \
+	alphaTmin            1e-10 \
+	updateTestStepSize   yes \
+	alphaTreduceFactor   0.1 \
+	alphaTincreaseFactor 3 \
+	nAlphaAdjustMax      3 \
+	wolfeEnergy          0.0001 \
+	wolfeGradient        0.9 \
+	fdTest               no
+exchange-regularization WignerSeitzTruncated
+fluid None
+fluid-ex-corr (null) lda-PZ
+fluid-gummel-loop 10 1.000000e-05
+fluid-minimize  \
+	dirUpdateScheme      PolakRibiere \
+	linminMethod         DirUpdateRecommended \
+	nIterations          100 \
+	history              15 \
+	knormThreshold       0 \
+	energyDiffThreshold  0 \
+	nEnergyDiff          2 \
+	alphaTstart          1 \
+	alphaTmin            1e-10 \
+	updateTestStepSize   yes \
+	alphaTreduceFactor   0.1 \
+	alphaTincreaseFactor 3 \
+	nAlphaAdjustMax      3 \
+	wolfeEnergy          0.0001 \
+	wolfeGradient        0.9 \
+	fdTest               no
+fluid-solvent H2O 55.338 ScalarEOS \
+	epsBulk 78.4 \
+	pMol 0.92466 \
+	epsInf 1.77 \
+	Pvap 1.06736e-10 \
+	sigmaBulk 4.62e-05 \
+	Rvdw 2.61727 \
+	Res 1.42 \
+	tauNuc 343133 \
+	poleEl 15 7 1
+forces-output-coords Positions
+initial-magnetic-moments  \
+	Ni 1 -1 -1 1 1 1 \
+	Co 1 -1 -1 \
+	V -1 1 -1 -1 -1 1 1
+initial-state run.$VAR
+ion Ni  0.000000000000000   0.000000000000000   0.150000000000000 1
+ion Ni  0.500000000000000   0.000000000000000   0.150000000000000 1
+ion Ni  0.500000000000000   0.500000000000000   0.150000000000000 1
+ion Ni  0.250000000000000   0.250000000000000   0.050000000000000 1
+ion Ni  0.250000000000000   0.750000000000000   0.050000000000000 1
+ion Ni  0.500000000000000   0.500000000000000  -0.050000000000000 0
+ion Co  0.000000000000000   0.500000000000000   0.150000000000000 1
+ion Co -0.250000000000000   0.250000000000000   0.050000000000000 1
+ion Co -0.250000000000000   0.750000000000000   0.050000000000000 1
+ion V  0.000000000000000   0.000000000000000  -0.050000000000000 0
+ion V  0.500000000000000   0.000000000000000  -0.050000000000000 0
+ion V  0.000000000000000   0.500000000000000  -0.050000000000000 0
+ion V  0.250000000000000   0.250000000000000  -0.150000000000000 0
+ion V  0.250000000000000   0.750000000000000  -0.150000000000000 0
+ion V -0.250000000000000   0.250000000000000  -0.150000000000000 0
+ion V -0.250000000000000   0.750000000000000  -0.150000000000000 0
+ion O  0.250000000000000   0.250000000000000   0.150000000000000 1
+ion O  0.250000000000000   0.750000000000000   0.150000000000000 1
+ion O -0.250000000000000   0.250000000000000   0.150000000000000 1
+ion O -0.250000000000000   0.750000000000000   0.150000000000000 1
+ion O  0.000000000000000   0.000000000000000   0.050000000000000 1
+ion O  0.500000000000000   0.000000000000000   0.050000000000000 1
+ion O  0.000000000000000   0.500000000000000   0.050000000000000 1
+ion O  0.500000000000000   0.500000000000000   0.050000000000000 1
+ion O  0.250000000000000   0.250000000000000  -0.050000000000000 0
+ion O  0.250000000000000   0.750000000000000  -0.050000000000000 0
+ion O -0.250000000000000   0.250000000000000  -0.050000000000000 0
+ion O -0.250000000000000   0.750000000000000  -0.050000000000000 0
+ion O  0.000000000000000   0.000000000000000  -0.150000000000000 0
+ion O  0.500000000000000   0.000000000000000  -0.150000000000000 0
+ion O  0.000000000000000   0.500000000000000  -0.150000000000000 0
+ion O  0.500000000000000   0.500000000000000  -0.150000000000000 0
+ion O -0.000095572322686   0.000198307128402   0.224876729873325 1
+ion-species SG15/$ID_ONCV_PBE.upf
+ion-width 0
+ionic-minimize  \
+	dirUpdateScheme      L-BFGS \
+	linminMethod         DirUpdateRecommended \
+	nIterations          1000 \
+	history              15 \
+	knormThreshold       0.0001 \
+	energyDiffThreshold  0.0001 \
+	nEnergyDiff          3 \
+	alphaTstart          1 \
+	alphaTmin            1e-10 \
+	updateTestStepSize   yes \
+	alphaTreduceFactor   0.1 \
+	alphaTincreaseFactor 3 \
+	nAlphaAdjustMax      3 \
+	wolfeEnergy          0.0001 \
+	wolfeGradient        0.9 \
+	fdTest               no
+kpoint   0.500000000000   0.500000000000   0.500000000000  1.00000000000000
+kpoint-folding 3 3 1 
+latt-move-scale 1 1 1
+latt-scale 1 1 1 
+lattice  \
+	   8.140000000000001    8.140000000000001    0.000000000000000  \
+	   8.140000000000001   -8.140000000000001    0.000000000000000  \
+	   0.000000000000000    0.000000000000000   40.700000000000003 
+lattice-minimize  \
+	dirUpdateScheme      L-BFGS \
+	linminMethod         DirUpdateRecommended \
+	nIterations          0 \
+	history              15 \
+	knormThreshold       0 \
+	energyDiffThreshold  1e-06 \
+	nEnergyDiff          2 \
+	alphaTstart          1 \
+	alphaTmin            1e-10 \
+	updateTestStepSize   yes \
+	alphaTreduceFactor   0.1 \
+	alphaTincreaseFactor 3 \
+	nAlphaAdjustMax      3 \
+	wolfeEnergy          0.0001 \
+	wolfeGradient        0.9 \
+	fdTest               no
+lcao-params -1 1e-06 0.001
+pcm-variant GLSSA13
+spintype z-spin
+subspace-rotation-factor 1 yes
+symmetries none
+symmetry-threshold 0.0001
+
+
+Applied RMS atom displacement 0 bohrs to make symmetries exact.
+
+---------- Initializing the Grid ----------
+R = 
+[         8.14         8.14            0  ]
+[         8.14        -8.14            0  ]
+[            0            0         40.7  ]
+unit cell volume = 5393.53
+G =
+[   0.385945   0.385945         -0  ]
+[   0.385945  -0.385945         -0  ]
+[         -0         -0   0.154378  ]
+Minimum fftbox size, Smin = [  60  60  204  ]
+Chosen fftbox size, S = [  60  60  210  ]
+
+---------- Exchange Correlation functional ----------
+Initialized LibXC exchange functional 'Hammer, Hansen, and Norskov'
+Initialized LibXC correlation functional 'Perdew, Burke & Ernzerhof'
+
+---------- Setting up pseudopotentials ----------
+Width of ionic core gaussian charges (only for fluid interactions / plotting) set to 0
+
+Reading pseudopotential file '/data2/jt577/jdftx_eat_withLibXC/build/pseudopotentials/SG15/Ni_ONCV_PBE.upf':
+  'Ni' pseudopotential, 'PBE' functional
+  Generated using ONCVPSP code by D. R. Hamann
+  Author: Martin Schlipf and Francois Gygi  Date: 150915.
+  18 valence electrons, 4 orbitals, 6 projectors, 1292 radial grid points, with lMax = 2
+  Transforming local potential to a uniform radial grid of dG=0.02 with 1419 points.
+  Transforming nonlocal projectors to a uniform radial grid of dG=0.02 with 528 points.
+    3S    l: 0   occupation:  2.0   eigenvalue: -4.081355
+    3P    l: 1   occupation:  6.0   eigenvalue: -2.623460
+    4S    l: 0   occupation:  2.0   eigenvalue: -0.207378
+    3D    l: 2   occupation:  8.0   eigenvalue: -0.326118
+  Transforming atomic orbitals to a uniform radial grid of dG=0.02 with 528 points.
+  WARNING: large normalization error in atomic orbital 1s (integral: 0.000006).
+  Core radius for overlap checks: 1.99 bohrs.
+  Reading pulay file /data2/jt577/jdftx_eat_withLibXC/build/pseudopotentials/SG15/Ni_ONCV_PBE.pulay ... using dE_dnG = -7.250568e-04 computed for Ecut = 30.
+
+Reading pseudopotential file '/data2/jt577/jdftx_eat_withLibXC/build/pseudopotentials/SG15/Co_ONCV_PBE.upf':
+  'Co' pseudopotential, 'PBE' functional
+  Generated using ONCVPSP code by D. R. Hamann
+  Author: Martin Schlipf and Francois Gygi  Date: 150915.
+  17 valence electrons, 4 orbitals, 6 projectors, 1388 radial grid points, with lMax = 2
+  Transforming local potential to a uniform radial grid of dG=0.02 with 1419 points.
+  Transforming nonlocal projectors to a uniform radial grid of dG=0.02 with 528 points.
+    3S    l: 0   occupation:  2.0   eigenvalue: -3.763303
+    3P    l: 1   occupation:  6.0   eigenvalue: -2.412101
+    4S    l: 0   occupation:  2.0   eigenvalue: -0.201022
+    3D    l: 2   occupation:  7.0   eigenvalue: -0.301498
+  Transforming atomic orbitals to a uniform radial grid of dG=0.02 with 528 points.
+  Core radius for overlap checks: 1.94 bohrs.
+  Reading pulay file /data2/jt577/jdftx_eat_withLibXC/build/pseudopotentials/SG15/Co_ONCV_PBE.pulay ... using dE_dnG = -9.787391e-05 computed for Ecut = 30.
+
+Reading pseudopotential file '/data2/jt577/jdftx_eat_withLibXC/build/pseudopotentials/SG15/V_ONCV_PBE.upf':
+  'V' pseudopotential, 'PBE' functional
+  Generated using ONCVPSP code by D. R. Hamann
+  Author: Martin Schlipf and Francois Gygi  Date: 150915.
+  13 valence electrons, 4 orbitals, 6 projectors, 1536 radial grid points, with lMax = 2
+  Transforming local potential to a uniform radial grid of dG=0.02 with 1419 points.
+  Transforming nonlocal projectors to a uniform radial grid of dG=0.02 with 528 points.
+    3S    l: 0   occupation:  2.0   eigenvalue: -2.581105
+    3P    l: 1   occupation:  6.0   eigenvalue: -1.618486
+    4S    l: 0   occupation:  2.0   eigenvalue: -0.172804
+    3D    l: 2   occupation:  3.0   eigenvalue: -0.189795
+  Transforming atomic orbitals to a uniform radial grid of dG=0.02 with 528 points.
+  Core radius for overlap checks: 1.80 bohrs.
+  Reading pulay file /data2/jt577/jdftx_eat_withLibXC/build/pseudopotentials/SG15/V_ONCV_PBE.pulay ... using dE_dnG = -1.698632e-04 computed for Ecut = 30.
+
+Reading pseudopotential file '/data2/jt577/jdftx_eat_withLibXC/build/pseudopotentials/SG15/O_ONCV_PBE.upf':
+  'O' pseudopotential, 'PBE' functional
+  Generated using ONCVPSP code by D. R. Hamann
+  Author: Martin Schlipf and Francois Gygi  Date: 150915.
+  6 valence electrons, 2 orbitals, 4 projectors, 936 radial grid points, with lMax = 1
+  Transforming local potential to a uniform radial grid of dG=0.02 with 1419 points.
+  Transforming nonlocal projectors to a uniform radial grid of dG=0.02 with 528 points.
+    2S    l: 0   occupation:  2.0   eigenvalue: -0.880572
+    2P    l: 1   occupation:  4.0   eigenvalue: -0.331869
+  Transforming atomic orbitals to a uniform radial grid of dG=0.02 with 528 points.
+  Core radius for overlap checks: 1.29 bohrs.
+  Reading pulay file /data2/jt577/jdftx_eat_withLibXC/build/pseudopotentials/SG15/O_ONCV_PBE.pulay ... using dE_dnG = -8.209514e-03 computed for Ecut = 30.
+
+Reading pseudopotential file '/data2/jt577/jdftx_eat_withLibXC/build/pseudopotentials/SG15/Cr_ONCV_PBE.upf':
+  'Cr' pseudopotential, 'PBE' functional
+  Generated using ONCVPSP code by D. R. Hamann
+  Author: Martin Schlipf and Francois Gygi  Date: 150915.
+  14 valence electrons, 4 orbitals, 6 projectors, 1160 radial grid points, with lMax = 2
+  Transforming local potential to a uniform radial grid of dG=0.02 with 1419 points.
+  Transforming nonlocal projectors to a uniform radial grid of dG=0.02 with 528 points.
+    3S    l: 0   occupation:  2.0   eigenvalue: -2.865131
+    3P    l: 1   occupation:  6.0   eigenvalue: -1.810600
+    4S    l: 0   occupation:  2.0   eigenvalue: -0.180525
+    3D    l: 2   occupation:  4.0   eigenvalue: -0.220312
+  Transforming atomic orbitals to a uniform radial grid of dG=0.02 with 528 points.
+  WARNING: large normalization error in atomic orbital 1s (integral: 0.000001).
+  Core radius for overlap checks: 2.10 bohrs.
+  Reading pulay file /data2/jt577/jdftx_eat_withLibXC/build/pseudopotentials/SG15/Cr_ONCV_PBE.pulay ... using dE_dnG = -9.817895e-06 computed for Ecut = 30.
+
+Initialized 5 species with 33 total atoms.
+
+Folded 1 k-points by 3x3x1 to 9 k-points.
+
+---------- Setting up k-points, bands, fillings ----------
+No reducable k-points. 
+Computing the number of bands and number of electrons
+Calculating initial fillings.
+nElectrons: 352.000000   nBands: 228   nStates: 18
+
+----- Setting up reduced wavefunction bases (one per k-point) -----
+average nbasis = 42312.000 , ideal nbasis = 42330.081
+
+---------- Setting up ewald sum ----------
+Optimum gaussian width for ewald sums = 3.906449 bohr.
+Real space sum over 605 unit cells with max indices [  5  5  2  ]
+Reciprocal space sum over 5915 terms with max indices [  6  6  17  ]
+
+---------- Allocating electronic variables ----------
+Initializing wave functions:  linear combination of atomic orbitals
+Ni (M=1) pseudo-atom majority spin occupations:   s ( 1 0.5 )  p ( 3 )  d ( 5 )
+Ni (M=1) pseudo-atom minority spin occupations:   s ( 1 0 )  p ( 3 )  d ( 4.5 )
+Co (M=1) pseudo-atom majority spin occupations:   s ( 1 0 )  p ( 3 )  d ( 5 )
+Co (M=1) pseudo-atom minority spin occupations:   s ( 1 0 )  p ( 3 )  d ( 4 )
+V (M=1) pseudo-atom majority spin occupations:   s ( 1 0 )  p ( 3 )  d ( 3 )
+V (M=1) pseudo-atom minority spin occupations:   s ( 1 0 )  p ( 3 )  d ( 2 )
+O pseudo-atom occupations:   s ( 2 )  p ( 4 )
+ldc must be >= MAX(M,1): ldc=0 M=0Parameter 14 to routine cblas_zgemm was incorrect
+ldc must be >= MAX(M,1): ldc=0 M=0Parameter 14 to routine cblas_zgemm was incorrect
+ldc must be >= MAX(M,1): ldc=0 M=0Parameter 14 to routine cblas_zgemm was incorrect
+ldc must be >= MAX(M,1): ldc=0 M=0Parameter 14 to routine cblas_zgemm was incorrect
+ldc must be >= MAX(M,1): ldc=0 M=0Parameter 14 to routine cblas_zgemm was incorrect
+ldc must be >= MAX(M,1): ldc=0 M=0Parameter 14 to routine cblas_zgemm was incorrect
+ldc must be >= MAX(M,1): ldc=0 M=0Parameter 14 to routine cblas_zgemm was incorrect
+ldc must be >= MAX(M,1): ldc=0 M=0Parameter 14 to routine cblas_zgemm was incorrect
+ldc must be >= MAX(M,1): ldc=0 M=0ldc must be >= MAX(M,1): ldc=0 M=0Parameter 14 to routine cblas_zgemm was incorrect
+ldc must be >= MAX(M,1): ldc=0 M=0Parameter 14 to routine cblas_zgemm was incorrect
+ldc must be >= MAX(M,1): ldc=0 M=0Parameter 14 to routine cblas_zgemm was incorrect
+ldc must be >= MAX(M,1): ldc=0 M=0Parameter 14 to routine cblas_zgemm was incorrect
+ldc must be >= MAX(M,1): ldc=0 M=0Parameter 14 to routine cblas_zgemm was incorrect
+ldc must be >= MAX(M,1): ldc=0 M=0Parameter 14 to routine cblas_zgemm was incorrect
+ldc must be >= MAX(M,1): ldc=0 M=0Parameter 14 to routine cblas_zgemm was incorrect
+ldc must be >= MAX(M,1): ldc=0 M=0Parameter 14 to routine cblas_zgemm was incorrect
+ldc must be >= MAX(M,1): ldc=0 M=0Parameter 14 to routine cblas_zgemm was incorrect
+ldc must be >= MAX(M,1): ldc=0 M=0Parameter 14 to routine cblas_zgemm was incorrect
+ldc must be >= MAX(M,1): ldc=0 M=0Parameter 14 to routine cblas_zgemm was incorrect
+ldc must be >= MAX(M,1): ldc=0 M=0ldc must be >= MAX(M,1): ldc=0 M=0Parameter 14 to routine cblas_zgemm was incorrect
+Segmentation Fault.
+ldc must be >= MAX(M,1): ldc=0 M=0Parameter 14 to routine cblas_zgemm was incorrect
+ldc must be >= MAX(M,1): ldc=0 M=0Parameter 14 to routine cblas_zgemm was incorrect
+ldc must be >= MAX(M,1): ldc=0 M=0Parameter 14 to routine cblas_zgemm was incorrect
+Parameter 14 to routine cblas_zgemm was incorrect
+Parameter 14 to routine cblas_zgemm was incorrect
+ldc must be >= MAX(M,1): ldc=0 M=0Parameter 14 to routine cblas_zgemm was incorrect
+ldc must be >= MAX(M,1): ldc=0 M=0Parameter 14 to routine cblas_zgemm was incorrect
+ldc must be >= MAX(M,1): ldc=0 M=0Parameter 14 to routine cblas_zgemm was incorrect
+ldc must be >= MAX(M,1): ldc=0 M=0Parameter 14 to routine cblas_zgemm was incorrect
+ldc must be >= MAX(M,1): ldc=0 M=0Parameter 14 to routine cblas_zgemm was incorrect
+ldc must be >= MAX(M,1): ldc=0 M=0Parameter 14 to routine cblas_zgemm was incorrect
+ldc must be >= MAX(M,1): ldc=0 M=0ldc must be >= MAX(M,1): ldc=0 M=0Parameter 14 to routine cblas_zgemm was incorrect
+Parameter 14 to routine cblas_zgemm was incorrect
+ldc must be >= MAX(M,1): ldc=0 M=0Parameter 14 to routine cblas_zgemm was incorrect
+Segmentation Fault.
+ldc must be >= MAX(M,1): ldc=0 M=0Parameter 14 to routine cblas_zgemm was incorrect
+Segmentation Fault.
+malloc(): unsorted double linked list corrupted
+Segmentation Fault.
+ldc must be >= MAX(M,1): ldc=0 M=0Parameter 14 to routine cblas_zgemm was incorrect
+ldc must be >= MAX(M,1): ldc=0 M=0Parameter 14 to routine cblas_zgemm was incorrect
+malloc(): unsorted double linked list corrupted
+ldc must be >= MAX(M,1): ldc=0 M=0ldc must be >= MAX(M,1): ldc=0 M=0Parameter 14 to routine cblas_zgemm was incorrect
+Segmentation Fault.
+malloc(): unsorted double linked list corrupted
+ldc must be >= MAX(M,1): ldc=0 M=0Parameter 14 to routine cblas_zgemm was incorrect
+Parameter 14 to routine cblas_zgemm was incorrect
+Aborted.
+ldc must be >= MAX(M,1): ldc=0 M=0Parameter 14 to routine cblas_zgemm was incorrect
+Aborted.
+Segmentation Fault.
+Segmentation Fault.
+Segmentation Fault.
+ldc must be >= MAX(M,1): ldc=0 M=0Parameter 14 to routine cblas_zgemm was incorrect
+Segmentation Fault.
+Aborted.
+malloc(): unsorted double linked list corrupted
+ldc must be >= MAX(M,1): ldc=0 M=0Parameter 14 to routine cblas_zgemm was incorrect
+ldc must be >= MAX(M,1): ldc=0 M=0Parameter 14 to routine cblas_zgemm was incorrect
+Aborted.
+ldc must be >= MAX(M,1): ldc=0 M=0Parameter 14 to routine cblas_zgemm was incorrect
+malloc(): unsorted double linked list corrupted
+ldc must be >= MAX(M,1): ldc=0 M=0Parameter 14 to routine cblas_zgemm was incorrect
+Aborted.
+ldc must be >= MAX(M,1): ldc=0 M=0Parameter 14 to routine cblas_zgemm was incorrect
+malloc(): unsorted double linked list corrupted
+ldc must be >= MAX(M,1): ldc=0 M=0Parameter 14 to routine cblas_zgemm was incorrect
+ldc must be >= MAX(M,1): ldc=0 M=0Parameter 14 to routine cblas_zgemm was incorrect
+malloc(): unsorted double linked list corrupted
+ldc must be >= MAX(M,1): ldc=0 M=0Parameter 14 to routine cblas_zgemm was incorrect
+Aborted.
+ldc must be >= MAX(M,1): ldc=0 M=0Parameter 14 to routine cblas_zgemm was incorrect
+Aborted.
+ldc must be >= MAX(M,1): ldc=0 M=0Parameter 14 to routine cblas_zgemm was incorrect
+ldc must be >= MAX(M,1): ldc=0 M=0Parameter 14 to routine cblas_zgemm was incorrect
+ldc must be >= MAX(M,1): ldc=0 M=0Parameter 14 to routine cblas_zgemm was incorrect
+ldc must be >= MAX(M,1): ldc=0 M=0Parameter 14 to routine cblas_zgemm was incorrect
+ldc must be >= MAX(M,1): ldc=0 M=0Parameter 14 to routine cblas_zgemm was incorrect
+
+Stack trace:
+	 0: /data2/jt577/jdftx_eat_withLibXC/build/libjdftx.so(_Z10printStackb+0x53) [0x7fdaf2b87fa3]
+	 1: /data2/jt577/jdftx_eat_withLibXC/build/libjdftx.so(_Z14stackTraceExiti+0x11) [0x7fdaf2b88451]
+	 2: /lib/x86_64-linux-gnu/libc.so.6(+0x42520) [0x7fdaf22a2520]
+	 3: /lib/x86_64-linux-gnu/libc.so.6(+0x453fc) [0x7fdaf22a53fc]
+	 4: /lib/x86_64-linux-gnu/libc.so.6(on_exit+0) [0x7fdaf22a5610]
+	 5: /lib/x86_64-linux-gnu/libcblas.so.3(cblas_xerbla+0xb9) [0x7fdaf1d5e4e9]
+	 6: /data2/jt577/jdftx_eat_withLibXC/build/libjdftx.so(_ZNSt6thread11_State_implINS_8_InvokerISt5tupleIJPFvmm15CBLAS_TRANSPOSES3_iiiPK7complexS6_iS6_iS6_PS4_iEmmS3_S3_iiiS6_S6_iS6_iS6_S7_iEEEEE6_M_runEv+0x4b) [0x7fdaf2ad783b]
+	 7: /lib/x86_64-linux-gnu/libstdc++.so.6(+0xdc253) [0x7fdaf2587253]
+	 8: /lib/x86_64-linux-gnu/libc.so.6(+0x94ac3) [0x7fdaf22f4ac3]
+	 9: /lib/x86_64-linux-gnu/libc.so.6(+0x126850) [0x7fdaf2386850]
+Writing 'jdftx-stacktrace' (for use with script printStackTrace): --------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 4 in communicator MPI_COMM_WORLD
+with errorcode 1.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+done.
+[node3402:3864582] 1 more process has sent help message help-mpi-api.txt / mpi-abort
+[node3402:3864582] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages

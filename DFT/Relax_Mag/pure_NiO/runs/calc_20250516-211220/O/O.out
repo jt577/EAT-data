@@ -1,0 +1,2265 @@
+
+*************** JDFTx 1.7.0  ***************
+
+Start date and time: Fri May 16 21:12:21 2025
+Executable /data2/jt577/jdftx_eat_withLibXC/build/jdftx with command-line: -i /data2/jt577/May_2025/Relax_Mag_litU/pure_NiO/runs/calc_20250516-211220/O/O.in
+Running on hosts (process indices):  node3403 (0-8)
+Divided in process groups (process indices):  0 (0)  1 (1)  2 (2)  3 (3)  4 (4)  5 (5)  6 (6)  7 (7)  8 (8)
+Resource initialization completed at t[s]:      0.00
+Run totals: 9 processes, 90 threads, 0 GPUs
+
+
+Input parsed successfully to the following command list (including defaults):
+
+add-mix 
+add-U 	Ni d 0.235196
+basis kpoint-dependent
+coords-type Lattice
+core-overlap-check vector
+coulomb-interaction Periodic
+davidson-band-ratio 1.1
+dump End IonicPositions Lattice Ecomponents
+dump-name O.$VAR
+elec-cutoff 30
+elec-eigen-algo Davidson
+elec-ex-corr gga-x-rpbe gga-c-pbe
+elec-smearing Fermi 0.001
+electronic-minimize  \
+	dirUpdateScheme      FletcherReeves \
+	linminMethod         DirUpdateRecommended \
+	nIterations          1000 \
+	history              15 \
+	knormThreshold       0 \
+	energyDiffThreshold  1e-06 \
+	nEnergyDiff          5 \
+	alphaTstart          1 \
+	alphaTmin            1e-10 \
+	updateTestStepSize   yes \
+	alphaTreduceFactor   0.1 \
+	alphaTincreaseFactor 3 \
+	nAlphaAdjustMax      3 \
+	wolfeEnergy          0.0001 \
+	wolfeGradient        0.9 \
+	fdTest               no
+exchange-regularization WignerSeitzTruncated
+fluid None
+fluid-ex-corr (null) lda-PZ
+fluid-gummel-loop 10 1.000000e-05
+fluid-minimize  \
+	dirUpdateScheme      PolakRibiere \
+	linminMethod         DirUpdateRecommended \
+	nIterations          100 \
+	history              15 \
+	knormThreshold       0 \
+	energyDiffThreshold  0 \
+	nEnergyDiff          2 \
+	alphaTstart          1 \
+	alphaTmin            1e-10 \
+	updateTestStepSize   yes \
+	alphaTreduceFactor   0.1 \
+	alphaTincreaseFactor 3 \
+	nAlphaAdjustMax      3 \
+	wolfeEnergy          0.0001 \
+	wolfeGradient        0.9 \
+	fdTest               no
+fluid-solvent H2O 55.338 ScalarEOS \
+	epsBulk 78.4 \
+	pMol 0.92466 \
+	epsInf 1.77 \
+	Pvap 1.06736e-10 \
+	sigmaBulk 4.62e-05 \
+	Rvdw 2.61727 \
+	Res 1.42 \
+	tauNuc 343133 \
+	poleEl 15 7 1
+forces-output-coords Positions
+initial-magnetic-moments  \
+	Ni 1 -1 1 -1 1 1 -1 -1 -1 1 -1 1 -1 -1 1 1
+initial-state O.$VAR
+ion Ni  0.000000000000000   0.000000000000000   0.150000000000000 1
+ion Ni  0.500000000000000   0.000000000000000   0.150000000000000 1
+ion Ni  0.000000000000000   0.500000000000000   0.150000000000000 1
+ion Ni  0.500000000000000   0.500000000000000   0.150000000000000 1
+ion Ni  0.250000000000000   0.250000000000000   0.050000000000000 1
+ion Ni  0.250000000000000   0.750000000000000   0.050000000000000 1
+ion Ni -0.250000000000000   0.250000000000000   0.050000000000000 1
+ion Ni -0.250000000000000   0.750000000000000   0.050000000000000 1
+ion Ni  0.000000000000000   0.000000000000000  -0.050000000000000 0
+ion Ni  0.500000000000000   0.000000000000000  -0.050000000000000 0
+ion Ni  0.000000000000000   0.500000000000000  -0.050000000000000 0
+ion Ni  0.500000000000000   0.500000000000000  -0.050000000000000 0
+ion Ni  0.250000000000000   0.250000000000000  -0.150000000000000 0
+ion Ni  0.250000000000000   0.750000000000000  -0.150000000000000 0
+ion Ni -0.250000000000000   0.250000000000000  -0.150000000000000 0
+ion Ni -0.250000000000000   0.750000000000000  -0.150000000000000 0
+ion O  0.250000000000000   0.250000000000000   0.150000000000000 1
+ion O  0.250000000000000   0.750000000000000   0.150000000000000 1
+ion O -0.250000000000000   0.250000000000000   0.150000000000000 1
+ion O -0.250000000000000   0.750000000000000   0.150000000000000 1
+ion O  0.000000000000000   0.000000000000000   0.050000000000000 1
+ion O  0.500000000000000   0.000000000000000   0.050000000000000 1
+ion O  0.000000000000000   0.500000000000000   0.050000000000000 1
+ion O  0.500000000000000   0.500000000000000   0.050000000000000 1
+ion O  0.250000000000000   0.250000000000000  -0.050000000000000 0
+ion O  0.250000000000000   0.750000000000000  -0.050000000000000 0
+ion O -0.250000000000000   0.250000000000000  -0.050000000000000 0
+ion O -0.250000000000000   0.750000000000000  -0.050000000000000 0
+ion O  0.000000000000000   0.000000000000000  -0.150000000000000 0
+ion O  0.500000000000000   0.000000000000000  -0.150000000000000 0
+ion O  0.000000000000000   0.500000000000000  -0.150000000000000 0
+ion O  0.500000000000000   0.500000000000000  -0.150000000000000 0
+ion O  0.000000000000000   0.000000000000000   0.230000000000000 1
+ion-species SG15/$ID_ONCV_PBE.upf
+ion-width 0
+ionic-minimize  \
+	dirUpdateScheme      L-BFGS \
+	linminMethod         DirUpdateRecommended \
+	nIterations          1000 \
+	history              15 \
+	knormThreshold       0.0001 \
+	energyDiffThreshold  0.0001 \
+	nEnergyDiff          3 \
+	alphaTstart          1 \
+	alphaTmin            1e-10 \
+	updateTestStepSize   yes \
+	alphaTreduceFactor   0.1 \
+	alphaTincreaseFactor 3 \
+	nAlphaAdjustMax      3 \
+	wolfeEnergy          0.0001 \
+	wolfeGradient        0.9 \
+	fdTest               no
+kpoint   0.500000000000   0.500000000000   0.500000000000  1.00000000000000
+kpoint-folding 3 3 1 
+latt-move-scale 1 1 1
+latt-scale 1 1 1 
+lattice  \
+	   7.880000000000000    7.880000000000000    0.000000000000000  \
+	   7.880000000000000   -7.880000000000000    0.000000000000000  \
+	   0.000000000000000    0.000000000000000   39.399999999999999 
+lattice-minimize  \
+	dirUpdateScheme      L-BFGS \
+	linminMethod         DirUpdateRecommended \
+	nIterations          0 \
+	history              15 \
+	knormThreshold       0 \
+	energyDiffThreshold  1e-06 \
+	nEnergyDiff          2 \
+	alphaTstart          1 \
+	alphaTmin            1e-10 \
+	updateTestStepSize   yes \
+	alphaTreduceFactor   0.1 \
+	alphaTincreaseFactor 3 \
+	nAlphaAdjustMax      3 \
+	wolfeEnergy          0.0001 \
+	wolfeGradient        0.9 \
+	fdTest               no
+lcao-params -1 1e-06 0.001
+pcm-variant GLSSA13
+spintype z-spin
+subspace-rotation-factor 1 yes
+symmetries none
+symmetry-threshold 0.0001
+
+
+Applied RMS atom displacement 0 bohrs to make symmetries exact.
+
+---------- Initializing the Grid ----------
+R = 
+[         7.88         7.88            0  ]
+[         7.88        -7.88            0  ]
+[            0            0         39.4  ]
+unit cell volume = 4893.04
+G =
+[   0.398679   0.398679         -0  ]
+[   0.398679  -0.398679         -0  ]
+[         -0         -0   0.159472  ]
+Minimum fftbox size, Smin = [  56  56  196  ]
+Chosen fftbox size, S = [  56  56  196  ]
+
+---------- Exchange Correlation functional ----------
+Initialized LibXC exchange functional 'Hammer, Hansen, and Norskov'
+Initialized LibXC correlation functional 'Perdew, Burke & Ernzerhof'
+
+---------- Setting up pseudopotentials ----------
+Width of ionic core gaussian charges (only for fluid interactions / plotting) set to 0
+
+Reading pseudopotential file '/data2/jt577/jdftx_eat_withLibXC/build/pseudopotentials/SG15/Ni_ONCV_PBE.upf':
+  'Ni' pseudopotential, 'PBE' functional
+  Generated using ONCVPSP code by D. R. Hamann
+  Author: Martin Schlipf and Francois Gygi  Date: 150915.
+  18 valence electrons, 4 orbitals, 6 projectors, 1292 radial grid points, with lMax = 2
+  Transforming local potential to a uniform radial grid of dG=0.02 with 1368 points.
+  Transforming nonlocal projectors to a uniform radial grid of dG=0.02 with 528 points.
+    3S    l: 0   occupation:  2.0   eigenvalue: -4.081355
+    3P    l: 1   occupation:  6.0   eigenvalue: -2.623460
+    4S    l: 0   occupation:  2.0   eigenvalue: -0.207378
+    3D    l: 2   occupation:  8.0   eigenvalue: -0.326118
+  Transforming atomic orbitals to a uniform radial grid of dG=0.02 with 528 points.
+  WARNING: large normalization error in atomic orbital 1s (integral: 0.000006).
+  Core radius for overlap checks: 1.99 bohrs.
+  Reading pulay file /data2/jt577/jdftx_eat_withLibXC/build/pseudopotentials/SG15/Ni_ONCV_PBE.pulay ... using dE_dnG = -7.250568e-04 computed for Ecut = 30.
+
+Reading pseudopotential file '/data2/jt577/jdftx_eat_withLibXC/build/pseudopotentials/SG15/O_ONCV_PBE.upf':
+  'O' pseudopotential, 'PBE' functional
+  Generated using ONCVPSP code by D. R. Hamann
+  Author: Martin Schlipf and Francois Gygi  Date: 150915.
+  6 valence electrons, 2 orbitals, 4 projectors, 936 radial grid points, with lMax = 1
+  Transforming local potential to a uniform radial grid of dG=0.02 with 1368 points.
+  Transforming nonlocal projectors to a uniform radial grid of dG=0.02 with 528 points.
+    2S    l: 0   occupation:  2.0   eigenvalue: -0.880572
+    2P    l: 1   occupation:  4.0   eigenvalue: -0.331869
+  Transforming atomic orbitals to a uniform radial grid of dG=0.02 with 528 points.
+  Core radius for overlap checks: 1.29 bohrs.
+  Reading pulay file /data2/jt577/jdftx_eat_withLibXC/build/pseudopotentials/SG15/O_ONCV_PBE.pulay ... using dE_dnG = -8.209514e-03 computed for Ecut = 30.
+
+Initialized 2 species with 33 total atoms.
+
+Folded 1 k-points by 3x3x1 to 9 k-points.
+
+---------- Setting up k-points, bands, fillings ----------
+No reducable k-points. 
+Computing the number of bands and number of electrons
+Calculating initial fillings.
+nElectrons: 390.000000   nBands: 228   nStates: 18
+
+----- Setting up reduced wavefunction bases (one per k-point) -----
+average nbasis = 38425.778 , ideal nbasis = 38402.061
+
+---------- Setting up ewald sum ----------
+Optimum gaussian width for ewald sums = 3.781673 bohr.
+Real space sum over 605 unit cells with max indices [  5  5  2  ]
+Reciprocal space sum over 5915 terms with max indices [  6  6  17  ]
+
+---------- Allocating electronic variables ----------
+Initializing wave functions:  linear combination of atomic orbitals
+Ni (M=1) pseudo-atom majority spin occupations:   s ( 1 0.5 )  p ( 3 )  d ( 5 )
+Ni (M=1) pseudo-atom minority spin occupations:   s ( 1 0 )  p ( 3 )  d ( 4.5 )
+O pseudo-atom occupations:   s ( 2 )  p ( 4 )
+	FillingsUpdate:  mu: +1.809001770  nElectrons: 390.000000  magneticMoment: [ Abs: 0.19800  Tot: -0.00000 ]
+LCAOMinimize: Iter:   0  F: -2503.8215670074564514  |grad|_K:  2.340e-02  alpha:  1.000e+00
+LCAOMinimize: 	Step increased F by 4.472622e+01, reducing alpha to 4.529319e-02.
+LCAOMinimize: 	Step increased F by 2.070839e+00, reducing alpha to 4.529319e-03.
+	FillingsUpdate:  mu: +1.669197922  nElectrons: 390.000000  magneticMoment: [ Abs: 0.20496  Tot: +0.00000 ]
+LCAOMinimize: Iter:   1  F: -2506.8898680487804995  |grad|_K:  2.548e-02  alpha:  4.529e-03  linmin: -1.316e-01  cgtest:  7.767e-01  t[s]:     54.38
+LCAOMinimize: 	Wrong curvature in test step, increasing alphaT to 1.358796e-02.
+	FillingsUpdate:  mu: +1.330144983  nElectrons: 390.000000  magneticMoment: [ Abs: 0.23468  Tot: +0.00000 ]
+LCAOMinimize: Iter:   2  F: -2511.2893387124322544  |grad|_K:  2.183e-02  alpha: -1.605e-02  linmin: -1.959e-01  cgtest:  8.909e-01  t[s]:     65.98
+LCAOMinimize: Encountered beta<0, resetting CG.
+LCAOMinimize: 	Step increased F by 4.020051e+01, reducing alpha to 4.505352e-02.
+LCAOMinimize: 	Step increased F by 3.108138e+00, reducing alpha to 4.505352e-03.
+	FillingsUpdate:  mu: +1.135975467  nElectrons: 390.000000  magneticMoment: [ Abs: 0.23882  Tot: +0.00000 ]
+LCAOMinimize: Iter:   3  F: -2513.1315103183328574  |grad|_K:  1.943e-02  alpha:  4.505e-03  linmin: -1.825e-01  cgtest:  9.416e-01  t[s]:     96.46
+LCAOMinimize: Encountered beta<0, resetting CG.
+LCAOMinimize: 	Wrong curvature in test step, increasing alphaT to 1.351606e-02.
+	FillingsUpdate:  mu: +0.906760435  nElectrons: 390.000000  magneticMoment: [ Abs: 0.25467  Tot: -0.00000 ]
+LCAOMinimize: Iter:   4  F: -2514.8564543981128736  |grad|_K:  1.890e-02  alpha: -3.041e-02  linmin: -1.851e-01  cgtest:  8.347e-01  t[s]:    108.20
+LCAOMinimize: 	Step increased F by 4.119198e+01, reducing alpha to 4.404854e-02.
+LCAOMinimize: 	Step increased F by 6.164319e+00, reducing alpha to 4.404854e-03.
+	FillingsUpdate:  mu: +0.606710667  nElectrons: 390.000000  magneticMoment: [ Abs: 0.27059  Tot: +0.00000 ]
+LCAOMinimize: Iter:   5  F: -2516.5336912155466962  |grad|_K:  1.434e-02  alpha:  4.405e-03  linmin: -1.816e-01  cgtest:  8.901e-01  t[s]:    139.14
+LCAOMinimize: Encountered beta<0, resetting CG.
+LCAOMinimize: 	Predicted alpha/alphaT>3.000000, increasing alphaT to 1.321456e-02.
+	FillingsUpdate:  mu: -0.013509407  nElectrons: 390.000000  magneticMoment: [ Abs: 0.29205  Tot: -0.00000 ]
+LCAOMinimize: Iter:   6  F: -2519.0643241767129439  |grad|_K:  7.450e-03  alpha:  2.332e-02  linmin: -4.643e-02  cgtest: -1.861e-01  t[s]:    155.48
+	FillingsUpdate:  mu: -0.078783753  nElectrons: 390.000000  magneticMoment: [ Abs: 0.34413  Tot: +0.00000 ]
+LCAOMinimize: Iter:   7  F: -2519.6522367939960532  |grad|_K:  5.780e-03  alpha:  1.278e-02  linmin: -9.322e-03  cgtest:  2.104e-01  t[s]:    168.25
+	FillingsUpdate:  mu: -0.144483532  nElectrons: 390.000000  magneticMoment: [ Abs: 0.36762  Tot: -0.00000 ]
+LCAOMinimize: Iter:   8  F: -2519.8575291565680345  |grad|_K:  3.721e-03  alpha:  1.157e-02  linmin:  1.161e-02  cgtest:  6.895e-01  t[s]:    180.62
+LCAOMinimize: Encountered beta<0, resetting CG.
+	FillingsUpdate:  mu: -0.127306573  nElectrons: 390.000000  magneticMoment: [ Abs: 0.35393  Tot: -0.00000 ]
+LCAOMinimize: Iter:   9  F: -2519.9747182271448764  |grad|_K:  9.041e-04  alpha:  1.717e-02  linmin: -2.840e-02  cgtest:  3.633e-01  t[s]:    193.27
+LCAOMinimize: Encountered beta<0, resetting CG.
+	FillingsUpdate:  mu: -0.107207530  nElectrons: 390.000000  magneticMoment: [ Abs: 0.37281  Tot: -0.00000 ]
+LCAOMinimize: Iter:  10  F: -2519.9902951429780842  |grad|_K:  1.507e-03  alpha:  4.043e-02  linmin:  4.741e-05  cgtest: -8.807e-02  t[s]:    205.90
+	FillingsUpdate:  mu: -0.068121485  nElectrons: 390.000000  magneticMoment: [ Abs: 0.49232  Tot: -0.00000 ]
+LCAOMinimize: Iter:  11  F: -2520.0322188354089121  |grad|_K:  3.331e-03  alpha:  5.608e-02  linmin:  2.165e-03  cgtest: -2.089e-01  t[s]:    218.63
+LCAOMinimize: 	Step increased F by 1.199266e-04, reducing alpha to 2.758931e-04.
+	FillingsUpdate:  mu: -0.068028843  nElectrons: 390.000000  magneticMoment: [ Abs: 0.49394  Tot: +0.00000 ]
+LCAOMinimize: Iter:  12  F: -2520.0324844637798378  |grad|_K:  3.383e-03  alpha:  2.759e-04  linmin: -1.895e-04  cgtest:  9.980e-01  t[s]:    240.05
+LCAOMinimize: 	Predicted alpha/alphaT>3.000000, increasing alphaT to 8.276793e-04.
+LCAOMinimize: 	Predicted alpha/alphaT>3.000000, increasing alphaT to 2.483038e-03.
+LCAOMinimize: 	Predicted alpha/alphaT>3.000000, increasing alphaT to 7.449113e-03.
+	FillingsUpdate:  mu: -0.030510821  nElectrons: 390.000000  magneticMoment: [ Abs: 0.53400  Tot: -0.00000 ]
+LCAOMinimize: Iter:  13  F: -2520.0384894377461933  |grad|_K:  6.395e-03  alpha:  2.266e-02  linmin:  2.440e-02  cgtest: -4.458e-01  t[s]:    260.02
+LCAOMinimize: 	Bad step direction: g.d > 0.
+LCAOMinimize: 	Undoing step.
+LCAOMinimize: 	Step failed: resetting search direction.
+	FillingsUpdate:  mu: -0.030510821  nElectrons: 390.000000  magneticMoment: [ Abs: 0.53400  Tot: -0.00000 ]
+LCAOMinimize: Iter:  14  F: -2520.0384894377461933  |grad|_K:  6.395e-03  alpha:  0.000e+00
+	FillingsUpdate:  mu: -0.091519435  nElectrons: 390.000000  magneticMoment: [ Abs: 0.50919  Tot: -0.00000 ]
+LCAOMinimize: Iter:  15  F: -2520.1409755673307700  |grad|_K:  2.112e-03  alpha:  8.599e-03  linmin:  7.671e-02  cgtest: -1.003e+00  t[s]:    281.56
+LCAOMinimize: 	Bad step direction: g.d > 0.
+LCAOMinimize: 	Undoing step.
+LCAOMinimize: 	Step failed: resetting search direction.
+	FillingsUpdate:  mu: -0.091519435  nElectrons: 390.000000  magneticMoment: [ Abs: 0.50919  Tot: -0.00000 ]
+LCAOMinimize: Iter:  16  F: -2520.1409755673271320  |grad|_K:  2.112e-03  alpha:  0.000e+00
+	FillingsUpdate:  mu: -0.102731714  nElectrons: 390.000000  magneticMoment: [ Abs: 0.52552  Tot: -0.00000 ]
+LCAOMinimize: Iter:  17  F: -2520.1577049673592228  |grad|_K:  6.796e-04  alpha:  7.867e-03  linmin:  6.107e-03  cgtest: -9.192e-02  t[s]:    303.11
+LCAOMinimize: 	Predicted alpha/alphaT>3.000000, increasing alphaT to 2.360061e-02.
+LCAOMinimize: 	Predicted alpha/alphaT>3.000000, increasing alphaT to 7.080184e-02.
+	FillingsUpdate:  mu: -0.094875303  nElectrons: 390.000000  magneticMoment: [ Abs: 0.60567  Tot: -0.00000 ]
+LCAOMinimize: Iter:  18  F: -2520.1810971014424467  |grad|_K:  9.623e-04  alpha:  1.104e-01  linmin: -3.632e-04  cgtest:  2.890e-01  t[s]:    323.28
+	FillingsUpdate:  mu: -0.095201618  nElectrons: 390.000000  magneticMoment: [ Abs: 0.67562  Tot: -0.00000 ]
+LCAOMinimize: Iter:  19  F: -2520.1932753729743126  |grad|_K:  1.621e-03  alpha:  3.206e-02  linmin:  4.002e-04  cgtest: -1.559e-01  t[s]:    335.87
+	FillingsUpdate:  mu: -0.096441739  nElectrons: 390.000000  magneticMoment: [ Abs: 1.09107  Tot: +0.00000 ]
+LCAOMinimize: Iter:  20  F: -2520.2397161885619425  |grad|_K:  1.475e-03  alpha:  4.227e-02  linmin:  6.386e-05  cgtest: -8.205e-02  t[s]:    348.69
+	FillingsUpdate:  mu: -0.083597968  nElectrons: 390.000000  magneticMoment: [ Abs: 1.41203  Tot: -0.00000 ]
+LCAOMinimize: Iter:  21  F: -2520.2757507738801905  |grad|_K:  8.967e-04  alpha:  3.659e-02  linmin: -4.173e-04  cgtest:  6.319e-01  t[s]:    361.42
+LCAOMinimize: Encountered beta<0, resetting CG.
+	FillingsUpdate:  mu: -0.071638224  nElectrons: 390.000000  magneticMoment: [ Abs: 1.48522  Tot: -0.00000 ]
+LCAOMinimize: Iter:  22  F: -2520.2820660775582837  |grad|_K:  5.657e-04  alpha:  1.616e-02  linmin: -6.410e-03  cgtest:  3.521e-02  t[s]:    374.08
+	FillingsUpdate:  mu: -0.067628318  nElectrons: 390.000000  magneticMoment: [ Abs: 1.55744  Tot: +0.00000 ]
+LCAOMinimize: Iter:  23  F: -2520.2845908906006116  |grad|_K:  3.733e-04  alpha:  1.646e-02  linmin: -2.577e-04  cgtest: -3.356e-02  t[s]:    386.88
+	FillingsUpdate:  mu: -0.072211487  nElectrons: 390.000000  magneticMoment: [ Abs: 1.79081  Tot: -0.00000 ]
+LCAOMinimize: Iter:  24  F: -2520.2876150575134488  |grad|_K:  3.412e-04  alpha:  4.709e-02  linmin:  4.589e-03  cgtest:  3.145e-02  t[s]:    399.40
+LCAOMinimize: 	Predicted alpha/alphaT>3.000000, increasing alphaT to 1.412812e-01.
+	FillingsUpdate:  mu: -0.078886323  nElectrons: 390.000000  magneticMoment: [ Abs: 2.60954  Tot: -0.00000 ]
+LCAOMinimize: Iter:  25  F: -2520.2947544575285974  |grad|_K:  1.074e-03  alpha:  1.317e-01  linmin:  3.055e-03  cgtest:  1.845e-01  t[s]:    415.35
+	FillingsUpdate:  mu: -0.073626611  nElectrons: 390.000000  magneticMoment: [ Abs: 3.90358  Tot: +0.00000 ]
+LCAOMinimize: Iter:  26  F: -2520.3018072258523716  |grad|_K:  1.803e-03  alpha:  2.937e-02  linmin:  4.885e-03  cgtest:  1.006e+00  t[s]:    427.69
+	FillingsUpdate:  mu: -0.089109824  nElectrons: 390.000000  magneticMoment: [ Abs: 4.68143  Tot: -0.00000 ]
+LCAOMinimize: Iter:  27  F: -2520.3248523752463370  |grad|_K:  8.366e-04  alpha:  1.948e-02  linmin: -6.801e-04  cgtest: -1.938e-01  t[s]:    440.15
+	FillingsUpdate:  mu: -0.081159942  nElectrons: 390.000000  magneticMoment: [ Abs: 5.25526  Tot: +0.00000 ]
+LCAOMinimize: Iter:  28  F: -2520.3378132982320494  |grad|_K:  4.602e-04  alpha:  3.661e-02  linmin: -1.192e-02  cgtest: -6.292e-02  t[s]:    452.50
+	FillingsUpdate:  mu: -0.084163962  nElectrons: 390.000000  magneticMoment: [ Abs: 5.57981  Tot: -0.00000 ]
+LCAOMinimize: Iter:  29  F: -2520.3420932332551274  |grad|_K:  5.788e-04  alpha:  3.782e-02  linmin: -6.402e-04  cgtest: -1.296e-01  t[s]:    465.18
+	FillingsUpdate:  mu: -0.085639063  nElectrons: 390.000000  magneticMoment: [ Abs: 6.34242  Tot: +0.00000 ]
+LCAOMinimize: Iter:  30  F: -2520.3489649569255562  |grad|_K:  6.003e-04  alpha:  4.263e-02  linmin: -5.734e-03  cgtest:  3.464e-01  t[s]:    477.67
+LCAOMinimize: None of the convergence criteria satisfied after 30 iterations.
+
+
+---- Citations for features of the code used in this run ----
+
+   Software package:
+      R. Sundararaman, K. Letchworth-Weaver, K.A. Schwarz, D. Gunceler, Y. Ozhabes and T.A. Arias, 'JDFTx: software for joint density-functional theory', SoftwareX 6, 278 (2017)
+
+   Simplified rotationally-invariant DFT+U:
+      S. L. Dudarev et al., Phys. Rev. B 57, 1505 (1998)
+
+   LibXC library of exchange-correlation functions:
+      M. A. L. Marques, M. J. T. Oliveira and T. Burnus, Comput. Phys. Commun. 183, 2272 (2012)
+
+   Hammer, Hansen, and Norskov exchange functional:
+      B. Hammer, L. B. Hansen, and J. K. Nørskov, Phys. Rev. B 59, 7413 (1999)
+
+   Perdew, Burke & Ernzerhof correlation functional:
+      J. P. Perdew, K. Burke, and M. Ernzerhof, Phys. Rev. Lett. 77, 3865 (1996)
+
+   Pseudopotentials:
+      M Schlipf and F Gygi, Comput. Phys. Commun. 196, 36 (2015)
+
+   Total energy minimization with Auxiliary Hamiltonian:
+      C. Freysoldt, S. Boeck, and J. Neugebauer, Phys. Rev. B 79, 241103(R) (2009)
+
+This list may not be complete. Please suggest additional citations or
+report any other bugs at https://github.com/shankar1729/jdftx/issues
+
+Initialization completed successfully at t[s]:    483.17
+
+
+-------- Electronic minimization -----------
+	FillingsUpdate:  mu: -0.085639061  nElectrons: 390.000000  magneticMoment: [ Abs: 6.34242  Tot: +0.00000 ]
+ElecMinimize: Iter:   0  F: -2520.348964956933287  |grad|_K:  1.749e-03  alpha:  1.000e+00
+	FillingsUpdate:  mu: +1.201611314  nElectrons: 390.000000  magneticMoment: [ Abs: 7.38562  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.997
+ElecMinimize: Iter:   1  F: -2639.366494383158170  |grad|_K:  2.240e-03  alpha:  4.739e-01  linmin:  8.181e-02  t[s]:    566.36
+ElecMinimize: 	Step increased F by 2.613166e+01, reducing alpha to 1.812785e-02.
+	FillingsUpdate:  mu: +0.923772224  nElectrons: 390.000000  magneticMoment: [ Abs: 7.81773  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 1.09
+ElecMinimize: Iter:   2  F: -2647.329107691894478  |grad|_K:  1.359e-03  alpha:  1.813e-02  linmin: -2.990e-03  t[s]:    674.10
+ElecMinimize: 	Predicted alpha/alphaT>3.000000, increasing alphaT to 5.438354e-02.
+	FillingsUpdate:  mu: +0.665496529  nElectrons: 390.000000  magneticMoment: [ Abs: 5.76376  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.744
+ElecMinimize: Iter:   3  F: -2683.916529183316925  |grad|_K:  1.682e-03  alpha:  1.011e-01  linmin:  9.675e-05  t[s]:    775.71
+	FillingsUpdate:  mu: +0.890930901  nElectrons: 390.000000  magneticMoment: [ Abs: 7.51885  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.78
+ElecMinimize: Iter:   4  F: -2702.101425898717935  |grad|_K:  1.051e-03  alpha:  4.652e-02  linmin:  3.123e-04  t[s]:    847.33
+	FillingsUpdate:  mu: +0.756592693  nElectrons: 390.000000  magneticMoment: [ Abs: 6.90151  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.59
+ElecMinimize: Iter:   5  F: -2708.277106629757327  |grad|_K:  1.082e-03  alpha:  3.840e-02  linmin:  7.738e-05  t[s]:    919.50
+	FillingsUpdate:  mu: +0.369118854  nElectrons: 390.000000  magneticMoment: [ Abs: 4.22339  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.736
+ElecMinimize: Iter:   6  F: -2718.800528414767541  |grad|_K:  6.282e-04  alpha:  6.055e-02  linmin:  3.445e-04  t[s]:    992.74
+	FillingsUpdate:  mu: +0.313864242  nElectrons: 390.000000  magneticMoment: [ Abs: 3.04762  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.674
+ElecMinimize: Iter:   7  F: -2722.983380110359576  |grad|_K:  6.247e-04  alpha:  7.658e-02  linmin:  3.680e-04  t[s]:   1063.42
+	FillingsUpdate:  mu: +0.078735485  nElectrons: 390.000000  magneticMoment: [ Abs: 2.64994  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.588
+ElecMinimize: Iter:   8  F: -2725.456267321294945  |grad|_K:  4.432e-04  alpha:  4.426e-02  linmin: -4.690e-05  t[s]:   1134.58
+	FillingsUpdate:  mu: +0.106678254  nElectrons: 390.000000  magneticMoment: [ Abs: 3.39325  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.683
+ElecMinimize: Iter:   9  F: -2728.466900867725599  |grad|_K:  3.640e-04  alpha:  9.862e-02  linmin:  1.929e-04  t[s]:   1206.28
+	FillingsUpdate:  mu: +0.295530707  nElectrons: 390.000000  magneticMoment: [ Abs: 3.87996  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.675
+ElecMinimize: Iter:  10  F: -2729.939371985569778  |grad|_K:  3.799e-04  alpha:  7.722e-02  linmin: -2.466e-05  t[s]:   1279.07
+	FillingsUpdate:  mu: +0.279573699  nElectrons: 390.000000  magneticMoment: [ Abs: 3.80543  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.535
+ElecMinimize: Iter:  11  F: -2730.891812623621718  |grad|_K:  3.439e-04  alpha:  3.887e-02  linmin: -1.179e-04  t[s]:   1349.53
+	FillingsUpdate:  mu: +0.146597465  nElectrons: 390.000000  magneticMoment: [ Abs: 3.42237  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.421
+ElecMinimize: Iter:  12  F: -2732.057522558437086  |grad|_K:  2.599e-04  alpha:  5.908e-02  linmin:  2.916e-06  t[s]:   1421.42
+	FillingsUpdate:  mu: +0.166813988  nElectrons: 390.000000  magneticMoment: [ Abs: 2.76373  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.385
+ElecMinimize: Iter:  13  F: -2732.719210035992091  |grad|_K:  2.776e-04  alpha:  6.217e-02  linmin:  1.979e-05  t[s]:   1493.24
+	FillingsUpdate:  mu: +0.115363862  nElectrons: 390.000000  magneticMoment: [ Abs: 2.76629  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.504
+ElecMinimize: Iter:  14  F: -2733.371751181781747  |grad|_K:  2.057e-04  alpha:  5.447e-02  linmin: -5.830e-06  t[s]:   1564.31
+	FillingsUpdate:  mu: +0.204021497  nElectrons: 390.000000  magneticMoment: [ Abs: 3.38234  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.414
+ElecMinimize: Iter:  15  F: -2733.822552526861728  |grad|_K:  2.545e-04  alpha:  7.133e-02  linmin:  3.833e-04  t[s]:   1636.71
+	FillingsUpdate:  mu: +0.133551986  nElectrons: 390.000000  magneticMoment: [ Abs: 3.69485  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.51
+ElecMinimize: Iter:  16  F: -2734.047848738257926  |grad|_K:  2.071e-04  alpha:  3.147e-02  linmin:  5.541e-05  t[s]:   1709.45
+	FillingsUpdate:  mu: +0.169293543  nElectrons: 390.000000  magneticMoment: [ Abs: 3.49956  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.491
+ElecMinimize: Iter:  17  F: -2734.270843758557476  |grad|_K:  2.131e-04  alpha:  3.397e-02  linmin: -4.026e-05  t[s]:   1785.03
+	FillingsUpdate:  mu: +0.132203669  nElectrons: 390.000000  magneticMoment: [ Abs: 3.48699  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.379
+ElecMinimize: Iter:  18  F: -2734.544843632354059  |grad|_K:  2.484e-04  alpha:  5.426e-02  linmin:  1.151e-03  t[s]:   1859.91
+	FillingsUpdate:  mu: +0.129471050  nElectrons: 390.000000  magneticMoment: [ Abs: 3.49183  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.326
+ElecMinimize: Iter:  19  F: -2734.545806505178916  |grad|_K:  2.278e-04  alpha:  3.288e-04  linmin: -1.504e-04  t[s]:   1931.85
+ElecMinimize: 	Predicted alpha/alphaT>3.000000, increasing alphaT to 9.865217e-04.
+ElecMinimize: 	Predicted alpha/alphaT>3.000000, increasing alphaT to 2.959565e-03.
+	FillingsUpdate:  mu: +0.062692452  nElectrons: 390.000000  magneticMoment: [ Abs: 3.70191  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.501
+ElecMinimize: Iter:  20  F: -2734.609702875017774  |grad|_K:  1.711e-04  alpha:  7.357e-03  linmin:  1.551e-04  t[s]:   2063.93
+	FillingsUpdate:  mu: +0.075064207  nElectrons: 390.000000  magneticMoment: [ Abs: 3.80277  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.624
+ElecMinimize: Iter:  21  F: -2734.635262609753681  |grad|_K:  1.731e-04  alpha:  6.167e-03  linmin:  1.752e-05  t[s]:   2137.38
+	FillingsUpdate:  mu: +0.101049387  nElectrons: 390.000000  magneticMoment: [ Abs: 3.85994  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.626
+ElecMinimize: Iter:  22  F: -2734.661833143082276  |grad|_K:  1.809e-04  alpha:  5.655e-03  linmin:  2.780e-05  t[s]:   2208.70
+	FillingsUpdate:  mu: +0.102458187  nElectrons: 390.000000  magneticMoment: [ Abs: 3.85898  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.585
+ElecMinimize: Iter:  23  F: -2734.685110043920304  |grad|_K:  1.732e-04  alpha:  4.550e-03  linmin:  1.099e-05  t[s]:   2279.41
+	FillingsUpdate:  mu: +0.088187942  nElectrons: 390.000000  magneticMoment: [ Abs: 3.82550  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.618
+ElecMinimize: Iter:  24  F: -2734.704374508359706  |grad|_K:  1.485e-04  alpha:  4.089e-03  linmin:  2.059e-06  t[s]:   2352.36
+	FillingsUpdate:  mu: +0.067014639  nElectrons: 390.000000  magneticMoment: [ Abs: 3.77922  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.804
+ElecMinimize: Iter:  25  F: -2734.718661884663561  |grad|_K:  1.257e-04  alpha:  4.099e-03  linmin: -3.110e-07  t[s]:   2422.83
+	FillingsUpdate:  mu: +0.063917206  nElectrons: 390.000000  magneticMoment: [ Abs: 3.72950  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.978
+ElecMinimize: Iter:  26  F: -2734.729146880953522  |grad|_K:  1.177e-04  alpha:  4.196e-03  linmin:  7.048e-06  t[s]:   2495.01
+	FillingsUpdate:  mu: +0.072797387  nElectrons: 390.000000  magneticMoment: [ Abs: 3.68350  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.807
+ElecMinimize: Iter:  27  F: -2734.738662194124117  |grad|_K:  1.301e-04  alpha:  4.359e-03  linmin:  1.445e-05  t[s]:   2566.90
+	FillingsUpdate:  mu: +0.084985354  nElectrons: 390.000000  magneticMoment: [ Abs: 3.65809  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.544
+ElecMinimize: Iter:  28  F: -2734.750517245852279  |grad|_K:  1.384e-04  alpha:  4.458e-03  linmin:  1.663e-05  t[s]:   2640.00
+	FillingsUpdate:  mu: +0.091876019  nElectrons: 390.000000  magneticMoment: [ Abs: 3.67967  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.358
+ElecMinimize: Iter:  29  F: -2734.764074163415444  |grad|_K:  1.191e-04  alpha:  4.504e-03  linmin:  1.069e-05  t[s]:   2712.29
+	FillingsUpdate:  mu: +0.085362981  nElectrons: 390.000000  magneticMoment: [ Abs: 3.73951  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.262
+ElecMinimize: Iter:  30  F: -2734.775552541073466  |grad|_K:  8.971e-05  alpha:  5.139e-03  linmin:  1.482e-06  t[s]:   2784.46
+	FillingsUpdate:  mu: +0.078635809  nElectrons: 390.000000  magneticMoment: [ Abs: 3.80914  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.225
+ElecMinimize: Iter:  31  F: -2734.784212467615362  |grad|_K:  7.210e-05  alpha:  6.803e-03  linmin: -1.736e-05  t[s]:   2857.06
+	FillingsUpdate:  mu: +0.074916426  nElectrons: 390.000000  magneticMoment: [ Abs: 3.87916  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.203
+ElecMinimize: Iter:  32  F: -2734.791774250724302  |grad|_K:  6.703e-05  alpha:  9.149e-03  linmin: -3.044e-05  t[s]:   2930.23
+	FillingsUpdate:  mu: +0.074645314  nElectrons: 390.000000  magneticMoment: [ Abs: 3.94939  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.176
+ElecMinimize: Iter:  33  F: -2734.799730736113816  |grad|_K:  6.791e-05  alpha:  1.110e-02  linmin: -3.091e-05  t[s]:   3004.16
+	FillingsUpdate:  mu: +0.076605249  nElectrons: 390.000000  magneticMoment: [ Abs: 4.01608  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.158
+ElecMinimize: Iter:  34  F: -2734.808680404049028  |grad|_K:  6.855e-05  alpha:  1.216e-02  linmin: -2.709e-05  t[s]:   3077.44
+	FillingsUpdate:  mu: +0.073144052  nElectrons: 390.000000  magneticMoment: [ Abs: 4.07266  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.162
+ElecMinimize: Iter:  35  F: -2734.818188891059435  |grad|_K:  6.754e-05  alpha:  1.269e-02  linmin: -2.579e-05  t[s]:   3148.75
+	FillingsUpdate:  mu: +0.066337082  nElectrons: 390.000000  magneticMoment: [ Abs: 4.11774  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.195
+ElecMinimize: Iter:  36  F: -2734.827596278455076  |grad|_K:  6.721e-05  alpha:  1.292e-02  linmin: -2.644e-05  t[s]:   3219.05
+	FillingsUpdate:  mu: +0.060825859  nElectrons: 390.000000  magneticMoment: [ Abs: 4.15698  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.246
+ElecMinimize: Iter:  37  F: -2734.836753909200525  |grad|_K:  6.986e-05  alpha:  1.268e-02  linmin: -2.758e-05  t[s]:   3292.18
+	FillingsUpdate:  mu: +0.062977350  nElectrons: 390.000000  magneticMoment: [ Abs: 4.20180  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.265
+ElecMinimize: Iter:  38  F: -2734.846221874292496  |grad|_K:  7.716e-05  alpha:  1.212e-02  linmin: -2.950e-05  t[s]:   3362.37
+	FillingsUpdate:  mu: +0.075485665  nElectrons: 390.000000  magneticMoment: [ Abs: 4.27021  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.246
+ElecMinimize: Iter:  39  F: -2734.857199197044338  |grad|_K:  8.666e-05  alpha:  1.150e-02  linmin: -3.380e-05  t[s]:   3433.86
+	FillingsUpdate:  mu: +0.090810013  nElectrons: 390.000000  magneticMoment: [ Abs: 4.37609  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.228
+ElecMinimize: Iter:  40  F: -2734.870321264176255  |grad|_K:  9.167e-05  alpha:  1.088e-02  linmin: -4.098e-05  t[s]:   3505.03
+	FillingsUpdate:  mu: +0.096911584  nElectrons: 390.000000  magneticMoment: [ Abs: 4.51336  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.244
+ElecMinimize: Iter:  41  F: -2734.884687637679690  |grad|_K:  9.082e-05  alpha:  1.060e-02  linmin: -4.673e-05  t[s]:   3577.37
+	FillingsUpdate:  mu: +0.090322023  nElectrons: 390.000000  magneticMoment: [ Abs: 4.66218  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.333
+ElecMinimize: Iter:  42  F: -2734.898813482098376  |grad|_K:  8.828e-05  alpha:  1.058e-02  linmin: -4.363e-05  t[s]:   3649.47
+	FillingsUpdate:  mu: +0.090948904  nElectrons: 390.000000  magneticMoment: [ Abs: 4.80662  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.428
+ElecMinimize: Iter:  43  F: -2734.911804379556997  |grad|_K:  8.858e-05  alpha:  1.030e-02  linmin: -3.572e-05  t[s]:   3722.79
+	FillingsUpdate:  mu: +0.098853048  nElectrons: 390.000000  magneticMoment: [ Abs: 4.94513  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.537
+ElecMinimize: Iter:  44  F: -2734.924262824340985  |grad|_K:  9.371e-05  alpha:  9.847e-03  linmin: -3.341e-05  t[s]:   3794.23
+	FillingsUpdate:  mu: +0.111933650  nElectrons: 390.000000  magneticMoment: [ Abs: 5.09072  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.556
+ElecMinimize: Iter:  45  F: -2734.938658860137821  |grad|_K:  1.059e-04  alpha:  1.016e-02  linmin: -4.211e-05  t[s]:   3865.88
+	FillingsUpdate:  mu: +0.114615212  nElectrons: 390.000000  magneticMoment: [ Abs: 5.23033  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.613
+ElecMinimize: Iter:  46  F: -2734.955473131587496  |grad|_K:  1.049e-04  alpha:  9.260e-03  linmin: -3.346e-05  t[s]:   3937.70
+	FillingsUpdate:  mu: +0.112503883  nElectrons: 390.000000  magneticMoment: [ Abs: 5.32450  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.851
+ElecMinimize: Iter:  47  F: -2734.969752727358809  |grad|_K:  9.646e-05  alpha:  8.015e-03  linmin: -1.073e-05  t[s]:   4009.40
+	FillingsUpdate:  mu: +0.113528908  nElectrons: 390.000000  magneticMoment: [ Abs: 5.39733  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.975
+ElecMinimize: Iter:  48  F: -2734.981197097180939  |grad|_K:  1.048e-04  alpha:  7.717e-03  linmin:  2.465e-06  t[s]:   4081.56
+	FillingsUpdate:  mu: +0.114609310  nElectrons: 390.000000  magneticMoment: [ Abs: 5.52019  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.801
+ElecMinimize: Iter:  49  F: -2734.994457894576044  |grad|_K:  1.253e-04  alpha:  7.640e-03  linmin: -1.293e-05  t[s]:   4153.93
+	FillingsUpdate:  mu: +0.104691977  nElectrons: 390.000000  magneticMoment: [ Abs: 5.74584  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.765
+ElecMinimize: Iter:  50  F: -2735.010568279321433  |grad|_K:  1.141e-04  alpha:  6.453e-03  linmin: -2.609e-05  t[s]:   4226.94
+	FillingsUpdate:  mu: +0.095736678  nElectrons: 390.000000  magneticMoment: [ Abs: 5.98981  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 1.07
+ElecMinimize: Iter:  51  F: -2735.023651443051222  |grad|_K:  9.899e-05  alpha:  6.258e-03  linmin: -2.573e-05  t[s]:   4298.97
+	FillingsUpdate:  mu: +0.100929255  nElectrons: 390.000000  magneticMoment: [ Abs: 6.24762  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 1.12
+ElecMinimize: Iter:  52  F: -2735.035663838482378  |grad|_K:  1.104e-04  alpha:  7.593e-03  linmin: -5.133e-05  t[s]:   4372.14
+	FillingsUpdate:  mu: +0.107603741  nElectrons: 390.000000  magneticMoment: [ Abs: 6.59194  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 1.06
+ElecMinimize: Iter:  53  F: -2735.052185786584232  |grad|_K:  1.160e-04  alpha:  8.304e-03  linmin: -6.313e-05  t[s]:   4445.93
+	FillingsUpdate:  mu: +0.099059191  nElectrons: 390.000000  magneticMoment: [ Abs: 6.87628  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 1.54
+ElecMinimize: Iter:  54  F: -2735.067320302841381  |grad|_K:  9.536e-05  alpha:  6.911e-03  linmin: -3.000e-05  t[s]:   4517.52
+	FillingsUpdate:  mu: +0.104683546  nElectrons: 390.000000  magneticMoment: [ Abs: 7.10273  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 1.72
+ElecMinimize: Iter:  55  F: -2735.079806529151938  |grad|_K:  1.079e-04  alpha:  8.499e-03  linmin: -4.842e-05  t[s]:   4589.54
+	FillingsUpdate:  mu: +0.109009224  nElectrons: 390.000000  magneticMoment: [ Abs: 7.51944  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 1.54
+ElecMinimize: Iter:  56  F: -2735.100600804135411  |grad|_K:  1.223e-04  alpha:  1.090e-02  linmin: -7.668e-05  t[s]:   4660.90
+	FillingsUpdate:  mu: +0.103778156  nElectrons: 390.000000  magneticMoment: [ Abs: 7.92704  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 2.01
+ElecMinimize: Iter:  57  F: -2735.118532927066553  |grad|_K:  1.024e-04  alpha:  7.395e-03  linmin: -1.467e-05  t[s]:   4731.87
+	FillingsUpdate:  mu: +0.098385896  nElectrons: 390.000000  magneticMoment: [ Abs: 8.40302  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 1.77
+ElecMinimize: Iter:  58  F: -2735.139226564353066  |grad|_K:  1.256e-04  alpha:  1.226e-02  linmin: -5.291e-05  t[s]:   4803.27
+	FillingsUpdate:  mu: +0.081858189  nElectrons: 390.000000  magneticMoment: [ Abs: 8.78677  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 2.29
+ElecMinimize: Iter:  59  F: -2735.157647004410137  |grad|_K:  9.669e-05  alpha:  7.165e-03  linmin: -1.011e-05  t[s]:   4876.58
+	FillingsUpdate:  mu: +0.078283832  nElectrons: 390.000000  magneticMoment: [ Abs: 9.18457  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 1.93
+ElecMinimize: Iter:  60  F: -2735.175196243028040  |grad|_K:  1.290e-04  alpha:  1.176e-02  linmin: -2.023e-05  t[s]:   4948.16
+	FillingsUpdate:  mu: +0.070139182  nElectrons: 390.000000  magneticMoment: [ Abs: 9.79214  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 2.68
+ElecMinimize: Iter:  61  F: -2735.198006216226986  |grad|_K:  1.014e-04  alpha:  8.678e-03  linmin: -2.881e-05  t[s]:   5019.49
+	FillingsUpdate:  mu: +0.079945041  nElectrons: 390.000000  magneticMoment: [ Abs: 10.27218  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 2.82
+ElecMinimize: Iter:  62  F: -2735.213026650623306  |grad|_K:  1.092e-04  alpha:  9.084e-03  linmin:  1.966e-05  t[s]:   5092.39
+	FillingsUpdate:  mu: +0.080906620  nElectrons: 390.000000  magneticMoment: [ Abs: 10.83434  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 3.81
+ElecMinimize: Iter:  63  F: -2735.230051202947834  |grad|_K:  9.634e-05  alpha:  9.127e-03  linmin: -6.306e-05  t[s]:   5164.64
+	FillingsUpdate:  mu: +0.081334821  nElectrons: 390.000000  magneticMoment: [ Abs: 11.30066  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 3.27
+ElecMinimize: Iter:  64  F: -2735.244636352749694  |grad|_K:  1.133e-04  alpha:  9.567e-03  linmin: -4.937e-05  t[s]:   5235.97
+	FillingsUpdate:  mu: +0.069600337  nElectrons: 390.000000  magneticMoment: [ Abs: 11.92424  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 4.33
+ElecMinimize: Iter:  65  F: -2735.261661073465802  |grad|_K:  8.574e-05  alpha:  8.232e-03  linmin: -3.707e-05  t[s]:   5306.99
+	FillingsUpdate:  mu: +0.066616443  nElectrons: 390.000000  magneticMoment: [ Abs: 12.73297  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 3.36
+ElecMinimize: Iter:  66  F: -2735.281595481215390  |grad|_K:  1.100e-04  alpha:  1.642e-02  linmin: -8.873e-05  t[s]:   5378.78
+	FillingsUpdate:  mu: +0.061650075  nElectrons: 390.000000  magneticMoment: [ Abs: 13.32245  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 3.1
+ElecMinimize: Iter:  67  F: -2735.295417897100833  |grad|_K:  9.483e-05  alpha:  6.818e-03  linmin: -1.407e-05  t[s]:   5451.48
+	FillingsUpdate:  mu: +0.065467204  nElectrons: 390.000000  magneticMoment: [ Abs: 14.32882  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 3.77
+ElecMinimize: Iter:  68  F: -2735.315224668154315  |grad|_K:  8.238e-05  alpha:  1.361e-02  linmin: -5.643e-05  t[s]:   5521.69
+	FillingsUpdate:  mu: +0.073533177  nElectrons: 390.000000  magneticMoment: [ Abs: 15.12676  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 2.87
+ElecMinimize: Iter:  69  F: -2735.329153936706462  |grad|_K:  1.079e-04  alpha:  1.262e-02  linmin: -1.654e-05  t[s]:   5593.75
+	FillingsUpdate:  mu: +0.069648285  nElectrons: 390.000000  magneticMoment: [ Abs: 16.09641  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 3.55
+ElecMinimize: Iter:  70  F: -2735.345988035685878  |grad|_K:  7.662e-05  alpha:  8.877e-03  linmin:  6.322e-06  t[s]:   5666.83
+	FillingsUpdate:  mu: +0.065934554  nElectrons: 390.000000  magneticMoment: [ Abs: 17.15930  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 3.13
+ElecMinimize: Iter:  71  F: -2735.363265353143561  |grad|_K:  1.013e-04  alpha:  1.876e-02  linmin:  1.266e-05  t[s]:   5738.23
+	FillingsUpdate:  mu: +0.073336803  nElectrons: 390.000000  magneticMoment: [ Abs: 17.73244  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 2.95
+ElecMinimize: Iter:  72  F: -2735.373083444333133  |grad|_K:  7.916e-05  alpha:  5.589e-03  linmin: -1.102e-04  t[s]:   5810.43
+ElecMinimize: 	Predicted alpha/alphaT>3.000000, increasing alphaT to 1.676645e-02.
+	FillingsUpdate:  mu: +0.082244932  nElectrons: 390.000000  magneticMoment: [ Abs: 18.77269  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 2.24
+ElecMinimize: Iter:  73  F: -2735.391051319519647  |grad|_K:  1.166e-04  alpha:  1.683e-02  linmin:  5.140e-05  t[s]:   5914.98
+	FillingsUpdate:  mu: +0.075791333  nElectrons: 390.000000  magneticMoment: [ Abs: 19.38120  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 3.29
+ElecMinimize: Iter:  74  F: -2735.402757303815179  |grad|_K:  7.590e-05  alpha:  5.092e-03  linmin: -1.302e-04  t[s]:   5987.15
+	FillingsUpdate:  mu: +0.077265218  nElectrons: 390.000000  magneticMoment: [ Abs: 19.84753  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 2.31
+ElecMinimize: Iter:  75  F: -2735.412120461235645  |grad|_K:  1.280e-04  alpha:  9.797e-03  linmin:  1.350e-04  t[s]:   6058.14
+	FillingsUpdate:  mu: +0.079159023  nElectrons: 390.000000  magneticMoment: [ Abs: 20.61429  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 1.7
+ElecMinimize: Iter:  76  F: -2735.425821366065975  |grad|_K:  1.201e-04  alpha:  5.857e-03  linmin: -3.492e-06  t[s]:   6131.86
+	FillingsUpdate:  mu: +0.081210148  nElectrons: 390.000000  magneticMoment: [ Abs: 21.01637  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 2.36
+ElecMinimize: Iter:  77  F: -2735.434085566244903  |grad|_K:  7.445e-05  alpha:  3.619e-03  linmin:  3.818e-06  t[s]:   6204.29
+	FillingsUpdate:  mu: +0.082706187  nElectrons: 390.000000  magneticMoment: [ Abs: 21.34212  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 2.1
+ElecMinimize: Iter:  78  F: -2735.441243743380710  |grad|_K:  1.005e-04  alpha:  7.882e-03  linmin: -1.179e-04  t[s]:   6277.72
+	FillingsUpdate:  mu: +0.078214412  nElectrons: 390.000000  magneticMoment: [ Abs: 22.02406  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 2.19
+ElecMinimize: Iter:  79  F: -2735.458826697179575  |grad|_K:  8.728e-05  alpha:  1.038e-02  linmin:  9.151e-05  t[s]:   6348.10
+	FillingsUpdate:  mu: +0.081407196  nElectrons: 390.000000  magneticMoment: [ Abs: 22.30204  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 2.69
+ElecMinimize: Iter:  80  F: -2735.465932702446025  |grad|_K:  7.493e-05  alpha:  6.452e-03  linmin:  7.325e-07  t[s]:   6419.32
+	FillingsUpdate:  mu: +0.079018864  nElectrons: 390.000000  magneticMoment: [ Abs: 22.68701  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 2.13
+ElecMinimize: Iter:  81  F: -2735.477021491196865  |grad|_K:  9.505e-05  alpha:  1.234e-02  linmin: -5.253e-05  t[s]:   6493.35
+	FillingsUpdate:  mu: +0.081190446  nElectrons: 390.000000  magneticMoment: [ Abs: 23.06415  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 2.39
+ElecMinimize: Iter:  82  F: -2735.488162234092215  |grad|_K:  7.361e-05  alpha:  7.469e-03  linmin: -3.117e-05  t[s]:   6566.08
+	FillingsUpdate:  mu: +0.079861549  nElectrons: 390.000000  magneticMoment: [ Abs: 23.36110  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 1.8
+ElecMinimize: Iter:  83  F: -2735.496752485230900  |grad|_K:  9.115e-05  alpha:  1.020e-02  linmin:  2.217e-04  t[s]:   6639.19
+	FillingsUpdate:  mu: +0.087421157  nElectrons: 390.000000  magneticMoment: [ Abs: 23.63931  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 1.27
+ElecMinimize: Iter:  84  F: -2735.505459844017878  |grad|_K:  9.664e-05  alpha:  7.240e-03  linmin: -3.999e-06  t[s]:   6712.18
+	FillingsUpdate:  mu: +0.077785959  nElectrons: 390.000000  magneticMoment: [ Abs: 23.89858  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 1.53
+ElecMinimize: Iter:  85  F: -2735.515640562524823  |grad|_K:  6.921e-05  alpha:  6.878e-03  linmin: -7.507e-06  t[s]:   6786.96
+	FillingsUpdate:  mu: +0.082941220  nElectrons: 390.000000  magneticMoment: [ Abs: 24.07298  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 1.47
+ElecMinimize: Iter:  86  F: -2735.523112386457342  |grad|_K:  7.787e-05  alpha:  9.750e-03  linmin: -7.212e-05  t[s]:   6857.46
+	FillingsUpdate:  mu: +0.087643345  nElectrons: 390.000000  magneticMoment: [ Abs: 24.39338  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 1.43
+ElecMinimize: Iter:  87  F: -2735.537334809747335  |grad|_K:  8.011e-05  alpha:  1.429e-02  linmin: -4.552e-05  t[s]:   6929.61
+	FillingsUpdate:  mu: +0.083542391  nElectrons: 390.000000  magneticMoment: [ Abs: 24.61396  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 2.05
+ElecMinimize: Iter:  88  F: -2735.547334782520011  |grad|_K:  7.130e-05  alpha:  9.873e-03  linmin: -1.886e-05  t[s]:   7000.36
+	FillingsUpdate:  mu: +0.083212537  nElectrons: 390.000000  magneticMoment: [ Abs: 24.83687  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 2.65
+ElecMinimize: Iter:  89  F: -2735.558740386047248  |grad|_K:  7.514e-05  alpha:  1.373e-02  linmin: -1.181e-04  t[s]:   7071.79
+	FillingsUpdate:  mu: +0.083850990  nElectrons: 390.000000  magneticMoment: [ Abs: 25.06004  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 3.41
+ElecMinimize: Iter:  90  F: -2735.572264150986484  |grad|_K:  7.674e-05  alpha:  1.417e-02  linmin: -3.447e-05  t[s]:   7147.55
+	FillingsUpdate:  mu: +0.085749651  nElectrons: 390.000000  magneticMoment: [ Abs: 25.22605  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 4.3
+ElecMinimize: Iter:  91  F: -2735.584083033196293  |grad|_K:  7.759e-05  alpha:  1.246e-02  linmin: -2.808e-05  t[s]:   7221.59
+	FillingsUpdate:  mu: +0.087330063  nElectrons: 390.000000  magneticMoment: [ Abs: 25.33467  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 5.34
+ElecMinimize: Iter:  92  F: -2735.595128784885674  |grad|_K:  7.757e-05  alpha:  1.139e-02  linmin: -1.365e-05  t[s]:   7293.67
+	FillingsUpdate:  mu: +0.090799701  nElectrons: 390.000000  magneticMoment: [ Abs: 25.36006  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 4.73
+ElecMinimize: Iter:  93  F: -2735.603646459356241  |grad|_K:  8.989e-05  alpha:  9.177e-03  linmin: -2.476e-05  t[s]:   7363.88
+	FillingsUpdate:  mu: +0.090003390  nElectrons: 390.000000  magneticMoment: [ Abs: 25.37560  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 6.95
+ElecMinimize: Iter:  94  F: -2735.613794666609920  |grad|_K:  7.218e-05  alpha:  7.691e-03  linmin:  3.541e-05  t[s]:   7436.13
+	FillingsUpdate:  mu: +0.103383179  nElectrons: 390.000000  magneticMoment: [ Abs: 25.36304  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 8.59
+	SubspaceRotationAdjust: resetting CG because factor has changed by 8.5867
+ElecMinimize: 	State modified externally: resetting search direction.
+ElecMinimize: Iter:  95  F: -2735.621635731850347  |grad|_K:  7.792e-05  alpha:  9.622e-03
+ElecMinimize: 	Predicted alpha/alphaT>3.000000, increasing alphaT to 2.886743e-02.
+ElecMinimize: 	Predicted alpha/alphaT>3.000000, increasing alphaT to 8.660230e-02.
+	FillingsUpdate:  mu: +0.140056945  nElectrons: 390.000000  magneticMoment: [ Abs: 24.91307  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 4.77
+ElecMinimize: Iter:  96  F: -2735.705516081274254  |grad|_K:  1.270e-04  alpha:  8.723e-02  linmin: -4.829e-04  t[s]:   7656.63
+	FillingsUpdate:  mu: +0.134816712  nElectrons: 390.000000  magneticMoment: [ Abs: 24.89745  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 2.91
+ElecMinimize: Iter:  97  F: -2735.712712446576461  |grad|_K:  9.178e-05  alpha:  1.365e-03  linmin: -4.046e-03  t[s]:   7730.33
+ElecMinimize: 	Wrong curvature in test step, increasing alphaT to 4.096174e-03.
+	FillingsUpdate:  mu: +0.125732644  nElectrons: 390.000000  magneticMoment: [ Abs: 24.89355  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 1.83
+ElecMinimize: Iter:  98  F: -2735.721038776000114  |grad|_K:  8.399e-05  alpha: -5.175e-03  linmin: -7.494e-03  t[s]:   7775.98
+	FillingsUpdate:  mu: +0.101751803  nElectrons: 390.000000  magneticMoment: [ Abs: 24.84625  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 1.03
+	SubspaceRotationAdjust: resetting CG because factor has changed by 0.119487
+ElecMinimize: 	State modified externally: resetting search direction.
+ElecMinimize: Iter:  99  F: -2735.724099285938337  |grad|_K:  4.293e-05  alpha:  1.347e-02
+ElecMinimize: 	Predicted alpha/alphaT>3.000000, increasing alphaT to 4.041718e-02.
+ElecMinimize: 	Predicted alpha/alphaT>3.000000, increasing alphaT to 1.212515e-01.
+	FillingsUpdate:  mu: +0.140275140  nElectrons: 390.000000  magneticMoment: [ Abs: 24.75267  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.581
+ElecMinimize: Iter: 100  F: -2735.755332474532679  |grad|_K:  7.283e-05  alpha:  1.793e-01  linmin:  1.921e-02  t[s]:   7996.53
+ElecMinimize: 	Bad step direction: g.d > 0.
+ElecMinimize: 	Undoing step.
+ElecMinimize: 	Step failed: resetting search direction.
+	FillingsUpdate:  mu: +0.140275140  nElectrons: 390.000000  magneticMoment: [ Abs: 24.75267  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.359
+ElecMinimize: Iter: 101  F: -2735.755332474532224  |grad|_K:  5.723e-05  alpha:  0.000e+00
+	FillingsUpdate:  mu: +0.089496008  nElectrons: 390.000000  magneticMoment: [ Abs: 24.76300  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.463
+ElecMinimize: Iter: 102  F: -2735.802608402697842  |grad|_K:  1.707e-05  alpha:  1.150e-01  linmin: -5.447e-03  t[s]:   8110.27
+ElecMinimize: 	Predicted alpha/alphaT>3.000000, increasing alphaT to 3.448544e-01.
+	FillingsUpdate:  mu: +0.097842255  nElectrons: 390.000000  magneticMoment: [ Abs: 24.62127  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.324
+ElecMinimize: Iter: 103  F: -2735.827406339851677  |grad|_K:  2.028e-05  alpha:  4.749e-01  linmin: -5.673e-03  t[s]:   8214.64
+	FillingsUpdate:  mu: +0.088413466  nElectrons: 390.000000  magneticMoment: [ Abs: 24.39673  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.254
+ElecMinimize: Iter: 104  F: -2735.844152231746648  |grad|_K:  1.266e-05  alpha:  2.339e-01  linmin:  3.303e-03  t[s]:   8288.29
+	FillingsUpdate:  mu: +0.084503847  nElectrons: 390.000000  magneticMoment: [ Abs: 24.17374  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.31
+ElecMinimize: Iter: 105  F: -2735.852823834365154  |grad|_K:  1.032e-05  alpha:  3.902e-01  linmin:  1.368e-04  t[s]:   8361.30
+	FillingsUpdate:  mu: +0.091677280  nElectrons: 390.000000  magneticMoment: [ Abs: 23.98203  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.327
+ElecMinimize: Iter: 106  F: -2735.859364568870660  |grad|_K:  7.228e-06  alpha:  3.901e-01  linmin:  2.829e-04  t[s]:   8436.42
+	FillingsUpdate:  mu: +0.089856314  nElectrons: 390.000000  magneticMoment: [ Abs: 23.88550  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.358
+ElecMinimize: Iter: 107  F: -2735.861808524606204  |grad|_K:  4.368e-06  alpha:  2.994e-01  linmin:  3.163e-05  t[s]:   8511.40
+	FillingsUpdate:  mu: +0.087581308  nElectrons: 390.000000  magneticMoment: [ Abs: 23.83159  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.395
+ElecMinimize: Iter: 108  F: -2735.862856361770810  |grad|_K:  3.576e-06  alpha:  3.477e-01  linmin:  8.361e-06  t[s]:   8583.97
+	FillingsUpdate:  mu: +0.088457005  nElectrons: 390.000000  magneticMoment: [ Abs: 23.77535  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.423
+ElecMinimize: Iter: 109  F: -2735.863779241483371  |grad|_K:  2.988e-06  alpha:  4.566e-01  linmin:  1.767e-05  t[s]:   8658.10
+	FillingsUpdate:  mu: +0.088789468  nElectrons: 390.000000  magneticMoment: [ Abs: 23.73917  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.475
+ElecMinimize: Iter: 110  F: -2735.864215332419917  |grad|_K:  2.136e-06  alpha:  3.095e-01  linmin:  7.301e-06  t[s]:   8729.66
+	FillingsUpdate:  mu: +0.088649920  nElectrons: 390.000000  magneticMoment: [ Abs: 23.70845  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.543
+ElecMinimize: Iter: 111  F: -2735.864449921546111  |grad|_K:  1.627e-06  alpha:  3.253e-01  linmin:  5.382e-06  t[s]:   8804.45
+	FillingsUpdate:  mu: +0.088024728  nElectrons: 390.000000  magneticMoment: [ Abs: 23.67961  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.614
+ElecMinimize: Iter: 112  F: -2735.864595450835168  |grad|_K:  1.269e-06  alpha:  3.482e-01  linmin:  2.874e-05  t[s]:   8876.80
+	FillingsUpdate:  mu: +0.088694216  nElectrons: 390.000000  magneticMoment: [ Abs: 23.65536  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.718
+ElecMinimize: Iter: 113  F: -2735.864681822622515  |grad|_K:  1.019e-06  alpha:  3.407e-01  linmin: -8.643e-08  t[s]:   8947.46
+	FillingsUpdate:  mu: +0.088609467  nElectrons: 390.000000  magneticMoment: [ Abs: 23.63192  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.846
+ElecMinimize: Iter: 114  F: -2735.864735963271869  |grad|_K:  8.057e-07  alpha:  3.299e-01  linmin: -3.858e-06  t[s]:   9020.35
+	FillingsUpdate:  mu: +0.088775927  nElectrons: 390.000000  magneticMoment: [ Abs: 23.61176  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.986
+ElecMinimize: Iter: 115  F: -2735.864768249519329  |grad|_K:  6.408e-07  alpha:  3.142e-01  linmin:  2.009e-06  t[s]:   9089.92
+	FillingsUpdate:  mu: +0.088943124  nElectrons: 390.000000  magneticMoment: [ Abs: 23.59805  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 1.1
+ElecMinimize: Iter: 116  F: -2735.864787902086846  |grad|_K:  4.985e-07  alpha:  3.027e-01  linmin: -5.217e-07  t[s]:   9161.96
+	FillingsUpdate:  mu: +0.088763958  nElectrons: 390.000000  magneticMoment: [ Abs: 23.59152  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 1.19
+ElecMinimize: Iter: 117  F: -2735.864800797434327  |grad|_K:  4.293e-07  alpha:  3.280e-01  linmin:  4.192e-06  t[s]:   9237.08
+	FillingsUpdate:  mu: +0.089269004  nElectrons: 390.000000  magneticMoment: [ Abs: 23.59184  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 1.07
+ElecMinimize: Iter: 118  F: -2735.864808525705939  |grad|_K:  4.131e-07  alpha:  2.652e-01  linmin:  4.151e-06  t[s]:   9310.32
+	FillingsUpdate:  mu: +0.088608518  nElectrons: 390.000000  magneticMoment: [ Abs: 23.59258  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.835
+ElecMinimize: Iter: 119  F: -2735.864811995528271  |grad|_K:  3.509e-07  alpha:  1.293e-01  linmin:  1.013e-05  t[s]:   9383.45
+	FillingsUpdate:  mu: +0.088950043  nElectrons: 390.000000  magneticMoment: [ Abs: 23.59463  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.865
+ElecMinimize: Iter: 120  F: -2735.864815940266908  |grad|_K:  2.616e-07  alpha:  2.029e-01  linmin: -9.474e-06  t[s]:   9456.44
+	FillingsUpdate:  mu: +0.089026283  nElectrons: 390.000000  magneticMoment: [ Abs: 23.59801  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.944
+ElecMinimize: Iter: 121  F: -2735.864819261096727  |grad|_K:  2.497e-07  alpha:  3.062e-01  linmin:  6.973e-06  t[s]:   9528.40
+	FillingsUpdate:  mu: +0.088656568  nElectrons: 390.000000  magneticMoment: [ Abs: 23.60158  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.841
+ElecMinimize: Iter: 122  F: -2735.864821838231819  |grad|_K:  2.798e-07  alpha:  2.620e-01  linmin: -3.066e-06  t[s]:   9599.91
+	FillingsUpdate:  mu: +0.089091353  nElectrons: 390.000000  magneticMoment: [ Abs: 23.60520  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.722
+ElecMinimize: Iter: 123  F: -2735.864824010438497  |grad|_K:  2.430e-07  alpha:  1.752e-01  linmin: -2.505e-06  t[s]:   9669.42
+	FillingsUpdate:  mu: +0.088947064  nElectrons: 390.000000  magneticMoment: [ Abs: 23.61059  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.859
+ElecMinimize: Iter: 124  F: -2735.864827230753235  |grad|_K:  2.439e-07  alpha:  3.455e-01  linmin:  6.632e-06  t[s]:   9741.36
+	FillingsUpdate:  mu: +0.088602904  nElectrons: 390.000000  magneticMoment: [ Abs: 23.61471  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.81
+ElecMinimize: Iter: 125  F: -2735.864830558025460  |grad|_K:  3.102e-07  alpha:  3.550e-01  linmin:  1.785e-06  t[s]:   9812.70
+	FillingsUpdate:  mu: +0.089140733  nElectrons: 390.000000  magneticMoment: [ Abs: 23.61721  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.691
+ElecMinimize: Iter: 126  F: -2735.864833599850044  |grad|_K:  2.984e-07  alpha:  2.005e-01  linmin: -2.645e-09  t[s]:   9882.79
+	FillingsUpdate:  mu: +0.088837346  nElectrons: 390.000000  magneticMoment: [ Abs: 23.61883  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.795
+ElecMinimize: Iter: 127  F: -2735.864838320606395  |grad|_K:  3.147e-07  alpha:  3.368e-01  linmin:  1.131e-05  t[s]:   9954.06
+	FillingsUpdate:  mu: +0.088417019  nElectrons: 390.000000  magneticMoment: [ Abs: 23.61951  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.829
+ElecMinimize: Iter: 128  F: -2735.864843800438393  |grad|_K:  3.734e-07  alpha:  3.542e-01  linmin:  2.373e-05  t[s]:  10025.75
+	FillingsUpdate:  mu: +0.088995392  nElectrons: 390.000000  magneticMoment: [ Abs: 23.61931  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.75
+ElecMinimize: Iter: 129  F: -2735.864848842078572  |grad|_K:  3.912e-07  alpha:  2.338e-01  linmin: -2.841e-06  t[s]:  10095.45
+	FillingsUpdate:  mu: +0.088559329  nElectrons: 390.000000  magneticMoment: [ Abs: 23.61767  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.794
+ElecMinimize: Iter: 130  F: -2735.864854812829435  |grad|_K:  3.443e-07  alpha:  2.464e-01  linmin:  1.017e-05  t[s]:  10164.97
+	FillingsUpdate:  mu: +0.088267839  nElectrons: 390.000000  magneticMoment: [ Abs: 23.61476  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.938
+ElecMinimize: Iter: 131  F: -2735.864861175422902  |grad|_K:  3.684e-07  alpha:  3.461e-01  linmin:  3.536e-05  t[s]:  10238.57
+	FillingsUpdate:  mu: +0.088763949  nElectrons: 390.000000  magneticMoment: [ Abs: 23.61192  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.948
+ElecMinimize: Iter: 132  F: -2735.864865982724950  |grad|_K:  4.001e-07  alpha:  2.316e-01  linmin: -3.523e-06  t[s]:  10310.05
+	FillingsUpdate:  mu: +0.088217464  nElectrons: 390.000000  magneticMoment: [ Abs: 23.60819  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.981
+ElecMinimize: Iter: 133  F: -2735.864871529455741  |grad|_K:  3.655e-07  alpha:  2.180e-01  linmin:  1.935e-06  t[s]:  10383.91
+	FillingsUpdate:  mu: +0.088375154  nElectrons: 390.000000  magneticMoment: [ Abs: 23.60480  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 1.19
+ElecMinimize: Iter: 134  F: -2735.864878266123014  |grad|_K:  3.597e-07  alpha:  3.172e-01  linmin: -1.132e-05  t[s]:  10455.54
+	FillingsUpdate:  mu: +0.088485581  nElectrons: 390.000000  magneticMoment: [ Abs: 23.60282  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 1.33
+ElecMinimize: Iter: 135  F: -2735.864885233983387  |grad|_K:  3.884e-07  alpha:  3.324e-01  linmin: -2.192e-06  t[s]:  10528.01
+	FillingsUpdate:  mu: +0.088046517  nElectrons: 390.000000  magneticMoment: [ Abs: 23.60197  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 1.25
+ElecMinimize: Iter: 136  F: -2735.864891381387224  |grad|_K:  4.874e-07  alpha:  2.568e-01  linmin: -3.758e-06  t[s]:  10599.02
+	FillingsUpdate:  mu: +0.088812166  nElectrons: 390.000000  magneticMoment: [ Abs: 23.60245  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.992
+ElecMinimize: Iter: 137  F: -2735.864897346215912  |grad|_K:  5.039e-07  alpha:  1.612e-01  linmin: -2.560e-06  t[s]:  10672.99
+	FillingsUpdate:  mu: +0.088012487  nElectrons: 390.000000  magneticMoment: [ Abs: 23.60321  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.8
+ElecMinimize: Iter: 138  F: -2735.864905401938358  |grad|_K:  5.339e-07  alpha:  2.046e-01  linmin:  5.190e-05  t[s]:  10745.16
+	FillingsUpdate:  mu: +0.088042669  nElectrons: 390.000000  magneticMoment: [ Abs: 23.60255  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 1.06
+ElecMinimize: Iter: 139  F: -2735.864916411196191  |grad|_K:  5.676e-07  alpha:  2.690e-01  linmin:  3.079e-05  t[s]:  10818.98
+	FillingsUpdate:  mu: +0.088345309  nElectrons: 390.000000  magneticMoment: [ Abs: 23.60072  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 1.18
+ElecMinimize: Iter: 140  F: -2735.864925833694997  |grad|_K:  5.761e-07  alpha:  1.887e-01  linmin: -1.253e-05  t[s]:  10891.60
+	FillingsUpdate:  mu: +0.088009370  nElectrons: 390.000000  magneticMoment: [ Abs: 23.59900  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 1.46
+ElecMinimize: Iter: 141  F: -2735.864934495639773  |grad|_K:  5.884e-07  alpha:  1.587e-01  linmin:  1.390e-05  t[s]:  10965.83
+	FillingsUpdate:  mu: +0.088025043  nElectrons: 390.000000  magneticMoment: [ Abs: 23.59772  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 1.6
+ElecMinimize: Iter: 142  F: -2735.864941673770318  |grad|_K:  6.384e-07  alpha:  1.318e-01  linmin:  5.901e-06  t[s]:  11039.89
+	FillingsUpdate:  mu: +0.088343837  nElectrons: 390.000000  magneticMoment: [ Abs: 23.59650  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 1.66
+ElecMinimize: Iter: 143  F: -2735.864948072794959  |grad|_K:  6.418e-07  alpha:  9.989e-02  linmin: -2.862e-06  t[s]:  11108.51
+	FillingsUpdate:  mu: +0.088260633  nElectrons: 390.000000  magneticMoment: [ Abs: 23.59518  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 1.86
+ElecMinimize: Iter: 144  F: -2735.864954321051300  |grad|_K:  6.146e-07  alpha:  9.531e-02  linmin:  3.519e-06  t[s]:  11181.42
+	FillingsUpdate:  mu: +0.088063444  nElectrons: 390.000000  magneticMoment: [ Abs: 23.59455  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 1.79
+ElecMinimize: Iter: 145  F: -2735.864959906545664  |grad|_K:  6.508e-07  alpha:  9.414e-02  linmin:  4.826e-06  t[s]:  11250.45
+	FillingsUpdate:  mu: +0.088285238  nElectrons: 390.000000  magneticMoment: [ Abs: 23.59502  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 2.03
+ElecMinimize: Iter: 146  F: -2735.864965203553311  |grad|_K:  6.003e-07  alpha:  7.982e-02  linmin: -1.675e-06  t[s]:  11322.72
+	FillingsUpdate:  mu: +0.088551559  nElectrons: 390.000000  magneticMoment: [ Abs: 23.59644  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 2.09
+ElecMinimize: Iter: 147  F: -2735.864970222575266  |grad|_K:  6.219e-07  alpha:  8.770e-02  linmin: -4.945e-06  t[s]:  11393.51
+	FillingsUpdate:  mu: +0.088387538  nElectrons: 390.000000  magneticMoment: [ Abs: 23.59828  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 2.25
+ElecMinimize: Iter: 148  F: -2735.864975226535535  |grad|_K:  6.036e-07  alpha:  8.089e-02  linmin: -5.014e-06  t[s]:  11466.44
+	FillingsUpdate:  mu: +0.088437638  nElectrons: 390.000000  magneticMoment: [ Abs: 23.60055  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 2.58
+ElecMinimize: Iter: 149  F: -2735.864979947943084  |grad|_K:  5.767e-07  alpha:  8.116e-02  linmin: -1.424e-05  t[s]:  11540.05
+	FillingsUpdate:  mu: +0.088764312  nElectrons: 390.000000  magneticMoment: [ Abs: 23.60346  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 2.84
+ElecMinimize: Iter: 150  F: -2735.864984224122054  |grad|_K:  5.695e-07  alpha:  7.936e-02  linmin: -1.509e-05  t[s]:  11609.85
+	FillingsUpdate:  mu: +0.088591688  nElectrons: 390.000000  magneticMoment: [ Abs: 23.60683  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 3.64
+ElecMinimize: Iter: 151  F: -2735.864988006532712  |grad|_K:  5.192e-07  alpha:  7.182e-02  linmin: -5.637e-06  t[s]:  11683.06
+	FillingsUpdate:  mu: +0.088785057  nElectrons: 390.000000  magneticMoment: [ Abs: 23.61037  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 4.78
+ElecMinimize: Iter: 152  F: -2735.864991364297111  |grad|_K:  4.744e-07  alpha:  7.773e-02  linmin: -1.130e-05  t[s]:  11754.51
+	FillingsUpdate:  mu: +0.089001480  nElectrons: 390.000000  magneticMoment: [ Abs: 23.61272  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 5.37
+ElecMinimize: Iter: 153  F: -2735.864994038034638  |grad|_K:  4.758e-07  alpha:  7.345e-02  linmin: -5.981e-06  t[s]:  11827.42
+	FillingsUpdate:  mu: +0.088680238  nElectrons: 390.000000  magneticMoment: [ Abs: 23.61397  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 4.46
+ElecMinimize: Iter: 154  F: -2735.864995821470984  |grad|_K:  5.263e-07  alpha:  4.901e-02  linmin: -3.770e-07  t[s]:  11901.46
+	FillingsUpdate:  mu: +0.089044905  nElectrons: 390.000000  magneticMoment: [ Abs: 23.61495  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 4.36
+ElecMinimize: Iter: 155  F: -2735.864997324765227  |grad|_K:  4.447e-07  alpha:  3.426e-02  linmin: -8.865e-08  t[s]:  11972.01
+	FillingsUpdate:  mu: +0.088994241  nElectrons: 390.000000  magneticMoment: [ Abs: 23.61560  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 5.55
+ElecMinimize: Iter: 156  F: -2735.864999327791338  |grad|_K:  3.885e-07  alpha:  6.403e-02  linmin:  1.546e-07  t[s]:  12043.79
+	FillingsUpdate:  mu: +0.088851743  nElectrons: 390.000000  magneticMoment: [ Abs: 23.61539  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 4.76
+ElecMinimize: Iter: 157  F: -2735.865001320071769  |grad|_K:  4.500e-07  alpha:  8.357e-02  linmin:  1.097e-06  t[s]:  12115.05
+	FillingsUpdate:  mu: +0.089170656  nElectrons: 390.000000  magneticMoment: [ Abs: 23.61494  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 4.07
+ElecMinimize: Iter: 158  F: -2735.865002321120755  |grad|_K:  4.375e-07  alpha:  3.111e-02  linmin: -2.703e-06  t[s]:  12187.66
+	FillingsUpdate:  mu: +0.088975769  nElectrons: 390.000000  magneticMoment: [ Abs: 23.61360  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 5.61
+ElecMinimize: Iter: 159  F: -2735.865003825902477  |grad|_K:  3.275e-07  alpha:  4.944e-02  linmin:  7.843e-07  t[s]:  12259.66
+	FillingsUpdate:  mu: +0.088850713  nElectrons: 390.000000  magneticMoment: [ Abs: 23.61235  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 4.98
+ElecMinimize: Iter: 160  F: -2735.865004943175791  |grad|_K:  3.785e-07  alpha:  6.595e-02  linmin: -8.376e-07  t[s]:  12331.70
+	FillingsUpdate:  mu: +0.089116059  nElectrons: 390.000000  magneticMoment: [ Abs: 23.61174  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 4.5
+ElecMinimize: Iter: 161  F: -2735.865005571862184  |grad|_K:  3.362e-07  alpha:  2.755e-02  linmin: -1.474e-06  t[s]:  12404.73
+	FillingsUpdate:  mu: +0.088986802  nElectrons: 390.000000  magneticMoment: [ Abs: 23.61078  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 5.7
+ElecMinimize: Iter: 162  F: -2735.865006458419430  |grad|_K:  2.737e-07  alpha:  4.946e-02  linmin:  5.061e-07  t[s]:  12476.80
+	FillingsUpdate:  mu: +0.088832560  nElectrons: 390.000000  magneticMoment: [ Abs: 23.61008  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 4.52
+ElecMinimize: Iter: 163  F: -2735.865007136682379  |grad|_K:  3.289e-07  alpha:  5.733e-02  linmin: -4.678e-07  t[s]:  12550.85
+	FillingsUpdate:  mu: +0.089056012  nElectrons: 390.000000  magneticMoment: [ Abs: 23.60993  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 4.3
+ElecMinimize: Iter: 164  F: -2735.865007585655349  |grad|_K:  2.682e-07  alpha:  2.608e-02  linmin: -1.270e-06  t[s]:  12625.59
+	FillingsUpdate:  mu: +0.089039341  nElectrons: 390.000000  magneticMoment: [ Abs: 23.61007  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 5.32
+ElecMinimize: Iter: 165  F: -2735.865008257548197  |grad|_K:  2.398e-07  alpha:  5.890e-02  linmin:  2.524e-08  t[s]:  12698.50
+ElecMinimize: Converged (|Delta F|<1.000000e-06 for 5 iters).
+Setting wave functions to eigenvectors of Hamiltonian
+
+# Ionic positions in lattice coordinates:
+ion Ni   0.000000000000000   0.000000000000000   0.150000000000000 1
+ion Ni   0.500000000000000   0.000000000000000   0.150000000000000 1
+ion Ni   0.000000000000000   0.500000000000000   0.150000000000000 1
+ion Ni   0.500000000000000   0.500000000000000   0.150000000000000 1
+ion Ni   0.250000000000000   0.250000000000000   0.050000000000000 1
+ion Ni   0.250000000000000   0.750000000000000   0.050000000000000 1
+ion Ni  -0.250000000000000   0.250000000000000   0.050000000000000 1
+ion Ni  -0.250000000000000   0.750000000000000   0.050000000000000 1
+ion Ni   0.000000000000000   0.000000000000000  -0.050000000000000 0
+ion Ni   0.500000000000000   0.000000000000000  -0.050000000000000 0
+ion Ni   0.000000000000000   0.500000000000000  -0.050000000000000 0
+ion Ni   0.500000000000000   0.500000000000000  -0.050000000000000 0
+ion Ni   0.250000000000000   0.250000000000000  -0.150000000000000 0
+ion Ni   0.250000000000000   0.750000000000000  -0.150000000000000 0
+ion Ni  -0.250000000000000   0.250000000000000  -0.150000000000000 0
+ion Ni  -0.250000000000000   0.750000000000000  -0.150000000000000 0
+ion O   0.250000000000000   0.250000000000000   0.150000000000000 1
+ion O   0.250000000000000   0.750000000000000   0.150000000000000 1
+ion O  -0.250000000000000   0.250000000000000   0.150000000000000 1
+ion O  -0.250000000000000   0.750000000000000   0.150000000000000 1
+ion O   0.000000000000000   0.000000000000000   0.050000000000000 1
+ion O   0.500000000000000   0.000000000000000   0.050000000000000 1
+ion O   0.000000000000000   0.500000000000000   0.050000000000000 1
+ion O   0.500000000000000   0.500000000000000   0.050000000000000 1
+ion O   0.250000000000000   0.250000000000000  -0.050000000000000 0
+ion O   0.250000000000000   0.750000000000000  -0.050000000000000 0
+ion O  -0.250000000000000   0.250000000000000  -0.050000000000000 0
+ion O  -0.250000000000000   0.750000000000000  -0.050000000000000 0
+ion O   0.000000000000000   0.000000000000000  -0.150000000000000 0
+ion O   0.500000000000000   0.000000000000000  -0.150000000000000 0
+ion O   0.000000000000000   0.500000000000000  -0.150000000000000 0
+ion O   0.500000000000000   0.500000000000000  -0.150000000000000 0
+ion O   0.000000000000000   0.000000000000000   0.230000000000000 1
+
+# Forces in Lattice coordinates:
+force Ni   0.018082626569932  -0.007024584770059  -0.593987242728547 1
+force Ni   0.000602419095301   0.000019841550506  -0.225900958407326 1
+force Ni  -0.002059711345272   0.000042800426771  -0.264716207129732 1
+force Ni  -0.002655741564474  -0.000094074882398  -0.294721526112654 1
+force Ni   0.014605184126528   0.013249098903716   0.185613069509429 1
+force Ni   0.016692767915424  -0.015431478621838   0.193225047743033 1
+force Ni  -0.010024690645943   0.010180033738963   0.159759070580841 1
+force Ni  -0.009323616424213  -0.009294981596421   0.167983099414049 1
+force Ni  -0.003814535006761  -0.000568158881919  -0.294167054165718 0
+force Ni  -0.000115869701647  -0.000442681497615  -0.161201319779070 0
+force Ni   0.000852217237797   0.000399235836734  -0.162296380745213 0
+force Ni   0.001417472655780   0.000394724221163  -0.152672075661571 0
+force Ni   0.003083950207297   0.001732865922341   0.355615304417392 0
+force Ni   0.002960872899556  -0.001768160464637   0.355494646433809 0
+force Ni   0.000672074852562   0.001077390431816   0.356269472709646 0
+force Ni   0.000881537433336  -0.001109110297217   0.356758531601595 0
+force O   0.003921818056102   0.018441700225426  -0.356745276010026 1
+force O   0.004224608010529  -0.020550916583469  -0.357302705114847 1
+force O  -0.018539526796644   0.022838459496574  -0.345331240855380 1
+force O  -0.018350640972934  -0.020257627956714  -0.357301610262702 1
+force O  -0.007623394653829   0.004791893071028   0.483123787560889 1
+force O   0.003757945291250   0.000233857904130  -0.086430875154335 1
+force O   0.005717458043273  -0.000347312597357  -0.094261135647689 1
+force O  -0.000777148023579  -0.000757588746689  -0.104982038414703 1
+force O  -0.005482762591857  -0.000183442759540   0.104075634147284 0
+force O  -0.005872894989194   0.000525339840941   0.102423522497029 0
+force O  -0.006232887799665   0.000165758184995   0.105389436359511 0
+force O  -0.006443955949626  -0.000369454328360   0.102248519630189 0
+force O   0.006574299125800  -0.000133703650188   0.063854651569111 0
+force O   0.008867851668297  -0.000082896156313   0.043543297062659 0
+force O   0.004890286744545   0.000279937077623   0.044093825788977 0
+force O   0.008429635267730   0.000217948113597   0.034341305955751 0
+force O  -0.009295387311729   0.004278352424185   0.831520689067169 1
+
+# Energy components:
+   Eewald =     7284.5530789474723861
+       EH =     9761.1343204710574355
+     Eloc =   -19859.7074499915142951
+      Enl =     -851.9675738943799388
+   Epulay =        0.0007326944676329
+      Exc =     -301.6729339454678325
+       KE =     1229.5717746413756686
+        U =        2.2235576546310756
+-------------------------------------
+     Etot =    -2735.8644934223575547
+       TS =        0.0005148351907017
+-------------------------------------
+        F =    -2735.8650082575481974
+
+IonicMinimize: Iter:   0  F: -2735.865008257548197  |grad|_K:  5.265e-03  t[s]:  12706.94
+
+#--- Lowdin population analysis ---
+# oxidation-state Ni +3.541 +3.768 +3.754 +3.696 +3.365 +3.368 +3.367 +3.366 +3.379 +3.372 +3.372 +3.371 +3.727 +3.728 +3.727 +3.727
+# magnetic-moments Ni +0.357 -1.019 +0.998 -0.937 +0.899 +0.903 -0.903 -0.902 -0.929 +0.909 -0.909 +0.909 -1.010 -1.010 +1.008 +1.008
+# oxidation-state O -0.575 -0.578 -0.581 -0.578 -0.577 -0.581 -0.580 -0.579 -0.581 -0.581 -0.580 -0.581 -0.634 -0.637 -0.637 -0.637 -0.260
+# magnetic-moments O +0.138 +0.147 -0.145 -0.153 -0.064 -0.043 +0.046 -0.034 -0.055 -0.054 +0.049 +0.050 -0.152 +0.136 -0.140 +0.133 +0.872
+
+
+-------- Electronic minimization -----------
+	FillingsUpdate:  mu: +0.101991121  nElectrons: 390.000000  magneticMoment: [ Abs: 23.60964  Tot: +0.00000 ]
+ElecMinimize: Iter:   0  F: -2735.755788406157990  |grad|_K:  7.141e-05  alpha:  1.000e+00
+	FillingsUpdate:  mu: +0.087577129  nElectrons: 390.000000  magneticMoment: [ Abs: 23.61292  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 5.18
+ElecMinimize: Iter:   1  F: -2735.790047011596926  |grad|_K:  5.559e-05  alpha:  2.654e-02  linmin: -3.349e-03  t[s]:  12802.44
+ElecMinimize: 	Predicted alpha/alphaT>3.000000, increasing alphaT to 7.963479e-02.
+	FillingsUpdate:  mu: +0.106944361  nElectrons: 390.000000  magneticMoment: [ Abs: 23.63773  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 2.77
+ElecMinimize: Iter:   2  F: -2735.852436526338806  |grad|_K:  4.351e-05  alpha:  7.973e-02  linmin:  1.286e-04  t[s]:  12904.20
+	FillingsUpdate:  mu: +0.087916151  nElectrons: 390.000000  magneticMoment: [ Abs: 23.63778  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 1.82
+ElecMinimize: Iter:   3  F: -2735.857877747168459  |grad|_K:  1.921e-05  alpha:  2.309e-02  linmin:  1.227e-03  t[s]:  12975.91
+	FillingsUpdate:  mu: +0.104335835  nElectrons: 390.000000  magneticMoment: [ Abs: 23.61383  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 1.37
+ElecMinimize: Iter:   4  F: -2735.860588273303165  |grad|_K:  1.455e-05  alpha:  6.073e-02  linmin:  1.919e-03  t[s]:  13048.91
+	FillingsUpdate:  mu: +0.106587391  nElectrons: 390.000000  magneticMoment: [ Abs: 23.61584  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.943
+ElecMinimize: Iter:   5  F: -2735.862792527013880  |grad|_K:  1.147e-05  alpha:  8.546e-02  linmin: -2.001e-04  t[s]:  13119.91
+	FillingsUpdate:  mu: +0.090875932  nElectrons: 390.000000  magneticMoment: [ Abs: 23.62241  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.806
+ElecMinimize: Iter:   6  F: -2735.864353550616670  |grad|_K:  6.453e-06  alpha:  7.381e-02  linmin: -7.381e-05  t[s]:  13193.08
+	FillingsUpdate:  mu: +0.086397906  nElectrons: 390.000000  magneticMoment: [ Abs: 23.62411  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.672
+	SubspaceRotationAdjust: resetting CG because factor has changed by 0.12628
+ElecMinimize: 	State modified externally: resetting search direction.
+ElecMinimize: Iter:   7  F: -2735.865320582382537  |grad|_K:  4.795e-06  alpha:  1.461e-01
+	FillingsUpdate:  mu: +0.092027250  nElectrons: 390.000000  magneticMoment: [ Abs: 23.62350  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.509
+ElecMinimize: Iter:   8  F: -2735.865873331460079  |grad|_K:  2.264e-06  alpha:  1.523e-01  linmin:  1.098e-03  t[s]:  13351.06
+	FillingsUpdate:  mu: +0.088098300  nElectrons: 390.000000  magneticMoment: [ Abs: 23.62283  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.461
+ElecMinimize: Iter:   9  F: -2735.866017381738857  |grad|_K:  1.373e-06  alpha:  1.807e-01  linmin: -6.331e-04  t[s]:  13425.37
+	FillingsUpdate:  mu: +0.088443728  nElectrons: 390.000000  magneticMoment: [ Abs: 23.62414  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.492
+ElecMinimize: Iter:  10  F: -2735.866119997539954  |grad|_K:  9.759e-07  alpha:  3.329e-01  linmin:  4.594e-06  t[s]:  13499.11
+	FillingsUpdate:  mu: +0.089112092  nElectrons: 390.000000  magneticMoment: [ Abs: 23.62333  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.606
+ElecMinimize: Iter:  11  F: -2735.866176188178997  |grad|_K:  7.812e-07  alpha:  3.733e-01  linmin:  1.200e-05  t[s]:  13570.25
+	FillingsUpdate:  mu: +0.087946605  nElectrons: 390.000000  magneticMoment: [ Abs: 23.62266  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.513
+ElecMinimize: Iter:  12  F: -2735.866201450588505  |grad|_K:  5.479e-07  alpha:  2.631e-01  linmin: -7.353e-06  t[s]:  13640.98
+	FillingsUpdate:  mu: +0.088881275  nElectrons: 390.000000  magneticMoment: [ Abs: 23.62277  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.37
+ElecMinimize: Iter:  13  F: -2735.866210893592779  |grad|_K:  3.287e-07  alpha:  1.981e-01  linmin:  1.468e-05  t[s]:  13714.52
+	FillingsUpdate:  mu: +0.088546432  nElectrons: 390.000000  magneticMoment: [ Abs: 23.62255  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.405
+ElecMinimize: Iter:  14  F: -2735.866216024509413  |grad|_K:  1.955e-07  alpha:  3.007e-01  linmin: -2.319e-06  t[s]:  13785.94
+	FillingsUpdate:  mu: +0.088422173  nElectrons: 390.000000  magneticMoment: [ Abs: 23.62234  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.428
+ElecMinimize: Iter:  15  F: -2735.866217906840120  |grad|_K:  1.343e-07  alpha:  3.111e-01  linmin: -1.500e-07  t[s]:  13856.45
+	FillingsUpdate:  mu: +0.088613700  nElectrons: 390.000000  magneticMoment: [ Abs: 23.62224  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.409
+ElecMinimize: Iter:  16  F: -2735.866218726362604  |grad|_K:  9.381e-08  alpha:  2.873e-01  linmin:  2.262e-06  t[s]:  13927.64
+	FillingsUpdate:  mu: +0.088498235  nElectrons: 390.000000  magneticMoment: [ Abs: 23.62209  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.43
+ElecMinimize: Iter:  17  F: -2735.866219197508599  |grad|_K:  7.436e-08  alpha:  3.386e-01  linmin: -1.537e-06  t[s]:  13998.30
+	FillingsUpdate:  mu: +0.088551155  nElectrons: 390.000000  magneticMoment: [ Abs: 23.62195  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.506
+ElecMinimize: Iter:  18  F: -2735.866219562075457  |grad|_K:  7.200e-08  alpha:  4.168e-01  linmin:  1.369e-06  t[s]:  14070.68
+	FillingsUpdate:  mu: +0.088581436  nElectrons: 390.000000  magneticMoment: [ Abs: 23.62181  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.589
+ElecMinimize: Iter:  19  F: -2735.866219932777767  |grad|_K:  7.299e-08  alpha:  4.522e-01  linmin:  8.852e-07  t[s]:  14144.19
+	FillingsUpdate:  mu: +0.088477886  nElectrons: 390.000000  magneticMoment: [ Abs: 23.62165  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.619
+ElecMinimize: Iter:  20  F: -2735.866220273013369  |grad|_K:  7.847e-08  alpha:  4.040e-01  linmin:  1.594e-07  t[s]:  14216.29
+ElecMinimize: Converged (|Delta F|<1.000000e-06 for 5 iters).
+Setting wave functions to eigenvectors of Hamiltonian
+
+# Ionic positions in lattice coordinates:
+ion Ni   0.000145605936847  -0.000056563754300   0.149617365016666 1
+ion Ni   0.500004850832726   0.000000159769243   0.149854479013626 1
+ion Ni  -0.000016585322873   0.500000344639990   0.149829474988321 1
+ion Ni   0.499978615289265   0.499999242484971   0.149810146147728 1
+ion Ni   0.250117604680346   0.250106685135082   0.050119568315023 1
+ion Ni   0.250134414439268   0.749875741784913   0.050124471802767 1
+ion Ni  -0.250080721374600   0.250081972236941   0.050102913673749 1
+ion Ni  -0.250075076145548   0.749925154429414   0.050108211432538 1
+ion Ni   0.000000000000000   0.000000000000000  -0.050000000000000 0
+ion Ni   0.500000000000000   0.000000000000000  -0.050000000000000 0
+ion Ni   0.000000000000000   0.500000000000000  -0.050000000000000 0
+ion Ni   0.500000000000000   0.500000000000000  -0.050000000000000 0
+ion Ni   0.250000000000000   0.250000000000000  -0.150000000000000 0
+ion Ni   0.250000000000000   0.750000000000000  -0.150000000000000 0
+ion Ni  -0.250000000000000   0.250000000000000  -0.150000000000000 0
+ion Ni  -0.250000000000000   0.750000000000000  -0.150000000000000 0
+ion O   0.250031579482659   0.250148497289815   0.149770191659145 1
+ion O   0.250034017624863   0.749834518760279   0.149769832574200 1
+ion O  -0.250149285014403   0.250183901120685   0.149777544357716 1
+ion O  -0.250147764057410   0.749836880395360   0.149769833279482 1
+ion O  -0.000061385524732   0.000038585549349   0.050311218910279 1
+ion O   0.500030259937219   0.000001883083693   0.049944322917909 1
+ion O   0.000046038435376   0.499997203350082   0.049939278816996 1
+ion O   0.499993742205226   0.499993899701530   0.049932372620774 1
+ion O   0.250000000000000   0.250000000000000  -0.050000000000000 0
+ion O   0.250000000000000   0.750000000000000  -0.050000000000000 0
+ion O  -0.250000000000000   0.250000000000000  -0.050000000000000 0
+ion O  -0.250000000000000   0.750000000000000  -0.050000000000000 0
+ion O   0.000000000000000   0.000000000000000  -0.150000000000000 0
+ion O   0.500000000000000   0.000000000000000  -0.150000000000000 0
+ion O   0.000000000000000   0.500000000000000  -0.150000000000000 0
+ion O   0.500000000000000   0.500000000000000  -0.150000000000000 0
+ion O  -0.000074848837510   0.000034450388636   0.230535649391293 1
+
+# Forces in Lattice coordinates:
+force Ni   0.015412349541578  -0.006241253712695  -0.229139934249020 1
+force Ni   0.000470288907820   0.000166270197297  -0.202610069975361 1
+force Ni  -0.002129006936270  -0.000336057472065  -0.248061140532492 1
+force Ni  -0.002898247880245  -0.000364463050992  -0.272124459953297 1
+force Ni   0.016099347733892   0.013696142053012   0.090519596945848 1
+force Ni   0.017497008966078  -0.015310151109508   0.093039636283056 1
+force Ni  -0.010999869293577   0.011296344546100   0.065937826074421 1
+force Ni  -0.010402681518755  -0.010578332631899   0.075539367494418 1
+force Ni  -0.003227572796013  -0.000189263519461  -0.299632943328269 0
+force Ni  -0.000745363463063  -0.000012466174047  -0.181306466122377 0
+force Ni   0.001584435476826   0.000001760244748  -0.182129873032199 0
+force Ni   0.000829134148616  -0.000120128821795  -0.177641768894387 0
+force Ni   0.003734848784325   0.001937733045320   0.344088536172497 0
+force Ni   0.003744731279401  -0.001932641737234   0.344632208093469 0
+force Ni  -0.000168037655030   0.001552240504575   0.345712286435726 0
+force Ni  -0.000091297334901  -0.001539505809878   0.345747135957225 0
+force O   0.004477821876920   0.017654474488771  -0.325217172011429 1
+force O   0.004276738478844  -0.019157688669304  -0.318181377607509 1
+force O  -0.018642110610676   0.021180366053749  -0.307029428564988 1
+force O  -0.019350488646490  -0.019626698178054  -0.325513445447163 1
+force O  -0.007728455043220   0.004722935053605   0.493343395187636 1
+force O   0.003646402137209  -0.000039053825742  -0.087166603992063 1
+force O   0.005778027053450   0.000061503333176  -0.095372195444198 1
+force O  -0.000486032794581  -0.000555738030119  -0.111933580938600 1
+force O  -0.005831827458489  -0.000877945544967   0.104971348093524 0
+force O  -0.006115143172802   0.001204874346420   0.105910554924074 0
+force O  -0.005679845235474  -0.000453955370773   0.107519811090150 0
+force O  -0.006013771923674   0.000294103352284   0.103873930222441 0
+force O   0.006365553224887   0.000034424527224   0.064987048008781 0
+force O   0.009090783515838   0.000042893329256   0.044139705291544 0
+force O   0.004482450653099  -0.000009547292967   0.044579497652025 0
+force O   0.008527554530468  -0.000012250222927   0.036921451384907 0
+force O  -0.009688896119365   0.004981389400940   0.533139173999501 1
+
+# Energy components:
+   Eewald =     7289.2999811150612004
+       EH =     9765.8146783540887554
+     Eloc =   -19869.1328373954311246
+      Enl =     -851.9696281415251633
+   Epulay =        0.0007326944676329
+      Exc =     -301.6728445406726564
+       KE =     1229.5713107636195218
+        U =        2.2229130232074428
+-------------------------------------
+     Etot =    -2735.8656941271851792
+       TS =        0.0005261458280366
+-------------------------------------
+        F =    -2735.8662202730133686
+
+IonicMinimize: Iter:   1  F: -2735.866220273013369  |grad|_K:  4.011e-03  alpha:  1.000e+00  linmin: -7.650e-01  t[s]:  14224.70
+
+#--- Lowdin population analysis ---
+# oxidation-state Ni +3.533 +3.767 +3.753 +3.695 +3.363 +3.366 +3.365 +3.364 +3.380 +3.372 +3.372 +3.371 +3.727 +3.728 +3.728 +3.727
+# magnetic-moments Ni +0.354 -1.019 +0.997 -0.938 +0.899 +0.903 -0.903 -0.902 -0.928 +0.908 -0.909 +0.909 -1.010 -1.010 +1.008 +1.008
+# oxidation-state O -0.575 -0.578 -0.581 -0.577 -0.576 -0.581 -0.580 -0.578 -0.581 -0.581 -0.581 -0.581 -0.633 -0.637 -0.637 -0.636 -0.260
+# magnetic-moments O +0.137 +0.146 -0.148 -0.157 -0.063 -0.043 +0.047 -0.035 -0.056 -0.055 +0.050 +0.051 -0.154 +0.136 -0.140 +0.133 +0.889
+
+
+-------- Electronic minimization -----------
+	FillingsUpdate:  mu: +0.070401526  nElectrons: 390.000000  magneticMoment: [ Abs: 23.62178  Tot: -0.00000 ]
+ElecMinimize: Iter:   0  F: -2734.104686909742213  |grad|_K:  2.530e-04  alpha:  1.000e+00
+	FillingsUpdate:  mu: +0.124338759  nElectrons: 390.000000  magneticMoment: [ Abs: 23.59478  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.428
+ElecMinimize: Iter:   1  F: -2735.714554711660185  |grad|_K:  6.671e-05  alpha:  1.609e-01  linmin:  2.633e-03  t[s]:  14317.84
+	FillingsUpdate:  mu: +0.095327779  nElectrons: 390.000000  magneticMoment: [ Abs: 23.61341  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.421
+ElecMinimize: Iter:   2  F: -2735.823205470424000  |grad|_K:  2.394e-05  alpha:  1.579e-01  linmin: -7.156e-03  t[s]:  14392.00
+	FillingsUpdate:  mu: +0.097733078  nElectrons: 390.000000  magneticMoment: [ Abs: 23.61098  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.516
+ElecMinimize: Iter:   3  F: -2735.848778184613366  |grad|_K:  1.447e-05  alpha:  2.465e-01  linmin:  2.750e-05  t[s]:  14463.86
+	FillingsUpdate:  mu: +0.087274661  nElectrons: 390.000000  magneticMoment: [ Abs: 23.61369  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.607
+ElecMinimize: Iter:   4  F: -2735.858102724565015  |grad|_K:  1.005e-05  alpha:  2.815e-01  linmin: -9.862e-05  t[s]:  14535.17
+	FillingsUpdate:  mu: +0.096275884  nElectrons: 390.000000  magneticMoment: [ Abs: 23.61191  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.633
+ElecMinimize: Iter:   5  F: -2735.863195925315722  |grad|_K:  8.867e-06  alpha:  3.182e-01  linmin:  1.410e-04  t[s]:  14605.14
+	FillingsUpdate:  mu: +0.087322126  nElectrons: 390.000000  magneticMoment: [ Abs: 23.61119  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.612
+ElecMinimize: Iter:   6  F: -2735.866210568190127  |grad|_K:  6.792e-06  alpha:  2.510e-01  linmin: -9.831e-05  t[s]:  14677.24
+	FillingsUpdate:  mu: +0.090742225  nElectrons: 390.000000  magneticMoment: [ Abs: 23.61814  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.553
+ElecMinimize: Iter:   7  F: -2735.868040983132687  |grad|_K:  4.401e-06  alpha:  2.470e-01  linmin:  6.810e-05  t[s]:  14750.65
+	FillingsUpdate:  mu: +0.086221728  nElectrons: 390.000000  magneticMoment: [ Abs: 23.61953  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.525
+ElecMinimize: Iter:   8  F: -2735.868840617019941  |grad|_K:  2.743e-06  alpha:  2.636e-01  linmin: -5.858e-06  t[s]:  14824.76
+	FillingsUpdate:  mu: +0.087715460  nElectrons: 390.000000  magneticMoment: [ Abs: 23.62090  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.499
+ElecMinimize: Iter:   9  F: -2735.869138993444267  |grad|_K:  1.619e-06  alpha:  2.506e-01  linmin:  2.026e-06  t[s]:  14897.74
+	FillingsUpdate:  mu: +0.087712022  nElectrons: 390.000000  magneticMoment: [ Abs: 23.62333  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.511
+ElecMinimize: Iter:  10  F: -2735.869254278289191  |grad|_K:  9.656e-07  alpha:  2.780e-01  linmin: -1.044e-06  t[s]:  14971.48
+	FillingsUpdate:  mu: +0.087664371  nElectrons: 390.000000  magneticMoment: [ Abs: 23.62452  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.552
+ElecMinimize: Iter:  11  F: -2735.869296205587034  |grad|_K:  6.548e-07  alpha:  2.843e-01  linmin: -5.886e-07  t[s]:  15042.99
+	FillingsUpdate:  mu: +0.087644073  nElectrons: 390.000000  magneticMoment: [ Abs: 23.62527  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.641
+ElecMinimize: Iter:  12  F: -2735.869315495307546  |grad|_K:  4.469e-07  alpha:  2.844e-01  linmin:  8.962e-07  t[s]:  15113.92
+	FillingsUpdate:  mu: +0.087639860  nElectrons: 390.000000  magneticMoment: [ Abs: 23.62669  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.748
+ElecMinimize: Iter:  13  F: -2735.869326265077689  |grad|_K:  3.467e-07  alpha:  3.410e-01  linmin:  1.796e-06  t[s]:  15185.99
+	FillingsUpdate:  mu: +0.087876590  nElectrons: 390.000000  magneticMoment: [ Abs: 23.62824  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.812
+ElecMinimize: Iter:  14  F: -2735.869332004009266  |grad|_K:  2.870e-07  alpha:  3.019e-01  linmin:  1.684e-06  t[s]:  15258.42
+	FillingsUpdate:  mu: +0.087459161  nElectrons: 390.000000  magneticMoment: [ Abs: 23.62936  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.72
+ElecMinimize: Iter:  15  F: -2735.869335335832147  |grad|_K:  2.427e-07  alpha:  2.558e-01  linmin: -2.125e-06  t[s]:  15330.00
+	FillingsUpdate:  mu: +0.087837389  nElectrons: 390.000000  magneticMoment: [ Abs: 23.63020  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.538
+ElecMinimize: Iter:  16  F: -2735.869336952600861  |grad|_K:  1.799e-07  alpha:  1.731e-01  linmin:  3.055e-07  t[s]:  15403.02
+	FillingsUpdate:  mu: +0.087698192  nElectrons: 390.000000  magneticMoment: [ Abs: 23.63109  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.549
+ElecMinimize: Iter:  17  F: -2735.869338238882847  |grad|_K:  1.213e-07  alpha:  2.514e-01  linmin: -4.275e-07  t[s]:  15476.09
+	FillingsUpdate:  mu: +0.087657704  nElectrons: 390.000000  magneticMoment: [ Abs: 23.63168  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.634
+ElecMinimize: Iter:  18  F: -2735.869338952173621  |grad|_K:  9.619e-08  alpha:  3.064e-01  linmin: -1.672e-07  t[s]:  15547.24
+	FillingsUpdate:  mu: +0.087757456  nElectrons: 390.000000  magneticMoment: [ Abs: 23.63207  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.672
+ElecMinimize: Iter:  19  F: -2735.869339369466616  |grad|_K:  8.476e-08  alpha:  2.852e-01  linmin:  4.131e-06  t[s]:  15616.40
+	FillingsUpdate:  mu: +0.087637708  nElectrons: 390.000000  magneticMoment: [ Abs: 23.63238  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.661
+ElecMinimize: Iter:  20  F: -2735.869339668471184  |grad|_K:  7.879e-08  alpha:  2.635e-01  linmin:  1.602e-06  t[s]:  15687.51
+	FillingsUpdate:  mu: +0.087729250  nElectrons: 390.000000  magneticMoment: [ Abs: 23.63272  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.711
+ElecMinimize: Iter:  21  F: -2735.869339949051209  |grad|_K:  6.799e-08  alpha:  2.862e-01  linmin:  1.812e-06  t[s]:  15759.61
+	FillingsUpdate:  mu: +0.087682830  nElectrons: 390.000000  magneticMoment: [ Abs: 23.63296  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.81
+ElecMinimize: Iter:  22  F: -2735.869340228962756  |grad|_K:  6.503e-08  alpha:  3.834e-01  linmin:  1.919e-06  t[s]:  15832.75
+ElecMinimize: Converged (|Delta F|<1.000000e-06 for 5 iters).
+Setting wave functions to eigenvectors of Hamiltonian
+
+# Ionic positions in lattice coordinates:
+ion Ni   0.000899602023540  -0.000366381821481   0.149112166835534 1
+ion Ni   0.500027095591417   0.000010932038947   0.149047292693571 1
+ion Ni  -0.000127335862711   0.499977324177760   0.148826929973135 1
+ion Ni   0.499825618319728   0.499976391236398   0.148715559123253 1
+ion Ni   0.250969694858732   0.250819174785269   0.050378198870201 1
+ion Ni   0.251048139465880   0.749088639030741   0.050387358439685 1
+ion Ni  -0.250662223354721   0.250680876193797   0.050261740910216 1
+ion Ni  -0.250627369098840   0.749360734802059   0.050308278933222 1
+ion Ni   0.000000000000000   0.000000000000000  -0.050000000000000 0
+ion Ni   0.500000000000000   0.000000000000000  -0.050000000000000 0
+ion Ni   0.000000000000000   0.500000000000000  -0.050000000000000 0
+ion Ni   0.500000000000000   0.500000000000000  -0.050000000000000 0
+ion Ni   0.250000000000000   0.250000000000000  -0.150000000000000 0
+ion Ni   0.250000000000000   0.750000000000000  -0.150000000000000 0
+ion Ni  -0.250000000000000   0.250000000000000  -0.150000000000000 0
+ion Ni  -0.250000000000000   0.750000000000000  -0.150000000000000 0
+ion O   0.250270691129799   0.251046377890568   0.148467492141545 1
+ion O   0.250255181964927   0.748868300815415   0.148505282232498 1
+ion O  -0.251111453881486   0.251250359864287   0.148557979661004 1
+ion O  -0.251159943293284   0.748835018527337   0.148466225613630 1
+ion O  -0.000461213012766   0.000280919400933   0.052357278471483 1
+ion O   0.500216479151633  -0.000004237878132   0.049584102516095 1
+ion O   0.000344690936615   0.500006527088599   0.049544779774893 1
+ion O   0.499973079593122   0.499968301366803   0.049462567164758 1
+ion O   0.250000000000000   0.250000000000000  -0.050000000000000 0
+ion O   0.250000000000000   0.750000000000000  -0.050000000000000 0
+ion O  -0.250000000000000   0.250000000000000  -0.050000000000000 0
+ion O  -0.250000000000000   0.750000000000000  -0.050000000000000 0
+ion O   0.000000000000000   0.000000000000000  -0.150000000000000 0
+ion O   0.500000000000000   0.000000000000000  -0.150000000000000 0
+ion O   0.000000000000000   0.500000000000000  -0.150000000000000 0
+ion O   0.500000000000000   0.500000000000000  -0.150000000000000 0
+ion O  -0.000580039914392   0.000301724275166   0.232374097831833 1
+
+# Forces in Lattice coordinates:
+force Ni   0.000089111190047  -0.002255449901521   0.534337789514325 1
+force Ni   0.002035345341982   0.000079564008950  -0.139357189078892 1
+force Ni  -0.005339772905564  -0.001041151022692  -0.159135376097565 1
+force Ni  -0.000629899110837  -0.000455597452945  -0.149825093383935 1
+force Ni   0.000215881719869  -0.004589967835742  -0.021964391278833 1
+force Ni   0.000524504248495   0.004404032511084  -0.017259407474088 1
+force Ni   0.003698502040113  -0.001524960567895  -0.016717781600681 1
+force Ni   0.004290912620678   0.002275322064609  -0.022746266415354 1
+force Ni  -0.003861765728206  -0.000642774845777  -0.230801938942267 0
+force Ni  -0.000795946977980  -0.000236593061581  -0.190491197363338 0
+force Ni   0.001872410528713   0.000228820177075  -0.192732977038809 0
+force Ni   0.001424694072474   0.000069747311127  -0.204498947685057 0
+force Ni   0.003820058273253   0.002029962850886   0.330403980906237 0
+force Ni   0.003860013418023  -0.002027860952053   0.332097613230593 0
+force Ni  -0.000253096749080   0.001696624506704   0.334223711445075 0
+force Ni  -0.000170778601455  -0.001673466097716   0.334477114557561 0
+force O  -0.000138738877809   0.008011626263584  -0.239597475102325 1
+force O   0.000676020996147  -0.010905162930802  -0.226201734702730 1
+force O  -0.012754927807827   0.011849849788617  -0.214414560110562 1
+force O  -0.012880909563115  -0.010285580505678  -0.234653215897016 1
+force O  -0.003710168857006   0.004601249745513   0.361479458348617 1
+force O   0.001742224814656  -0.000142232406494  -0.084706833561880 1
+force O   0.005286001582180   0.000304867960845  -0.102537240240504 1
+force O   0.000780831261494  -0.001090587530892  -0.136849735204832 1
+force O  -0.010247003765297  -0.005200823577178   0.126518669004067 0
+force O  -0.010611628040147   0.005562748074890   0.125309253992266 0
+force O  -0.001563789708104  -0.005200007427526   0.118644181521529 0
+force O  -0.001876164395378   0.005105923112178   0.117794431455125 0
+force O   0.006930027253968   0.000076683405790   0.073282275209582 0
+force O   0.009179084045214   0.000058706795768   0.045008324893288 0
+force O   0.004305176376817  -0.000041211408059   0.045210500160476 0
+force O   0.008526688290162  -0.000037632286209   0.040609341565288 0
+force O  -0.009907385483876   0.006116650754265  -0.279855449756553 1
+
+# Energy components:
+   Eewald =     7313.2200476091829842
+       EH =     9789.4857656920848967
+     Eloc =   -19916.7437275177799165
+      Enl =     -851.9880448170666796
+   Epulay =        0.0007326944676329
+      Exc =     -301.6863006641632978
+       KE =     1229.6216234254384290
+        U =        2.2211526361463227
+-------------------------------------
+     Etot =    -2735.8687509416886314
+       TS =        0.0005892872739345
+-------------------------------------
+        F =    -2735.8693402289627556
+
+IonicMinimize: Iter:   2  F: -2735.869340228962756  |grad|_K:  3.224e-03  alpha:  1.000e+00  linmin: -3.266e-01  t[s]:  15841.19
+
+#--- Lowdin population analysis ---
+# oxidation-state Ni +3.524 +3.762 +3.746 +3.687 +3.355 +3.359 +3.358 +3.357 +3.386 +3.372 +3.372 +3.372 +3.727 +3.728 +3.727 +3.726
+# magnetic-moments Ni +0.351 -1.016 +0.995 -0.939 +0.893 +0.899 -0.900 -0.898 -0.929 +0.908 -0.908 +0.909 -1.010 -1.010 +1.008 +1.007
+# oxidation-state O -0.572 -0.576 -0.579 -0.574 -0.572 -0.579 -0.578 -0.576 -0.582 -0.582 -0.581 -0.581 -0.631 -0.637 -0.637 -0.636 -0.265
+# magnetic-moments O +0.138 +0.149 -0.156 -0.165 -0.060 -0.044 +0.048 -0.035 -0.060 -0.059 +0.053 +0.055 -0.164 +0.134 -0.139 +0.132 +0.921
+
+
+-------- Electronic minimization -----------
+	FillingsUpdate:  mu: +0.070526523  nElectrons: 390.000000  magneticMoment: [ Abs: 23.63259  Tot: +0.00000 ]
+ElecMinimize: Iter:   0  F: -2733.563882043441936  |grad|_K:  2.876e-04  alpha:  1.000e+00
+	FillingsUpdate:  mu: +0.137065982  nElectrons: 390.000000  magneticMoment: [ Abs: 23.55904  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.622
+ElecMinimize: Iter:   1  F: -2735.659984345624707  |grad|_K:  8.245e-05  alpha:  1.754e-01  linmin:  9.231e-03  t[s]:  15935.32
+	FillingsUpdate:  mu: +0.090373405  nElectrons: 390.000000  magneticMoment: [ Abs: 23.57580  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.39
+ElecMinimize: Iter:   2  F: -2735.801037898618233  |grad|_K:  3.744e-05  alpha:  1.475e-01  linmin: -1.643e-03  t[s]:  16006.53
+	FillingsUpdate:  mu: +0.086569835  nElectrons: 390.000000  magneticMoment: [ Abs: 23.58120  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.375
+ElecMinimize: Iter:   3  F: -2735.841291254557291  |grad|_K:  1.832e-05  alpha:  1.738e-01  linmin: -1.392e-04  t[s]:  16079.58
+	FillingsUpdate:  mu: +0.089126832  nElectrons: 390.000000  magneticMoment: [ Abs: 23.59661  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.455
+ElecMinimize: Iter:   4  F: -2735.856147493614571  |grad|_K:  1.161e-05  alpha:  2.789e-01  linmin:  1.121e-04  t[s]:  16151.60
+	FillingsUpdate:  mu: +0.100643037  nElectrons: 390.000000  magneticMoment: [ Abs: 23.59566  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.482
+ElecMinimize: Iter:   5  F: -2735.862610946164750  |grad|_K:  9.757e-06  alpha:  3.051e-01  linmin:  6.847e-05  t[s]:  16224.09
+	FillingsUpdate:  mu: +0.088611578  nElectrons: 390.000000  magneticMoment: [ Abs: 23.58682  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.467
+ElecMinimize: Iter:   6  F: -2735.866289273500115  |grad|_K:  7.635e-06  alpha:  2.504e-01  linmin: -2.058e-04  t[s]:  16296.35
+	FillingsUpdate:  mu: +0.087970368  nElectrons: 390.000000  magneticMoment: [ Abs: 23.58964  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.621
+ElecMinimize: Iter:   7  F: -2735.869069032575226  |grad|_K:  5.266e-06  alpha:  2.941e-01  linmin: -1.017e-05  t[s]:  16369.72
+	FillingsUpdate:  mu: +0.093188488  nElectrons: 390.000000  magneticMoment: [ Abs: 23.59221  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.581
+ElecMinimize: Iter:   8  F: -2735.870319259211556  |grad|_K:  4.354e-06  alpha:  2.845e-01  linmin:  7.702e-05  t[s]:  16440.25
+	FillingsUpdate:  mu: +0.086097660  nElectrons: 390.000000  magneticMoment: [ Abs: 23.59088  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.449
+ElecMinimize: Iter:   9  F: -2735.870847125797809  |grad|_K:  2.656e-06  alpha:  1.833e-01  linmin:  1.470e-05  t[s]:  16516.33
+	FillingsUpdate:  mu: +0.087738293  nElectrons: 390.000000  magneticMoment: [ Abs: 23.59125  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.493
+ElecMinimize: Iter:  10  F: -2735.871128552693790  |grad|_K:  1.584e-06  alpha:  2.528e-01  linmin: -9.666e-07  t[s]:  16590.44
+	FillingsUpdate:  mu: +0.089129795  nElectrons: 390.000000  magneticMoment: [ Abs: 23.59206  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.487
+ElecMinimize: Iter:  11  F: -2735.871226387941533  |grad|_K:  1.036e-06  alpha:  2.465e-01  linmin:  2.216e-05  t[s]:  16662.94
+	FillingsUpdate:  mu: +0.087426195  nElectrons: 390.000000  magneticMoment: [ Abs: 23.59178  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.385
+ElecMinimize: Iter:  12  F: -2735.871267039524355  |grad|_K:  6.797e-07  alpha:  2.400e-01  linmin: -3.881e-05  t[s]:  16736.10
+	FillingsUpdate:  mu: +0.087890183  nElectrons: 390.000000  magneticMoment: [ Abs: 23.59153  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.41
+ElecMinimize: Iter:  13  F: -2735.871285973195427  |grad|_K:  4.604e-07  alpha:  2.586e-01  linmin:  9.325e-06  t[s]:  16808.27
+	FillingsUpdate:  mu: +0.088252603  nElectrons: 390.000000  magneticMoment: [ Abs: 23.59187  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.449
+ElecMinimize: Iter:  14  F: -2735.871295514358735  |grad|_K:  3.233e-07  alpha:  2.847e-01  linmin:  5.745e-06  t[s]:  16882.51
+	FillingsUpdate:  mu: +0.087805681  nElectrons: 390.000000  magneticMoment: [ Abs: 23.59231  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.43
+ElecMinimize: Iter:  15  F: -2735.871300401825010  |grad|_K:  2.570e-07  alpha:  2.957e-01  linmin: -2.363e-06  t[s]:  16955.95
+	FillingsUpdate:  mu: +0.087954805  nElectrons: 390.000000  magneticMoment: [ Abs: 23.59260  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.513
+ElecMinimize: Iter:  16  F: -2735.871303468890346  |grad|_K:  1.923e-07  alpha:  2.936e-01  linmin:  3.499e-06  t[s]:  17028.49
+	FillingsUpdate:  mu: +0.088076646  nElectrons: 390.000000  magneticMoment: [ Abs: 23.59281  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.591
+ElecMinimize: Iter:  17  F: -2735.871305505555029  |grad|_K:  1.668e-07  alpha:  3.484e-01  linmin:  1.650e-06  t[s]:  17102.17
+	FillingsUpdate:  mu: +0.087838649  nElectrons: 390.000000  magneticMoment: [ Abs: 23.59305  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.581
+ElecMinimize: Iter:  18  F: -2735.871306799073864  |grad|_K:  1.518e-07  alpha:  2.939e-01  linmin:  3.635e-07  t[s]:  17174.13
+	FillingsUpdate:  mu: +0.088027212  nElectrons: 390.000000  magneticMoment: [ Abs: 23.59332  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.575
+ElecMinimize: Iter:  19  F: -2735.871307864761548  |grad|_K:  1.258e-07  alpha:  2.923e-01  linmin:  2.456e-06  t[s]:  17247.49
+	FillingsUpdate:  mu: +0.087944495  nElectrons: 390.000000  magneticMoment: [ Abs: 23.59351  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.643
+ElecMinimize: Iter:  20  F: -2735.871308701905946  |grad|_K:  1.085e-07  alpha:  3.347e-01  linmin:  2.892e-06  t[s]:  17318.86
+	FillingsUpdate:  mu: +0.087918944  nElectrons: 390.000000  magneticMoment: [ Abs: 23.59368  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.746
+ElecMinimize: Iter:  21  F: -2735.871309340093831  |grad|_K:  9.745e-08  alpha:  3.429e-01  linmin:  1.549e-06  t[s]:  17390.45
+	FillingsUpdate:  mu: +0.088027370  nElectrons: 390.000000  magneticMoment: [ Abs: 23.59375  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.784
+ElecMinimize: Iter:  22  F: -2735.871309853197999  |grad|_K:  1.002e-07  alpha:  3.418e-01  linmin: -1.315e-06  t[s]:  17462.02
+	FillingsUpdate:  mu: +0.087842318  nElectrons: 390.000000  magneticMoment: [ Abs: 23.59374  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.69
+ElecMinimize: Iter:  23  F: -2735.871310259587062  |grad|_K:  1.054e-07  alpha:  2.558e-01  linmin:  2.738e-08  t[s]:  17536.36
+	FillingsUpdate:  mu: +0.087978216  nElectrons: 390.000000  magneticMoment: [ Abs: 23.59376  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.67
+ElecMinimize: Iter:  24  F: -2735.871310757195715  |grad|_K:  9.739e-08  alpha:  2.834e-01  linmin: -5.578e-07  t[s]:  17610.07
+ElecMinimize: Converged (|Delta F|<1.000000e-06 for 5 iters).
+Setting wave functions to eigenvectors of Hamiltonian
+
+# Ionic positions in lattice coordinates:
+ion Ni   0.001452765143070  -0.000680065425538   0.149729440222026 1
+ion Ni   0.500133398409429   0.000016365607487   0.148006690912444 1
+ion Ni  -0.000425262985694   0.499929974245062   0.147614170089764 1
+ion Ni   0.499711743478129   0.499951128280189   0.147463344672888 1
+ion Ni   0.251456344705026   0.251044414953500   0.050703094051064 1
+ion Ni   0.251608093952583   0.748791295243777   0.050744177277546 1
+ion Ni  -0.250828713704831   0.250947998953594   0.050540162043381 1
+ion Ni  -0.250746836298153   0.749152752783226   0.050587648101318 1
+ion Ni   0.000000000000000   0.000000000000000  -0.050000000000000 0
+ion Ni   0.500000000000000   0.000000000000000  -0.050000000000000 0
+ion Ni   0.000000000000000   0.500000000000000  -0.050000000000000 0
+ion Ni   0.500000000000000   0.500000000000000  -0.050000000000000 0
+ion Ni   0.250000000000000   0.250000000000000  -0.150000000000000 0
+ion Ni   0.250000000000000   0.750000000000000  -0.150000000000000 0
+ion Ni  -0.250000000000000   0.250000000000000  -0.150000000000000 0
+ion Ni  -0.250000000000000   0.750000000000000  -0.150000000000000 0
+ion O   0.250394249049503   0.251972371036407   0.146752457790863 1
+ion O   0.250419097441934   0.747755273810201   0.146840970679827 1
+ion O  -0.252254759040606   0.252474577084432   0.146964415000132 1
+ion O  -0.252310986816768   0.747751191100643   0.146767149764677 1
+ion O  -0.000865262707259   0.000632207225038   0.054847421082684 1
+ion O   0.500410385654967  -0.000005506332489   0.049069795631628 1
+ion O   0.000756286146503   0.500012509891672   0.048948362129194 1
+ion O   0.499985009678224   0.499898749400447   0.048715405171781 1
+ion O   0.250000000000000   0.250000000000000  -0.050000000000000 0
+ion O   0.250000000000000   0.750000000000000  -0.050000000000000 0
+ion O  -0.250000000000000   0.250000000000000  -0.050000000000000 0
+ion O  -0.250000000000000   0.750000000000000  -0.050000000000000 0
+ion O   0.000000000000000   0.000000000000000  -0.150000000000000 0
+ion O   0.500000000000000   0.000000000000000  -0.150000000000000 0
+ion O   0.000000000000000   0.500000000000000  -0.150000000000000 0
+ion O   0.500000000000000   0.500000000000000  -0.150000000000000 0
+ion O  -0.001308970847064   0.000709640057585   0.233293088425587 1
+
+# Forces in Lattice coordinates:
+force Ni  -0.011283511108713  -0.002053784174379   0.721139242467048 1
+force Ni   0.004534603049777  -0.000149071156079  -0.077701509557780 1
+force Ni  -0.010500583373400  -0.001266031557962  -0.082277986460343 1
+force Ni   0.002405493504730  -0.000102331480318  -0.032343933587351 1
+force Ni  -0.010877851466383  -0.017605930422220  -0.221688376070200 1
+force Ni  -0.010936226262809   0.018218433691699  -0.217118212535518 1
+force Ni   0.015317598070170  -0.010667273069239  -0.194722800993719 1
+force Ni   0.015693023273051   0.011505378471737  -0.213528416062571 1
+force Ni  -0.005808488654991  -0.001373198062755  -0.193457048980154 0
+force Ni   0.000067438540886  -0.000641312899017  -0.232243624545313 0
+force Ni   0.001248345831858   0.000620683978418  -0.238614000669022 0
+force Ni   0.002735434359375   0.000477767270390  -0.274365209232369 0
+force Ni   0.004092164943962   0.002471592577117   0.305317954681288 0
+force Ni   0.004208251492732  -0.002481559940886   0.310088482994475 0
+force Ni  -0.000482732528888   0.002149689546568   0.315150888978734 0
+force Ni  -0.000394865219357  -0.002110870146229   0.315448998273689 0
+force O   0.000303087065851   0.002592701293061  -0.108501406937208 1
+force O   0.000956526404288  -0.005817372974914  -0.098359210164629 1
+force O  -0.012820136986037   0.003771586006463  -0.110790073243820 1
+force O  -0.012551551686560  -0.002355083820726  -0.103918196673430 1
+force O   0.001969824499022   0.005900791115941  -0.035965864330328 1
+force O  -0.000486723316871  -0.000187872720039  -0.043324696362466 1
+force O   0.004340357931384   0.000472435539861  -0.061002398737429 1
+force O   0.000932736414718  -0.001992744820361  -0.096274728597699 1
+force O  -0.014515867143798  -0.009728750350751   0.164553314725945 0
+force O  -0.015085796001609   0.010141017601567   0.156530614103192 0
+force O   0.002620932872351  -0.010147613286541   0.140567552020161 0
+force O   0.002301866548122   0.010068630600439   0.141405406353986 0
+force O   0.007726492988344   0.000167289941704   0.082967028575316 0
+force O   0.009048977269165   0.000108859569053   0.049939440428412 0
+force O   0.004406163327963  -0.000111589562505   0.049808502203055 0
+force O   0.008255656478647  -0.000097623674116   0.047918284551260 0
+force O  -0.009680911083974   0.008253090757794  -0.493592233580063 1
+
+# Energy components:
+   Eewald =     7339.4111268577271403
+       EH =     9815.5140311638479034
+     Eloc =   -19969.0162638945766957
+      Enl =     -852.0126699616355381
+   Epulay =        0.0007326944676329
+      Exc =     -301.7139761453219080
+       KE =     1229.7267351321709157
+        U =        2.2196238220126010
+-------------------------------------
+     Etot =    -2735.8706603313080450
+       TS =        0.0006504258875288
+-------------------------------------
+        F =    -2735.8713107571957153
+
+IonicMinimize: Iter:   3  F: -2735.871310757195715  |grad|_K:  3.640e-03  alpha:  1.000e+00  linmin: -1.077e-01  t[s]:  17618.66
+
+#--- Lowdin population analysis ---
+# oxidation-state Ni +3.530 +3.752 +3.733 +3.675 +3.346 +3.351 +3.351 +3.349 +3.393 +3.372 +3.372 +3.374 +3.727 +3.727 +3.726 +3.725
+# magnetic-moments Ni +0.355 -1.012 +0.992 -0.935 +0.883 +0.894 -0.895 -0.894 -0.931 +0.906 -0.906 +0.909 -1.010 -1.010 +1.007 +1.007
+# oxidation-state O -0.569 -0.573 -0.577 -0.572 -0.568 -0.577 -0.576 -0.573 -0.582 -0.583 -0.581 -0.581 -0.629 -0.637 -0.637 -0.636 -0.276
+# magnetic-moments O +0.142 +0.157 -0.158 -0.166 -0.056 -0.046 +0.051 -0.035 -0.065 -0.064 +0.058 +0.060 -0.172 +0.133 -0.137 +0.130 +0.917
+
+
+-------- Electronic minimization -----------
+	FillingsUpdate:  mu: +0.117677114  nElectrons: 390.000000  magneticMoment: [ Abs: 23.59352  Tot: +0.00000 ]
+ElecMinimize: Iter:   0  F: -2733.374852090527384  |grad|_K:  3.039e-04  alpha:  1.000e+00
+	FillingsUpdate:  mu: +0.081964384  nElectrons: 390.000000  magneticMoment: [ Abs: 23.55250  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.701
+ElecMinimize: Iter:   1  F: -2735.119441129296320  |grad|_K:  1.522e-04  alpha:  8.141e-02  linmin: -2.404e-02  t[s]:  17709.48
+	FillingsUpdate:  mu: +0.115949785  nElectrons: 390.000000  magneticMoment: [ Abs: 23.56232  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.552
+ElecMinimize: Iter:   2  F: -2735.736058759354364  |grad|_K:  6.587e-05  alpha:  1.139e-01  linmin:  7.737e-04  t[s]:  17781.41
+	FillingsUpdate:  mu: +0.093096868  nElectrons: 390.000000  magneticMoment: [ Abs: 23.57696  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.731
+ElecMinimize: Iter:   3  F: -2735.793057459155534  |grad|_K:  3.599e-05  alpha:  9.390e-02  linmin: -3.512e-03  t[s]:  17854.56
+	FillingsUpdate:  mu: +0.099915995  nElectrons: 390.000000  magneticMoment: [ Abs: 23.53596  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.723
+ElecMinimize: Iter:   4  F: -2735.836776276622004  |grad|_K:  2.395e-05  alpha:  1.865e-01  linmin:  1.488e-03  t[s]:  17925.24
+	FillingsUpdate:  mu: +0.087414303  nElectrons: 390.000000  magneticMoment: [ Abs: 23.52485  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.822
+ElecMinimize: Iter:   5  F: -2735.851556185163645  |grad|_K:  1.668e-05  alpha:  1.775e-01  linmin: -2.843e-04  t[s]:  17996.44
+	FillingsUpdate:  mu: +0.089765962  nElectrons: 390.000000  magneticMoment: [ Abs: 23.53518  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.842
+ElecMinimize: Iter:   6  F: -2735.862205423351497  |grad|_K:  1.398e-05  alpha:  2.352e-01  linmin:  2.987e-05  t[s]:  18069.23
+	FillingsUpdate:  mu: +0.098516118  nElectrons: 390.000000  magneticMoment: [ Abs: 23.52669  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.724
+ElecMinimize: Iter:   7  F: -2735.867383267600417  |grad|_K:  9.815e-06  alpha:  1.649e-01  linmin:  4.724e-06  t[s]:  18142.44
+	FillingsUpdate:  mu: +0.095922211  nElectrons: 390.000000  magneticMoment: [ Abs: 23.51796  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.958
+ElecMinimize: Iter:   8  F: -2735.870560562028459  |grad|_K:  6.638e-06  alpha:  2.088e-01  linmin:  7.841e-06  t[s]:  18216.44
+	FillingsUpdate:  mu: +0.086374213  nElectrons: 390.000000  magneticMoment: [ Abs: 23.52191  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.73
+ElecMinimize: Iter:   9  F: -2735.871731677673324  |grad|_K:  4.556e-06  alpha:  1.670e-01  linmin:  5.741e-05  t[s]:  18289.17
+	FillingsUpdate:  mu: +0.089469162  nElectrons: 390.000000  magneticMoment: [ Abs: 23.52317  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.681
+ElecMinimize: Iter:  10  F: -2735.872234636985922  |grad|_K:  2.468e-06  alpha:  1.541e-01  linmin:  6.895e-05  t[s]:  18362.96
+	FillingsUpdate:  mu: +0.090672223  nElectrons: 390.000000  magneticMoment: [ Abs: 23.52057  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.66
+ElecMinimize: Iter:  11  F: -2735.872457658736039  |grad|_K:  1.767e-06  alpha:  2.326e-01  linmin: -5.868e-05  t[s]:  18436.90
+	FillingsUpdate:  mu: +0.088292409  nElectrons: 390.000000  magneticMoment: [ Abs: 23.52045  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.607
+ElecMinimize: Iter:  12  F: -2735.872545925178656  |grad|_K:  1.135e-06  alpha:  1.782e-01  linmin:  4.948e-06  t[s]:  18510.69
+	FillingsUpdate:  mu: +0.088824443  nElectrons: 390.000000  magneticMoment: [ Abs: 23.52028  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.641
+ElecMinimize: Iter:  13  F: -2735.872594954536453  |grad|_K:  8.706e-07  alpha:  2.409e-01  linmin:  2.984e-05  t[s]:  18582.47
+	FillingsUpdate:  mu: +0.089499667  nElectrons: 390.000000  magneticMoment: [ Abs: 23.51926  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.681
+ElecMinimize: Iter:  14  F: -2735.872622564180347  |grad|_K:  6.789e-07  alpha:  2.308e-01  linmin: -7.097e-06  t[s]:  18656.64
+	FillingsUpdate:  mu: +0.088731042  nElectrons: 390.000000  magneticMoment: [ Abs: 23.51895  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.631
+ElecMinimize: Iter:  15  F: -2735.872639676576455  |grad|_K:  5.601e-07  alpha:  2.346e-01  linmin: -1.181e-05  t[s]:  18728.15
+	FillingsUpdate:  mu: +0.088867188  nElectrons: 390.000000  magneticMoment: [ Abs: 23.51912  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.72
+ElecMinimize: Iter:  16  F: -2735.872651544297241  |grad|_K:  4.120e-07  alpha:  2.388e-01  linmin:  1.972e-06  t[s]:  18800.24
+	FillingsUpdate:  mu: +0.089284392  nElectrons: 390.000000  magneticMoment: [ Abs: 23.51870  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.672
+ElecMinimize: Iter:  17  F: -2735.872657833846915  |grad|_K:  3.298e-07  alpha:  2.343e-01  linmin:  7.481e-06  t[s]:  18871.44
+	FillingsUpdate:  mu: +0.088874606  nElectrons: 390.000000  magneticMoment: [ Abs: 23.51849  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.621
+ElecMinimize: Iter:  18  F: -2735.872661262390920  |grad|_K:  2.301e-07  alpha:  1.995e-01  linmin: -6.260e-06  t[s]:  18945.23
+	FillingsUpdate:  mu: +0.088857804  nElectrons: 390.000000  magneticMoment: [ Abs: 23.51880  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.752
+ElecMinimize: Iter:  19  F: -2735.872663388688579  |grad|_K:  1.692e-07  alpha:  2.537e-01  linmin: -4.482e-06  t[s]:  19017.58
+	FillingsUpdate:  mu: +0.089092751  nElectrons: 390.000000  magneticMoment: [ Abs: 23.51889  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.727
+ElecMinimize: Iter:  20  F: -2735.872664406971126  |grad|_K:  1.447e-07  alpha:  2.248e-01  linmin:  9.860e-07  t[s]:  19088.96
+	FillingsUpdate:  mu: +0.088916266  nElectrons: 390.000000  magneticMoment: [ Abs: 23.51888  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.837
+ElecMinimize: Iter:  21  F: -2735.872665272408994  |grad|_K:  1.212e-07  alpha:  2.615e-01  linmin: -3.364e-06  t[s]:  19162.33
+	FillingsUpdate:  mu: +0.088846594  nElectrons: 390.000000  magneticMoment: [ Abs: 23.51919  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.988
+ElecMinimize: Iter:  22  F: -2735.872666026549268  |grad|_K:  1.251e-07  alpha:  3.245e-01  linmin: -1.557e-07  t[s]:  19236.15
+	FillingsUpdate:  mu: +0.089055271  nElectrons: 390.000000  magneticMoment: [ Abs: 23.51974  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.926
+ElecMinimize: Iter:  23  F: -2735.872666688861500  |grad|_K:  1.368e-07  alpha:  2.674e-01  linmin:  3.115e-07  t[s]:  19310.46
+	FillingsUpdate:  mu: +0.088864938  nElectrons: 390.000000  magneticMoment: [ Abs: 23.52026  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.874
+ElecMinimize: Iter:  24  F: -2735.872667351833115  |grad|_K:  1.242e-07  alpha:  2.240e-01  linmin:  1.831e-06  t[s]:  19381.28
+	FillingsUpdate:  mu: +0.088876967  nElectrons: 390.000000  magneticMoment: [ Abs: 23.52079  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.926
+ElecMinimize: Iter:  25  F: -2735.872668119133778  |grad|_K:  1.266e-07  alpha:  3.147e-01  linmin: -6.984e-06  t[s]:  19453.35
+ElecMinimize: Converged (|Delta F|<1.000000e-06 for 5 iters).
+Setting wave functions to eigenvectors of Hamiltonian
+
+# Ionic positions in lattice coordinates:
+ion Ni   0.001283932357563  -0.001108078241281   0.151144210689958 1
+ion Ni   0.500506307597341  -0.000001096468810   0.146917030928050 1
+ion Ni  -0.001292642576870   0.499854269706601   0.146416887867621 1
+ion Ni   0.499828326407896   0.499954583685983   0.146480898233154 1
+ion Ni   0.251057543088535   0.250141410690256   0.050055159505454 1
+ion Ni   0.251300625905450   0.749647362771202   0.050156639132366 1
+ion Ni  -0.249962895666372   0.250437017182950   0.049983290436610 1
+ion Ni  -0.249829102197804   0.749760701879893   0.049934700384022 1
+ion Ni   0.000000000000000   0.000000000000000  -0.050000000000000 0
+ion Ni   0.500000000000000   0.000000000000000  -0.050000000000000 0
+ion Ni   0.000000000000000   0.500000000000000  -0.050000000000000 0
+ion Ni   0.500000000000000   0.500000000000000  -0.050000000000000 0
+ion Ni   0.250000000000000   0.250000000000000  -0.150000000000000 0
+ion Ni   0.250000000000000   0.750000000000000  -0.150000000000000 0
+ion Ni  -0.250000000000000   0.250000000000000  -0.150000000000000 0
+ion Ni  -0.250000000000000   0.750000000000000  -0.150000000000000 0
+ion O   0.250554216704627   0.252790356039636   0.145164088409497 1
+ion O   0.250647825598054   0.746614923669214   0.145282775290760 1
+ion O  -0.253826458905874   0.253525012602535   0.145347018117913 1
+ion O  -0.253823299464137   0.746924462382989   0.145200747934800 1
+ion O  -0.000930234752420   0.001236438971531   0.055600858064162 1
+ion O   0.500489212798555  -0.000001535330529   0.048625819319302 1
+ion O   0.001250950162526   0.500021146428477   0.048386061292406 1
+ion O   0.500011727315683   0.499714701951341   0.047943006250067 1
+ion O   0.250000000000000   0.250000000000000  -0.050000000000000 0
+ion O   0.250000000000000   0.750000000000000  -0.050000000000000 0
+ion O  -0.250000000000000   0.250000000000000  -0.050000000000000 0
+ion O  -0.250000000000000   0.750000000000000  -0.050000000000000 0
+ion O   0.000000000000000   0.000000000000000  -0.150000000000000 0
+ion O   0.500000000000000   0.000000000000000  -0.150000000000000 0
+ion O   0.000000000000000   0.500000000000000  -0.150000000000000 0
+ion O   0.500000000000000   0.500000000000000  -0.150000000000000 0
+ion O  -0.002302049832583   0.001442475363176   0.233634734056437 1
+
+# Forces in Lattice coordinates:
+force Ni  -0.007070055543621  -0.000165841977035   0.184803707898171 1
+force Ni  -0.008333327558392   0.000982726902582  -0.062105806401051 1
+force Ni   0.000993149635990  -0.002449858590989  -0.054182521178088 1
+force Ni  -0.009176013002967  -0.000765679746736   0.010401494739365 1
+force Ni  -0.009602170681114  -0.007870056018017  -0.237985246606166 1
+force Ni  -0.011612821309970   0.010243828767794  -0.246498806729959 1
+force Ni   0.007679231449304  -0.004538020984078  -0.246880316786176 1
+force Ni   0.008267823967333   0.005591171924238  -0.251014246296785 1
+force Ni  -0.004943145899743  -0.002098944338564  -0.224288590250780 0
+force Ni  -0.000632147060551  -0.000668390088916  -0.304483459072815 0
+force Ni   0.004024190732792   0.000703463483142  -0.316084358692862 0
+force Ni   0.001288096456159   0.000552039087334  -0.355628714191728 0
+force Ni   0.004261129926207   0.002794380504762   0.272373309506154 0
+force Ni   0.004426052609949  -0.002828004410195   0.279780415180063 0
+force Ni  -0.001115293324102   0.002380764103816   0.285601352106716 0
+force Ni  -0.001052889227209  -0.002332786570630   0.285578816877215 0
+force O  -0.000668199575405  -0.006002652264074   0.152544919076483 1
+force O  -0.001251247140739   0.005478943252862   0.159884542471241 1
+force O  -0.002701733016261  -0.008207103438402   0.145261483023436 1
+force O  -0.001713978755029   0.007851731166808   0.152050689806542 1
+force O   0.007059822216752   0.003055353696895  -0.000158222231678 1
+force O  -0.000447778760015  -0.001323277658896  -0.025467657074549 1
+force O   0.003591287403464   0.002024909378740  -0.026923929214997 1
+force O   0.000100100148297  -0.001547503522253  -0.014856970701997 1
+force O  -0.016248230854719  -0.012315490903875   0.147576557596724 0
+force O  -0.016941289092144   0.012864731055468   0.137156150156745 0
+force O   0.006013800506345  -0.012697981631432   0.112423082261859 0
+force O   0.005716951861352   0.012632734389323   0.111944850088270 0
+force O   0.009041823933428   0.000206070727435   0.084958488560707 0
+force O   0.008238667348580   0.000102013700051   0.053050294828715 0
+force O   0.005106924648973  -0.000070931595801   0.053724213885161 0
+force O   0.007376820804522  -0.000019130501531   0.052024648407363 0
+force O  -0.012201847575803   0.011073591235352  -0.253428894830268 1
+
+# Energy components:
+   Eewald =     7368.3245845570836536
+       EH =     9844.3719865528946684
+     Eloc =   -20026.8389328593257233
+      Enl =     -852.0306375357329216
+   Epulay =        0.0007326944676329
+      Exc =     -301.7387142580414547
+       KE =     1229.8203283376731179
+        U =        2.2186158777658842
+-------------------------------------
+     Etot =    -2735.8720366332172489
+       TS =        0.0006314859166977
+-------------------------------------
+        F =    -2735.8726681191337775
+
+IonicMinimize: Iter:   4  F: -2735.872668119133778  |grad|_K:  2.405e-03  alpha:  1.000e+00  linmin: -2.857e-03  t[s]:  19461.79
+
+#--- Lowdin population analysis ---
+# oxidation-state Ni +3.546 +3.744 +3.725 +3.670 +3.339 +3.344 +3.343 +3.342 +3.387 +3.367 +3.367 +3.371 +3.729 +3.728 +3.726 +3.726
+# magnetic-moments Ni +0.359 -1.008 +0.991 -0.929 +0.871 +0.886 -0.889 -0.888 -0.929 +0.905 -0.905 +0.907 -1.012 -1.011 +1.008 +1.008
+# oxidation-state O -0.567 -0.571 -0.576 -0.571 -0.567 -0.575 -0.574 -0.572 -0.581 -0.582 -0.581 -0.581 -0.629 -0.637 -0.638 -0.637 -0.283
+# magnetic-moments O +0.139 +0.160 -0.154 -0.160 -0.056 -0.048 +0.052 -0.035 -0.064 -0.064 +0.059 +0.059 -0.175 +0.134 -0.136 +0.128 +0.896
+
+
+-------- Electronic minimization -----------
+	FillingsUpdate:  mu: +0.130847830  nElectrons: 390.000000  magneticMoment: [ Abs: 23.52330  Tot: +0.00000 ]
+ElecMinimize: Iter:   0  F: -2734.692560915262220  |grad|_K:  2.156e-04  alpha:  1.000e+00
+	FillingsUpdate:  mu: +0.096344917  nElectrons: 390.000000  magneticMoment: [ Abs: 23.52822  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.987
+ElecMinimize: Iter:   1  F: -2735.337800307660928  |grad|_K:  1.379e-04  alpha:  5.463e-02  linmin: -1.623e-02  t[s]:  19556.36
+	FillingsUpdate:  mu: +0.152007476  nElectrons: 390.000000  magneticMoment: [ Abs: 23.51976  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.528
+ElecMinimize: Iter:   2  F: -2735.782125938877925  |grad|_K:  1.006e-04  alpha:  9.478e-02  linmin:  7.520e-03  t[s]:  19631.74
+	FillingsUpdate:  mu: +0.101039485  nElectrons: 390.000000  magneticMoment: [ Abs: 23.55375  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.98
+ElecMinimize: Iter:   3  F: -2735.817990105124409  |grad|_K:  3.739e-05  alpha:  4.214e-02  linmin:  3.898e-03  t[s]:  19704.36
+ElecMinimize: 	Predicted alpha/alphaT>3.000000, increasing alphaT to 1.264152e-01.
+	FillingsUpdate:  mu: +0.096943274  nElectrons: 390.000000  magneticMoment: [ Abs: 23.53096  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.772
+ElecMinimize: Iter:   4  F: -2735.854202420502133  |grad|_K:  2.258e-05  alpha:  1.983e-01  linmin:  1.825e-03  t[s]:  19810.95
+	FillingsUpdate:  mu: +0.085442210  nElectrons: 390.000000  magneticMoment: [ Abs: 23.51427  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.788
+ElecMinimize: Iter:   5  F: -2735.865083531783057  |grad|_K:  9.846e-06  alpha:  1.443e-01  linmin: -5.517e-05  t[s]:  19884.80
+	FillingsUpdate:  mu: +0.086822719  nElectrons: 390.000000  magneticMoment: [ Abs: 23.52314  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.682
+ElecMinimize: Iter:   6  F: -2735.869535123559672  |grad|_K:  7.827e-06  alpha:  2.892e-01  linmin: -2.426e-05  t[s]:  19958.99
+	FillingsUpdate:  mu: +0.097791346  nElectrons: 390.000000  magneticMoment: [ Abs: 23.51400  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.563
+ElecMinimize: Iter:   7  F: -2735.871705839211700  |grad|_K:  5.738e-06  alpha:  2.198e-01  linmin:  4.259e-05  t[s]:  20033.23
+	FillingsUpdate:  mu: +0.090073006  nElectrons: 390.000000  magneticMoment: [ Abs: 23.51300  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.657
+ElecMinimize: Iter:   8  F: -2735.872895442586923  |grad|_K:  3.373e-06  alpha:  2.300e-01  linmin:  3.674e-05  t[s]:  20104.90
+	FillingsUpdate:  mu: +0.087537853  nElectrons: 390.000000  magneticMoment: [ Abs: 23.51582  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.646
+ElecMinimize: Iter:   9  F: -2735.873293690401624  |grad|_K:  2.014e-06  alpha:  2.226e-01  linmin:  3.300e-06  t[s]:  20178.45
+	FillingsUpdate:  mu: +0.090336705  nElectrons: 390.000000  magneticMoment: [ Abs: 23.51652  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.504
+ElecMinimize: Iter:  10  F: -2735.873416022042420  |grad|_K:  1.277e-06  alpha:  1.907e-01  linmin: -8.632e-06  t[s]:  20253.15
+	FillingsUpdate:  mu: +0.089696829  nElectrons: 390.000000  magneticMoment: [ Abs: 23.51778  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.549
+ElecMinimize: Iter:  11  F: -2735.873476388833751  |grad|_K:  7.728e-07  alpha:  2.338e-01  linmin: -2.323e-06  t[s]:  20325.03
+	FillingsUpdate:  mu: +0.088793423  nElectrons: 390.000000  magneticMoment: [ Abs: 23.51799  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.514
+ElecMinimize: Iter:  12  F: -2735.873500107856216  |grad|_K:  5.329e-07  alpha:  2.510e-01  linmin:  4.773e-06  t[s]:  20398.88
+	FillingsUpdate:  mu: +0.089380884  nElectrons: 390.000000  magneticMoment: [ Abs: 23.51774  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.473
+ElecMinimize: Iter:  13  F: -2735.873510943046313  |grad|_K:  3.720e-07  alpha:  2.413e-01  linmin:  6.084e-06  t[s]:  20473.60
+	FillingsUpdate:  mu: +0.089431811  nElectrons: 390.000000  magneticMoment: [ Abs: 23.51828  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.511
+ElecMinimize: Iter:  14  F: -2735.873517365096632  |grad|_K:  2.874e-07  alpha:  2.935e-01  linmin:  1.994e-06  t[s]:  20547.94
+	FillingsUpdate:  mu: +0.089097423  nElectrons: 390.000000  magneticMoment: [ Abs: 23.51877  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.494
+ElecMinimize: Iter:  15  F: -2735.873521073358006  |grad|_K:  2.231e-07  alpha:  2.839e-01  linmin:  9.741e-07  t[s]:  20621.32
+	FillingsUpdate:  mu: +0.089271096  nElectrons: 390.000000  magneticMoment: [ Abs: 23.51874  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.537
+ElecMinimize: Iter:  16  F: -2735.873523159473734  |grad|_K:  1.580e-07  alpha:  2.651e-01  linmin:  2.885e-06  t[s]:  20694.77
+	FillingsUpdate:  mu: +0.089338077  nElectrons: 390.000000  magneticMoment: [ Abs: 23.51886  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.615
+ElecMinimize: Iter:  17  F: -2735.873524327275391  |grad|_K:  1.244e-07  alpha:  2.959e-01  linmin:  2.757e-06  t[s]:  20768.20
+	FillingsUpdate:  mu: +0.089179533  nElectrons: 390.000000  magneticMoment: [ Abs: 23.51918  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.629
+ElecMinimize: Iter:  18  F: -2735.873524987358905  |grad|_K:  1.003e-07  alpha:  2.697e-01  linmin:  1.877e-06  t[s]:  20840.61
+	FillingsUpdate:  mu: +0.089254301  nElectrons: 390.000000  magneticMoment: [ Abs: 23.51938  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.734
+ElecMinimize: Iter:  19  F: -2735.873525465560306  |grad|_K:  8.308e-08  alpha:  3.006e-01  linmin:  8.996e-07  t[s]:  20914.05
+	FillingsUpdate:  mu: +0.089279630  nElectrons: 390.000000  magneticMoment: [ Abs: 23.51967  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.871
+ElecMinimize: Iter:  20  F: -2735.873525836173940  |grad|_K:  8.071e-08  alpha:  3.399e-01  linmin:  7.729e-06  t[s]:  20987.48
+	FillingsUpdate:  mu: +0.089148946  nElectrons: 390.000000  magneticMoment: [ Abs: 23.52019  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.857
+ElecMinimize: Iter:  21  F: -2735.873526164971736  |grad|_K:  8.708e-08  alpha:  3.195e-01  linmin:  2.551e-06  t[s]:  21060.04
+	FillingsUpdate:  mu: +0.089275595  nElectrons: 390.000000  magneticMoment: [ Abs: 23.52067  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.793
+ElecMinimize: Iter:  22  F: -2735.873526478769691  |grad|_K:  8.191e-08  alpha:  2.616e-01  linmin: -5.931e-06  t[s]:  21133.43
+ElecMinimize: Converged (|Delta F|<1.000000e-06 for 5 iters).
+Setting wave functions to eigenvectors of Hamiltonian
+
+# Ionic positions in lattice coordinates:
+ion Ni   0.000914851399547  -0.001227208842426   0.151488095934794 1
+ion Ni   0.500198820113614   0.000037706303055   0.146404559821262 1
+ion Ni  -0.001458807145152   0.499727151292797   0.145933943173538 1
+ion Ni   0.499428890399985   0.499926960210999   0.146299356877156 1
+ion Ni   0.250394981754391   0.249470375592399   0.049130951647937 1
+ion Ni   0.250577334398359   0.750412226329070   0.049224606599887 1
+ion Ni  -0.249304682800405   0.250018384928527   0.049051617948943 1
+ion Ni  -0.249128496328041   0.750257331250082   0.048956841274362 1
+ion Ni   0.000000000000000   0.000000000000000  -0.050000000000000 0
+ion Ni   0.500000000000000   0.000000000000000  -0.050000000000000 0
+ion Ni   0.000000000000000   0.500000000000000  -0.050000000000000 0
+ion Ni   0.500000000000000   0.500000000000000  -0.050000000000000 0
+ion Ni   0.250000000000000   0.250000000000000  -0.150000000000000 0
+ion Ni   0.250000000000000   0.750000000000000  -0.150000000000000 0
+ion Ni  -0.250000000000000   0.250000000000000  -0.150000000000000 0
+ion Ni  -0.250000000000000   0.750000000000000  -0.150000000000000 0
+ion O   0.250536117547413   0.252668945731442   0.145380268978138 1
+ion O   0.250632007078825   0.746618463683030   0.145516685834690 1
+ion O  -0.254296430740308   0.253363858025664   0.145505773943852 1
+ion O  -0.254203998696036   0.747147008780251   0.145419818781141 1
+ion O  -0.000571601274647   0.001526162667635   0.055614287865701 1
+ion O   0.500477293078253  -0.000057568961208   0.048441710746470 1
+ion O   0.001530015734824   0.500110897333935   0.048169696432564 1
+ion O   0.500016647428743   0.499588575135387   0.047737839509074 1
+ion O   0.250000000000000   0.250000000000000  -0.050000000000000 0
+ion O   0.250000000000000   0.750000000000000  -0.050000000000000 0
+ion O  -0.250000000000000   0.250000000000000  -0.050000000000000 0
+ion O  -0.250000000000000   0.750000000000000  -0.050000000000000 0
+ion O   0.000000000000000   0.000000000000000  -0.150000000000000 0
+ion O   0.500000000000000   0.000000000000000  -0.150000000000000 0
+ion O   0.000000000000000   0.500000000000000  -0.150000000000000 0
+ion O   0.500000000000000   0.500000000000000  -0.150000000000000 0
+ion O  -0.003105325683295   0.002133913196852   0.233248808535563 1
+
+# Forces in Lattice coordinates:
+force Ni  -0.009064943724116   0.001705829119454  -0.049821810087629 1
+force Ni  -0.003332180660201   0.000333037198146  -0.000286180816941 1
+force Ni  -0.003094537142983  -0.000977184777351   0.006013172352289 1
+force Ni   0.001105888545536   0.000123115008555   0.009869806596253 1
+force Ni   0.001316467171947   0.005021997767308  -0.054442034847388 1
+force Ni  -0.000511133575700  -0.003595319781264  -0.059945390042952 1
+force Ni  -0.006245639096642   0.003270600863062  -0.057262442520176 1
+force Ni  -0.005813376361077  -0.002525866305067  -0.041761039191381 1
+force Ni  -0.006687527313595  -0.001874125157355  -0.203490082753756 0
+force Ni   0.001282028074575  -0.000069158391730  -0.290709514812330 0
+force Ni   0.003371318808842   0.000187869124464  -0.306933488494529 0
+force Ni   0.002729442532993   0.000060170588944  -0.336565356972481 0
+force Ni   0.003833043036642   0.002475682354558   0.324582021227937 0
+force Ni   0.003946624185299  -0.002496750169253   0.330107504191100 0
+force Ni  -0.001086443025885   0.002041339163336   0.337372927020895 0
+force Ni  -0.001019721248433  -0.001985192809357   0.336539535769627 0
+force O  -0.003457462180708  -0.006749637478527  -0.004740147946862 1
+force O  -0.004226526710423   0.006397591518151  -0.003858582448318 1
+force O   0.000866021038317  -0.005745086845872  -0.009307486967094 1
+force O   0.002196229983576   0.005723022506070  -0.017582002900228 1
+force O   0.004139188139556   0.002021545041726   0.004639282933309 1
+force O   0.001648584722497  -0.001477309719272  -0.047811036534944 1
+force O   0.001345849727817   0.002336773200958  -0.035883050693061 1
+force O   0.000015452539738  -0.000840723465371  -0.010303759827760 1
+force O  -0.016521365409946  -0.012879341827806   0.090476109907084 0
+force O  -0.017128228943130   0.013509979672371   0.083356435292684 0
+force O   0.007889858093584  -0.013363160173548   0.064353789889183 0
+force O   0.007652966707835   0.013301643059196   0.060700295108910 0
+force O   0.009857783349995   0.000197575661186   0.087733352424330 0
+force O   0.007570208185139   0.000070185748864   0.049991517805072 0
+force O   0.005813281531798  -0.000041448576377   0.051689545045573 0
+force O   0.006715928453551   0.000027865103478   0.050302560119512 0
+force O  -0.011274504571739   0.010805763827623  -0.021605109637711 1
+
+# Energy components:
+   Eewald =     7380.2509983622730942
+       EH =     9856.2227430408383952
+     Eloc =   -20050.6180644643354753
+      Enl =     -852.0301068376145395
+   Epulay =        0.0007326944676329
+      Exc =     -301.7407040904752193
+       KE =     1229.8234000812524300
+        U =        2.2180722526684082
+-------------------------------------
+     Etot =    -2735.8729289609254920
+       TS =        0.0005975178442706
+-------------------------------------
+        F =    -2735.8735264787696906
+
+IonicMinimize: Iter:   5  F: -2735.873526478769691  |grad|_K:  5.904e-04  alpha:  1.000e+00  linmin: -9.861e-02  t[s]:  21141.94
+
+#--- Lowdin population analysis ---
+# oxidation-state Ni +3.556 +3.746 +3.729 +3.679 +3.337 +3.343 +3.342 +3.340 +3.380 +3.361 +3.361 +3.367 +3.728 +3.727 +3.726 +3.725
+# magnetic-moments Ni +0.356 -1.011 +0.994 -0.933 +0.873 +0.887 -0.889 -0.888 -0.928 +0.905 -0.905 +0.907 -1.011 -1.010 +1.008 +1.008
+# oxidation-state O -0.570 -0.574 -0.578 -0.573 -0.567 -0.575 -0.574 -0.573 -0.580 -0.581 -0.580 -0.580 -0.629 -0.638 -0.638 -0.637 -0.280
+# magnetic-moments O +0.138 +0.160 -0.148 -0.154 -0.055 -0.046 +0.050 -0.034 -0.060 -0.059 +0.054 +0.054 -0.174 +0.134 -0.135 +0.128 +0.881
+
+
+-------- Electronic minimization -----------
+	FillingsUpdate:  mu: +0.098243521  nElectrons: 390.000000  magneticMoment: [ Abs: 23.52154  Tot: -0.00000 ]
+ElecMinimize: Iter:   0  F: -2735.835492012831310  |grad|_K:  3.848e-05  alpha:  1.000e+00
+	FillingsUpdate:  mu: +0.086628866  nElectrons: 390.000000  magneticMoment: [ Abs: 23.53351  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.557
+ElecMinimize: Iter:   1  F: -2735.871218880384276  |grad|_K:  8.222e-06  alpha:  1.500e-01  linmin: -3.375e-03  t[s]:  21259.64
+	FillingsUpdate:  mu: +0.094645288  nElectrons: 390.000000  magneticMoment: [ Abs: 23.52094  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.284
+ElecMinimize: Iter:   2  F: -2735.872812117940157  |grad|_K:  3.616e-06  alpha:  1.458e-01  linmin:  8.178e-04  t[s]:  21334.55
+	FillingsUpdate:  mu: +0.090264913  nElectrons: 390.000000  magneticMoment: [ Abs: 23.51995  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.328
+ElecMinimize: Iter:   3  F: -2735.873332477592157  |grad|_K:  1.918e-06  alpha:  2.609e-01  linmin:  8.655e-05  t[s]:  21408.57
+	FillingsUpdate:  mu: +0.088824734  nElectrons: 390.000000  magneticMoment: [ Abs: 23.51992  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.345
+ElecMinimize: Iter:   4  F: -2735.873483876870978  |grad|_K:  1.227e-06  alpha:  2.609e-01  linmin: -1.206e-05  t[s]:  21482.63
+	FillingsUpdate:  mu: +0.089180448  nElectrons: 390.000000  magneticMoment: [ Abs: 23.51935  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.371
+ElecMinimize: Iter:   5  F: -2735.873552972875132  |grad|_K:  7.898e-07  alpha:  2.899e-01  linmin: -3.259e-06  t[s]:  21553.85
+	FillingsUpdate:  mu: +0.089574711  nElectrons: 390.000000  magneticMoment: [ Abs: 23.51861  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.412
+ElecMinimize: Iter:   6  F: -2735.873581454609848  |grad|_K:  5.764e-07  alpha:  2.886e-01  linmin:  2.369e-07  t[s]:  21625.20
+	FillingsUpdate:  mu: +0.089560316  nElectrons: 390.000000  magneticMoment: [ Abs: 23.51770  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.469
+ElecMinimize: Iter:   7  F: -2735.873596571853341  |grad|_K:  4.133e-07  alpha:  2.877e-01  linmin: -2.186e-08  t[s]:  21699.17
+	FillingsUpdate:  mu: +0.089396091  nElectrons: 390.000000  magneticMoment: [ Abs: 23.51680  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.552
+ElecMinimize: Iter:   8  F: -2735.873604191988761  |grad|_K:  2.971e-07  alpha:  2.820e-01  linmin:  1.468e-07  t[s]:  21772.15
+	FillingsUpdate:  mu: +0.089366080  nElectrons: 390.000000  magneticMoment: [ Abs: 23.51602  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.649
+ElecMinimize: Iter:   9  F: -2735.873608586801311  |grad|_K:  2.219e-07  alpha:  3.147e-01  linmin: -5.165e-08  t[s]:  21845.57
+	FillingsUpdate:  mu: +0.089478697  nElectrons: 390.000000  magneticMoment: [ Abs: 23.51539  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.734
+ElecMinimize: Iter:  10  F: -2735.873611056193567  |grad|_K:  1.611e-07  alpha:  3.170e-01  linmin:  2.150e-07  t[s]:  21918.94
+	FillingsUpdate:  mu: +0.089426781  nElectrons: 390.000000  magneticMoment: [ Abs: 23.51490  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.822
+ElecMinimize: Iter:  11  F: -2735.873612265599149  |grad|_K:  1.071e-07  alpha:  2.946e-01  linmin: -3.357e-09  t[s]:  21992.71
+	FillingsUpdate:  mu: +0.089425884  nElectrons: 390.000000  magneticMoment: [ Abs: 23.51467  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.909
+ElecMinimize: Iter:  12  F: -2735.873612774864796  |grad|_K:  7.920e-08  alpha:  2.803e-01  linmin: -1.173e-06  t[s]:  22069.11
+	FillingsUpdate:  mu: +0.089433959  nElectrons: 390.000000  magneticMoment: [ Abs: 23.51461  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 1.04
+ElecMinimize: Iter:  13  F: -2735.873613062587083  |grad|_K:  6.262e-08  alpha:  2.898e-01  linmin: -7.340e-06  t[s]:  22143.78
+	FillingsUpdate:  mu: +0.089428896  nElectrons: 390.000000  magneticMoment: [ Abs: 23.51454  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 1.24
+ElecMinimize: Iter:  14  F: -2735.873613272325201  |grad|_K:  5.718e-08  alpha:  3.372e-01  linmin: -2.232e-06  t[s]:  22216.69
+	FillingsUpdate:  mu: +0.089410300  nElectrons: 390.000000  magneticMoment: [ Abs: 23.51474  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 1.41
+ElecMinimize: Iter:  15  F: -2735.873613449970435  |grad|_K:  5.685e-08  alpha:  3.431e-01  linmin: -7.454e-06  t[s]:  22289.57
+	FillingsUpdate:  mu: +0.089464627  nElectrons: 390.000000  magneticMoment: [ Abs: 23.51492  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 1.23
+ElecMinimize: Iter:  16  F: -2735.873613583256429  |grad|_K:  6.999e-08  alpha:  2.608e-01  linmin: -3.511e-06  t[s]:  22361.11
+ElecMinimize: Converged (|Delta F|<1.000000e-06 for 5 iters).
+Setting wave functions to eigenvectors of Hamiltonian
+
+# Ionic positions in lattice coordinates:
+ion Ni   0.000457099122982  -0.001212115435182   0.151458251580137 1
+ion Ni   0.500031317642974   0.000057497239908   0.146208243791693 1
+ion Ni  -0.001695257247743   0.499656453970038   0.145753372528362 1
+ion Ni   0.499417428349513   0.499927744422314   0.146197081334068 1
+ion Ni   0.250321565336892   0.249516070290701   0.048755612583155 1
+ion Ni   0.250422664456326   0.750439137134751   0.048834464484593 1
+ion Ni  -0.249407522514061   0.250058747871643   0.048670791431572 1
+ion Ni  -0.249199967488736   0.750271789063604   0.048615629547073 1
+ion Ni   0.000000000000000   0.000000000000000  -0.050000000000000 0
+ion Ni   0.500000000000000   0.000000000000000  -0.050000000000000 0
+ion Ni   0.000000000000000   0.500000000000000  -0.050000000000000 0
+ion Ni   0.500000000000000   0.500000000000000  -0.050000000000000 0
+ion Ni   0.250000000000000   0.250000000000000  -0.150000000000000 0
+ion Ni   0.250000000000000   0.750000000000000  -0.150000000000000 0
+ion Ni  -0.250000000000000   0.250000000000000  -0.150000000000000 0
+ion Ni  -0.250000000000000   0.750000000000000  -0.150000000000000 0
+ion O   0.250393977151922   0.252435410471365   0.145234055536888 1
+ion O   0.250463372891229   0.746786968200819   0.145379324321883 1
+ion O  -0.254481589070171   0.253194499273971   0.145334333241062 1
+ion O  -0.254310021061067   0.747347348754117   0.145230842596592 1
+ion O  -0.000344052166121   0.001717558089026   0.055752448144125 1
+ion O   0.500558906578091  -0.000131449020064   0.048195888507652 1
+ion O   0.001683147168060   0.500229196271836   0.047949606864688 1
+ion O   0.500020234392986   0.499514686580529   0.047590838440663 1
+ion O   0.250000000000000   0.250000000000000  -0.050000000000000 0
+ion O   0.250000000000000   0.750000000000000  -0.050000000000000 0
+ion O  -0.250000000000000   0.250000000000000  -0.050000000000000 0
+ion O  -0.250000000000000   0.750000000000000  -0.050000000000000 0
+ion O   0.000000000000000   0.000000000000000  -0.150000000000000 0
+ion O   0.500000000000000   0.000000000000000  -0.150000000000000 0
+ion O   0.000000000000000   0.500000000000000  -0.150000000000000 0
+ion O   0.500000000000000   0.500000000000000  -0.150000000000000 0
+ion O  -0.003828684242263   0.002789886957954   0.233181509315917 1
+
+# Forces in Lattice coordinates:
+force Ni  -0.007550583324110   0.001218026352576  -0.041500934339013 1
+force Ni  -0.004594274921486  -0.000416778581191  -0.005279376244522 1
+force Ni  -0.001935719884588  -0.000282661976144   0.002298756605155 1
+force Ni  -0.001465205837509   0.001036656186132   0.014749001170554 1
+force Ni   0.000856456358233   0.002963245787674   0.033421978688375 1
+force Ni  -0.000355268898152  -0.001535363041962   0.033060675816247 1
+force Ni  -0.004062383111125   0.001802385257858   0.029371448148963 1
+force Ni  -0.003783025225817  -0.001109126530006   0.033340200381881 1
+force Ni  -0.007703140812797  -0.002237152671382  -0.233349456431893 0
+force Ni   0.001844130556745  -0.000281135769455  -0.334373418693171 0
+force Ni   0.003214674311866   0.000427441253614  -0.351163275952243 0
+force Ni   0.003168366692304   0.000348759763986  -0.372809046485670 0
+force Ni   0.004156092547602   0.002876245821191   0.291631486846821 0
+force Ni   0.004257140217345  -0.002891600105014   0.297566242397134 0
+force Ni  -0.001601314921324   0.002394326334565   0.305180535843784 0
+force Ni  -0.001530117623011  -0.002328466969573   0.304634599164099 0
+force O  -0.002402414282393  -0.003458710851683  -0.012030526825704 1
+force O  -0.003530012187396   0.003655695454428  -0.012557839407020 1
+force O  -0.000604487476766  -0.002778491597297  -0.018112444155591 1
+force O   0.000856352486162   0.003308119643679  -0.017130293321102 1
+force O   0.002707872137259   0.001054649472372  -0.018695741411924 1
+force O   0.000627107655830  -0.001459958122262  -0.016770958271604 1
+force O  -0.000427922707289   0.002282247719746  -0.007868603644237 1
+force O  -0.000975946624300  -0.000574191906987   0.001082371424169 1
+force O  -0.016821881427061  -0.013308549181374   0.068285024923293 0
+force O  -0.017386778294686   0.013980903282948   0.060537175787318 0
+force O   0.008934629382359  -0.013809446246909   0.042690413765360 0
+force O   0.008623943310112   0.013783116019882   0.040881061137734 0
+force O   0.010044763908607   0.000220595820401   0.088910131420063 0
+force O   0.007470496998486   0.000075344226060   0.049889353182328 0
+force O   0.005832137151501  -0.000058844101753   0.051771420137335 0
+force O   0.006628473186859   0.000034071756746   0.050448820429267 0
+force O  -0.011812541821424   0.010836356961997  -0.008571769711001 1
+
+# Energy components:
+   Eewald =     7387.9593719732802128
+       EH =     9863.8944359017077659
+     Eloc =   -20066.0031522549070360
+      Enl =     -852.0320875195779990
+   Epulay =        0.0007326944676329
+      Exc =     -301.7436332710941542
+       KE =     1229.8337522470515069
+        U =        2.2175513743075803
+-------------------------------------
+     Etot =    -2735.8730288547640157
+       TS =        0.0005847284922104
+-------------------------------------
+        F =    -2735.8736135832564287
+
+IonicMinimize: Iter:   6  F: -2735.873613583256429  |grad|_K:  4.167e-04  alpha:  1.000e+00  linmin:  8.727e-03  t[s]:  22369.57
+
+#--- Lowdin population analysis ---
+# oxidation-state Ni +3.559 +3.747 +3.731 +3.683 +3.336 +3.342 +3.341 +3.339 +3.378 +3.358 +3.358 +3.365 +3.727 +3.727 +3.726 +3.725
+# magnetic-moments Ni +0.357 -1.012 +0.995 -0.935 +0.872 +0.886 -0.888 -0.887 -0.928 +0.905 -0.904 +0.907 -1.010 -1.010 +1.009 +1.008
+# oxidation-state O -0.570 -0.575 -0.579 -0.573 -0.566 -0.575 -0.574 -0.573 -0.580 -0.581 -0.580 -0.580 -0.629 -0.638 -0.638 -0.638 -0.280
+# magnetic-moments O +0.136 +0.159 -0.146 -0.153 -0.054 -0.045 +0.049 -0.034 -0.058 -0.057 +0.053 +0.053 -0.175 +0.134 -0.134 +0.128 +0.880
+
+
+-------- Electronic minimization -----------
+	FillingsUpdate:  mu: +0.088658743  nElectrons: 390.000000  magneticMoment: [ Abs: 23.51575  Tot: +0.00000 ]
+ElecMinimize: Iter:   0  F: -2735.868978229671484  |grad|_K:  1.331e-05  alpha:  1.000e+00
+	FillingsUpdate:  mu: +0.092206366  nElectrons: 390.000000  magneticMoment: [ Abs: 23.51043  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.934
+ElecMinimize: Iter:   1  F: -2735.873348640135191  |grad|_K:  3.251e-06  alpha:  1.546e-01  linmin: -9.353e-04  t[s]:  22484.94
+	FillingsUpdate:  mu: +0.087803049  nElectrons: 390.000000  magneticMoment: [ Abs: 23.51461  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.511
+ElecMinimize: Iter:   2  F: -2735.873519855788800  |grad|_K:  1.666e-06  alpha:  1.035e-01  linmin: -2.016e-05  t[s]:  22559.54
+	FillingsUpdate:  mu: +0.089741519  nElectrons: 390.000000  magneticMoment: [ Abs: 23.51430  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.503
+ElecMinimize: Iter:   3  F: -2735.873599585007923  |grad|_K:  9.498e-07  alpha:  1.812e-01  linmin: -3.044e-05  t[s]:  22634.88
+	FillingsUpdate:  mu: +0.090155456  nElectrons: 390.000000  magneticMoment: [ Abs: 23.51363  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.584
+ElecMinimize: Iter:   4  F: -2735.873629496085869  |grad|_K:  5.989e-07  alpha:  2.094e-01  linmin:  6.439e-06  t[s]:  22706.37
+	FillingsUpdate:  mu: +0.089159193  nElectrons: 390.000000  magneticMoment: [ Abs: 23.51344  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.517
+ElecMinimize: Iter:   5  F: -2735.873642805200689  |grad|_K:  3.971e-07  alpha:  2.347e-01  linmin:  8.917e-06  t[s]:  22780.32
+	FillingsUpdate:  mu: +0.089243093  nElectrons: 390.000000  magneticMoment: [ Abs: 23.51314  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.572
+ElecMinimize: Iter:   6  F: -2735.873649223151915  |grad|_K:  2.725e-07  alpha:  2.575e-01  linmin: -9.500e-07  t[s]:  22852.10
+	FillingsUpdate:  mu: +0.089521767  nElectrons: 390.000000  magneticMoment: [ Abs: 23.51313  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.6
+ElecMinimize: Iter:   7  F: -2735.873651959110248  |grad|_K:  2.002e-07  alpha:  2.329e-01  linmin:  5.135e-07  t[s]:  22928.87
+	FillingsUpdate:  mu: +0.089435526  nElectrons: 390.000000  magneticMoment: [ Abs: 23.51318  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.61
+ElecMinimize: Iter:   8  F: -2735.873653477410699  |grad|_K:  1.292e-07  alpha:  2.396e-01  linmin: -4.401e-07  t[s]:  23001.70
+	FillingsUpdate:  mu: +0.089372648  nElectrons: 390.000000  magneticMoment: [ Abs: 23.51293  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.656
+ElecMinimize: Iter:   9  F: -2735.873654162339335  |grad|_K:  9.215e-08  alpha:  2.594e-01  linmin: -1.964e-06  t[s]:  23073.95
+	FillingsUpdate:  mu: +0.089423525  nElectrons: 390.000000  magneticMoment: [ Abs: 23.51282  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.692
+ElecMinimize: Iter:  10  F: -2735.873654476306456  |grad|_K:  6.718e-08  alpha:  2.334e-01  linmin:  1.440e-06  t[s]:  23146.24
+	FillingsUpdate:  mu: +0.089415464  nElectrons: 390.000000  magneticMoment: [ Abs: 23.51284  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.726
+ElecMinimize: Iter:  11  F: -2735.873654649762557  |grad|_K:  4.768e-08  alpha:  2.428e-01  linmin: -7.353e-06  t[s]:  23220.81
+	FillingsUpdate:  mu: +0.089407511  nElectrons: 390.000000  magneticMoment: [ Abs: 23.51273  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.827
+ElecMinimize: Iter:  12  F: -2735.873654748423633  |grad|_K:  3.682e-08  alpha:  2.739e-01  linmin: -2.937e-05  t[s]:  23294.05
+	FillingsUpdate:  mu: +0.089421526  nElectrons: 390.000000  magneticMoment: [ Abs: 23.51261  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.943
+ElecMinimize: Iter:  13  F: -2735.873654805331626  |grad|_K:  3.251e-08  alpha:  2.659e-01  linmin:  2.702e-05  t[s]:  23366.43
+ElecMinimize: Converged (|Delta F|<1.000000e-06 for 5 iters).
+Setting wave functions to eigenvectors of Hamiltonian
+
+# Ionic positions in lattice coordinates:
+ion Ni  -0.000016511595982  -0.001131055464698   0.151324762134883 1
+ion Ni   0.499748840057011   0.000040780315057   0.146193704727936 1
+ion Ni  -0.001806225258027   0.499630098507551   0.145775182727045 1
+ion Ni   0.499329920944213   0.499980200483553   0.146281659126238 1
+ion Ni   0.250364191030864   0.249701551047518   0.048813796216401 1
+ion Ni   0.250383017131322   0.750344193902982   0.048885008187741 1
+ion Ni  -0.249659423576654   0.250174931753397   0.048708328074261 1
+ion Ni  -0.249434032883489   0.750197415933650   0.048679217087858 1
+ion Ni   0.000000000000000   0.000000000000000  -0.050000000000000 0
+ion Ni   0.500000000000000   0.000000000000000  -0.050000000000000 0
+ion Ni   0.000000000000000   0.500000000000000  -0.050000000000000 0
+ion Ni   0.500000000000000   0.500000000000000  -0.050000000000000 0
+ion Ni   0.250000000000000   0.250000000000000  -0.150000000000000 0
+ion Ni   0.250000000000000   0.750000000000000  -0.150000000000000 0
+ion Ni  -0.250000000000000   0.250000000000000  -0.150000000000000 0
+ion Ni  -0.250000000000000   0.750000000000000  -0.150000000000000 0
+ion O   0.250243697380474   0.252184859249897   0.145231573782424 1
+ion O   0.250245982479974   0.747049418282597   0.145377098980688 1
+ion O  -0.254494448148897   0.252976631122718   0.145303727798949 1
+ion O  -0.254238402282125   0.747586850663606   0.145199473742334 1
+ion O  -0.000158872259524   0.001785724987371   0.055664195509027 1
+ion O   0.500600926674718  -0.000220831349224   0.048100875180499 1
+ion O   0.001671927323470   0.500368827404489   0.047899560702426 1
+ion O   0.499970198412933   0.499478351661479   0.047596259887813 1
+ion O   0.250000000000000   0.250000000000000  -0.050000000000000 0
+ion O   0.250000000000000   0.750000000000000  -0.050000000000000 0
+ion O  -0.250000000000000   0.250000000000000  -0.050000000000000 0
+ion O  -0.250000000000000   0.750000000000000  -0.050000000000000 0
+ion O   0.000000000000000   0.000000000000000  -0.150000000000000 0
+ion O   0.500000000000000   0.000000000000000  -0.150000000000000 0
+ion O   0.000000000000000   0.500000000000000  -0.150000000000000 0
+ion O   0.500000000000000   0.500000000000000  -0.150000000000000 0
+ion O  -0.004533820290048   0.003443143250697   0.233046139027159 1
+
+# Forces in Lattice coordinates:
+force Ni  -0.002697153365513   0.001177580639736  -0.076370539065903 1
+force Ni  -0.003582534905963   0.000404099606206  -0.027595470096231 1
+force Ni  -0.000469170025458  -0.000469082185503  -0.024069010939220 1
+force Ni  -0.002903059508713   0.000151165631354  -0.015384827156438 1
+force Ni   0.000263500872205   0.000309333612805   0.008542657728723 1
+force Ni   0.000326000362192   0.000233397788091   0.008911749686239 1
+force Ni  -0.000449064954673  -0.000008039125172   0.004047989601880 1
+force Ni  -0.000651079647574   0.000253031759313   0.000879296633324 1
+force Ni  -0.007645438869618  -0.002095557470463  -0.248386298418172 0
+force Ni   0.001374254599409  -0.000121505321582  -0.356163299461273 0
+force Ni   0.003307842126412   0.000290910795125  -0.370482604477676 0
+force Ni   0.002837816989649   0.000310743595460  -0.389394200715112 0
+force Ni   0.004431053764325   0.003065510482261   0.290953029957799 0
+force Ni   0.004525287422608  -0.003078602031003   0.296901895665806 0
+force Ni  -0.001872980196051   0.002578980457155   0.304372855409092 0
+force Ni  -0.001796505929262  -0.002509931975107   0.303992583110723 0
+force O  -0.002046727068924  -0.001276343626878  -0.008975048071139 1
+force O  -0.003719049469320   0.002203519221715  -0.004730403220741 1
+force O  -0.002290600059856  -0.000531855261702  -0.011532711761822 1
+force O  -0.001114458071359   0.001505820067881  -0.006524702298837 1
+force O   0.000998506957021   0.002993280348223  -0.020000743193644 1
+force O  -0.000245383097371  -0.001038986166608   0.006812344759588 1
+force O  -0.001233370150419   0.001695255781888   0.009390711962128 1
+force O  -0.002083392446388  -0.000529968405583   0.009113589402379 1
+force O  -0.016857437083623  -0.013121928826103   0.075998067995680 0
+force O  -0.017377443503500   0.013813872883591   0.065315783101307 0
+force O   0.008853216952096  -0.013636122460745   0.047120954365667 0
+force O   0.008463065290203   0.013611014307714   0.046190923359770 0
+force O   0.010019568249263   0.000245492496251   0.089616902011157 0
+force O   0.007443166723843   0.000094314939578   0.051115070196179 0
+force O   0.005820675119768  -0.000093758065744   0.052783049823965 0
+force O   0.006644172541494   0.000011223281373   0.051091631942446 0
+force O  -0.010080600486284   0.009459792996750   0.000497203714090 1
+
+# Energy components:
+   Eewald =     7388.4235089081230399
+       EH =     9864.3853390641197620
+     Eloc =   -20066.9590007917031471
+      Enl =     -852.0327954354155509
+   Epulay =        0.0007326944676329
+      Exc =     -301.7442049200819270
+       KE =     1229.8359095007199357
+        U =        2.2174444485677225
+-------------------------------------
+     Etot =    -2735.8730665312023120
+       TS =        0.0005882741295147
+-------------------------------------
+        F =    -2735.8736548053316255
+
+IonicMinimize: Iter:   7  F: -2735.873654805331626  |grad|_K:  3.882e-04  alpha:  1.000e+00  linmin: -6.853e-02  t[s]:  23374.87
+
+#--- Lowdin population analysis ---
+# oxidation-state Ni +3.558 +3.746 +3.731 +3.683 +3.336 +3.342 +3.341 +3.339 +3.378 +3.359 +3.358 +3.365 +3.728 +3.727 +3.726 +3.725
+# magnetic-moments Ni +0.358 -1.011 +0.994 -0.935 +0.871 +0.886 -0.888 -0.887 -0.928 +0.904 -0.904 +0.907 -1.011 -1.010 +1.009 +1.008
+# oxidation-state O -0.570 -0.575 -0.579 -0.573 -0.566 -0.575 -0.574 -0.573 -0.580 -0.580 -0.580 -0.579 -0.629 -0.638 -0.638 -0.638 -0.281
+# magnetic-moments O +0.134 +0.158 -0.146 -0.152 -0.053 -0.046 +0.050 -0.035 -0.059 -0.058 +0.053 +0.053 -0.174 +0.133 -0.134 +0.128 +0.880
+
+
+-------- Electronic minimization -----------
+	FillingsUpdate:  mu: +0.095429423  nElectrons: 390.000000  magneticMoment: [ Abs: 23.51277  Tot: +0.00000 ]
+ElecMinimize: Iter:   0  F: -2735.382003272452039  |grad|_K:  1.334e-04  alpha:  1.000e+00
+	FillingsUpdate:  mu: +0.109357617  nElectrons: 390.000000  magneticMoment: [ Abs: 23.52392  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.65
+ElecMinimize: Iter:   1  F: -2735.808897006756979  |grad|_K:  5.614e-05  alpha:  1.408e-01  linmin: -6.298e-03  t[s]:  23469.28
+	FillingsUpdate:  mu: +0.090408743  nElectrons: 390.000000  magneticMoment: [ Abs: 23.53100  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.523
+ElecMinimize: Iter:   2  F: -2735.852374346947272  |grad|_K:  1.883e-05  alpha:  9.713e-02  linmin: -2.477e-03  t[s]:  23544.20
+	FillingsUpdate:  mu: +0.101090517  nElectrons: 390.000000  magneticMoment: [ Abs: 23.50576  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.592
+ElecMinimize: Iter:   3  F: -2735.866597871860449  |grad|_K:  9.690e-06  alpha:  2.395e-01  linmin:  1.368e-04  t[s]:  23617.06
+	FillingsUpdate:  mu: +0.086564975  nElectrons: 390.000000  magneticMoment: [ Abs: 23.50934  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.56
+ElecMinimize: Iter:   4  F: -2735.870332869588765  |grad|_K:  6.188e-06  alpha:  2.527e-01  linmin:  1.896e-06  t[s]:  23688.89
+	FillingsUpdate:  mu: +0.090075207  nElectrons: 390.000000  magneticMoment: [ Abs: 23.50170  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.614
+ElecMinimize: Iter:   5  F: -2735.872154692343429  |grad|_K:  4.205e-06  alpha:  3.005e-01  linmin: -3.927e-05  t[s]:  23758.98
+	FillingsUpdate:  mu: +0.090865704  nElectrons: 390.000000  magneticMoment: [ Abs: 23.50196  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.722
+ElecMinimize: Iter:   6  F: -2735.873016001793076  |grad|_K:  3.029e-06  alpha:  3.068e-01  linmin: -1.142e-05  t[s]:  23828.61
+	FillingsUpdate:  mu: +0.088380967  nElectrons: 390.000000  magneticMoment: [ Abs: 23.50025  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.775
+ElecMinimize: Iter:   7  F: -2735.873450853561735  |grad|_K:  1.919e-06  alpha:  2.991e-01  linmin:  1.243e-05  t[s]:  23899.28
+	FillingsUpdate:  mu: +0.090767166  nElectrons: 390.000000  magneticMoment: [ Abs: 23.49684  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.617
+ElecMinimize: Iter:   8  F: -2735.873593173353129  |grad|_K:  1.428e-06  alpha:  2.447e-01  linmin:  1.892e-06  t[s]:  23974.54
+	FillingsUpdate:  mu: +0.089119452  nElectrons: 390.000000  magneticMoment: [ Abs: 23.49801  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.471
+ElecMinimize: Iter:   9  F: -2735.873660821059275  |grad|_K:  7.359e-07  alpha:  2.097e-01  linmin:  3.789e-06  t[s]:  24046.63
+	FillingsUpdate:  mu: +0.089407619  nElectrons: 390.000000  magneticMoment: [ Abs: 23.49678  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.513
+ElecMinimize: Iter:  10  F: -2735.873686150098365  |grad|_K:  4.397e-07  alpha:  2.958e-01  linmin: -2.276e-06  t[s]:  24119.16
+	FillingsUpdate:  mu: +0.089681280  nElectrons: 390.000000  magneticMoment: [ Abs: 23.49582  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.504
+ElecMinimize: Iter:  11  F: -2735.873694852405151  |grad|_K:  2.922e-07  alpha:  2.846e-01  linmin: -1.864e-06  t[s]:  24191.79
+	FillingsUpdate:  mu: +0.089335847  nElectrons: 390.000000  magneticMoment: [ Abs: 23.49545  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.473
+ElecMinimize: Iter:  12  F: -2735.873698901177249  |grad|_K:  2.069e-07  alpha:  2.997e-01  linmin:  7.198e-06  t[s]:  24267.61
+	FillingsUpdate:  mu: +0.089462141  nElectrons: 390.000000  magneticMoment: [ Abs: 23.49457  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.55
+ElecMinimize: Iter:  13  F: -2735.873701257516586  |grad|_K:  1.542e-07  alpha:  3.482e-01  linmin: -5.190e-06  t[s]:  24340.23
+	FillingsUpdate:  mu: +0.089541855  nElectrons: 390.000000  magneticMoment: [ Abs: 23.49371  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.61
+ElecMinimize: Iter:  14  F: -2735.873702638555642  |grad|_K:  1.323e-07  alpha:  3.673e-01  linmin:  1.778e-06  t[s]:  24412.21
+	FillingsUpdate:  mu: +0.089409793  nElectrons: 390.000000  magneticMoment: [ Abs: 23.49303  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.628
+ElecMinimize: Iter:  15  F: -2735.873703529396607  |grad|_K:  1.051e-07  alpha:  3.218e-01  linmin:  3.845e-06  t[s]:  24486.58
+	FillingsUpdate:  mu: +0.089501268  nElectrons: 390.000000  magneticMoment: [ Abs: 23.49218  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.677
+ElecMinimize: Iter:  16  F: -2735.873704098682992  |grad|_K:  8.323e-08  alpha:  3.260e-01  linmin: -9.058e-06  t[s]:  24560.17
+	FillingsUpdate:  mu: +0.089468399  nElectrons: 390.000000  magneticMoment: [ Abs: 23.49148  Tot: -0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.8
+ElecMinimize: Iter:  17  F: -2735.873704454433664  |grad|_K:  6.654e-08  alpha:  3.241e-01  linmin: -5.993e-06  t[s]:  24632.13
+	FillingsUpdate:  mu: +0.089455867  nElectrons: 390.000000  magneticMoment: [ Abs: 23.49083  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.94
+ElecMinimize: Iter:  18  F: -2735.873704708490550  |grad|_K:  5.954e-08  alpha:  3.623e-01  linmin: -3.727e-06  t[s]:  24705.62
+	FillingsUpdate:  mu: +0.089517916  nElectrons: 390.000000  magneticMoment: [ Abs: 23.49007  Tot: +0.00000 ]
+	SubspaceRotationAdjust: set factor to 0.995
+ElecMinimize: Iter:  19  F: -2735.873704904466194  |grad|_K:  6.122e-08  alpha:  3.496e-01  linmin: -8.252e-06  t[s]:  24776.61
+ElecMinimize: Converged (|Delta F|<1.000000e-06 for 5 iters).
+Setting wave functions to eigenvectors of Hamiltonian
+
+# Ionic positions in lattice coordinates:
+ion Ni  -0.002056338621371  -0.000775484422585   0.150618198809354 1
+ion Ni   0.498426235810402   0.000018250969350   0.145857247376674 1
+ion Ni  -0.002336852802256   0.499469257208514   0.145586565711532 1
+ion Ni   0.498777473768527   0.500174570566205   0.146416517421764 1
+ion Ni   0.250474152830154   0.250337697200604   0.048854063260408 1
+ion Ni   0.250175988816529   0.750097333863496   0.048895234033025 1
+ion Ni  -0.250561423154129   0.250570639288134   0.048648483987902 1
+ion Ni  -0.250272776589239   0.749991991201183   0.048700959462907 1
+ion Ni   0.000000000000000   0.000000000000000  -0.050000000000000 0
+ion Ni   0.500000000000000   0.000000000000000  -0.050000000000000 0
+ion Ni   0.000000000000000   0.500000000000000  -0.050000000000000 0
+ion Ni   0.500000000000000   0.500000000000000  -0.050000000000000 0
+ion Ni   0.250000000000000   0.250000000000000  -0.150000000000000 0
+ion Ni   0.250000000000000   0.750000000000000  -0.150000000000000 0
+ion Ni  -0.250000000000000   0.250000000000000  -0.150000000000000 0
+ion Ni  -0.250000000000000   0.750000000000000  -0.150000000000000 0
+ion O   0.249530936408979   0.251158643395696   0.145091636985250 1
+ion O   0.249169124644870   0.748148329654184   0.145270281663891 1
+ion O  -0.254844248488923   0.252141149952750   0.145042500992828 1
+ion O  -0.254178409741469   0.748583619704787   0.144959238058222 1
+ion O   0.000652761525480   0.002332983130450   0.055354279793690 1
+ion O   0.500761211291965  -0.000639128058067   0.047696140085779 1
+ion O   0.001628915995763   0.501028565202709   0.047670369636122 1
+ion O   0.499649275829569   0.499277090468289   0.047575351561545 1
+ion O   0.250000000000000   0.250000000000000  -0.050000000000000 0
+ion O   0.250000000000000   0.750000000000000  -0.050000000000000 0
+ion O  -0.250000000000000   0.250000000000000  -0.050000000000000 0
+ion O  -0.250000000000000   0.750000000000000  -0.050000000000000 0
+ion O   0.000000000000000   0.000000000000000  -0.150000000000000 0
+ion O   0.500000000000000   0.000000000000000  -0.150000000000000 0
+ion O   0.000000000000000   0.500000000000000  -0.150000000000000 0
+ion O   0.500000000000000   0.500000000000000  -0.150000000000000 0
+ion O  -0.008059770299916   0.006701797965415   0.232430176720402 1
+
+# Forces in Lattice coordinates:
+force Ni   0.006718544433519  -0.000836825514360   0.032720113322059 1
+force Ni  -0.000365888272178   0.000160038081343  -0.007690848877310 1
+force Ni  -0.000796117822213   0.001964589181521  -0.014195480330533 1
+force Ni  -0.006570749658086   0.000887630235784  -0.030273593282142 1
+force Ni  -0.004083515879892  -0.008312129609495  -0.007709489097185 1
+force Ni  -0.000380059245683   0.006739779229061   0.002167369278975 1
+force Ni   0.011053842832373  -0.005851231370775  -0.007176059960348 1
+force Ni   0.010143977294213   0.005594442750971  -0.023544511947704 1
+force Ni  -0.008404597711257  -0.002915929397646  -0.234794003133926 0
+force Ni   0.000502264620771  -0.000574518129594  -0.370227338406278 0
+force Ni   0.002663598930415   0.000902247436832  -0.372120427269443 0
+force Ni   0.002756414169556   0.001370030419964  -0.385211397925333 0
+force Ni   0.004078226341156   0.002808492897546   0.292419491752533 0
+force Ni   0.004198549457077  -0.002823292058109   0.300876298265934 0
+force Ni  -0.001571025583272   0.002360864729636   0.306856644091879 0
+force Ni  -0.001484466337677  -0.002274684713534   0.307484319964372 0
+force O  -0.001501282578776   0.006695596217085   0.006699562911423 1
+force O  -0.005099137142904  -0.003144335530828   0.020567698781194 1
+force O  -0.007085493805291   0.007284428946772   0.007264081387872 1
+force O  -0.006279600324178  -0.003681229661165   0.025593404500379 1
+force O  -0.003309033327707   0.008465366109861  -0.078086567267106 1
+force O  -0.002796409845246  -0.000327033199062   0.073558173607727 1
+force O  -0.005579924930678   0.000681530404633   0.055947776812372 1
+force O  -0.006454450563865   0.000123191718485   0.028281293303375 1
+force O  -0.016812955966664  -0.012194952382181   0.081367869211885 0
+force O  -0.017370619902674   0.013206700192156   0.062867963843243 0
+force O   0.008756471164590  -0.012770576422316   0.045025294151976 0
+force O   0.008104404379401   0.012895329475837   0.047201989858684 0
+force O   0.010001847912345   0.000304162967277   0.087772573326250 0
+force O   0.007420381897105   0.000185066564481   0.049869568953088 0
+force O   0.005897972661375  -0.000227338930387   0.051785369469620 0
+force O   0.006700957942756  -0.000025548838923   0.049406419943828 0
+force O   0.001610852295611   0.000281596173913   0.012159895614687 1
+
+# Energy components:
+   Eewald =     7398.6711365774381193
+       EH =     9874.6429819141321786
+     Eloc =   -20087.4739992047288979
+      Enl =     -852.0382261020238275
+   Epulay =        0.0007326944676329
+      Exc =     -301.7504866685698062
+       KE =     1229.8585007354838581
+        U =        2.2162581288484091
+-------------------------------------
+     Etot =    -2735.8731019249535166
+       TS =        0.0006029795128598
+-------------------------------------
+        F =    -2735.8737049044661944
+
+IonicMinimize: Iter:   8  F: -2735.873704904466194  |grad|_K:  6.278e-04  alpha:  1.000e+00  linmin:  5.312e-02  t[s]:  24785.55
+IonicMinimize: Converged (|Delta F|<1.000000e-04 for 3 iters).
+
+#--- Lowdin population analysis ---
+# oxidation-state Ni +3.554 +3.742 +3.729 +3.682 +3.333 +3.340 +3.339 +3.337 +3.379 +3.357 +3.358 +3.364 +3.728 +3.727 +3.726 +3.725
+# magnetic-moments Ni +0.363 -1.010 +0.993 -0.936 +0.866 +0.886 -0.888 -0.887 -0.928 +0.903 -0.903 +0.908 -1.011 -1.010 +1.009 +1.009
+# oxidation-state O -0.569 -0.575 -0.578 -0.573 -0.566 -0.574 -0.573 -0.572 -0.580 -0.580 -0.580 -0.580 -0.629 -0.638 -0.638 -0.638 -0.281
+# magnetic-moments O +0.127 +0.155 -0.143 -0.151 -0.051 -0.048 +0.053 -0.036 -0.059 -0.057 +0.052 +0.054 -0.173 +0.132 -0.133 +0.129 +0.885
+
+
+Dumping 'O.ionpos' ... done
+Dumping 'O.lattice' ... done
+Dumping 'O.Ecomponents' ... done
+End date and time: Sat May 17 04:05:29 2025  (Duration: 0-6:53:08.37)
+Done!

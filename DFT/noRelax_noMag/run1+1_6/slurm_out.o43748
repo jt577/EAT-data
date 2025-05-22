@@ -1,0 +1,321 @@
+
+*************** JDFTx 1.7.0  ***************
+
+Start date and time: Thu May  1 18:39:25 2025
+Executable /data2/jt577/jdftx_eat_withLibXC/build/jdftx with command-line: -i /data2/jt577/May_2025/EAT_noMag/run1+1_6/runs/calc_20250501-183925/O/O.in
+Running on hosts (process indices):  node3307 (0-8)
+Divided in process groups (process indices):  0 (0)  1 (1)  2 (2)  3 (3)  4 (4)  5 (5)  6 (6)  7 (7)  8 (8)
+Resource initialization completed at t[s]:      0.00
+Run totals: 9 processes, 63 threads, 0 GPUs
+
+
+Input parsed successfully to the following command list (including defaults):
+
+add-mix mix1 Ni Cr Co V 
+add-mix mix2 Ni Cr Co V 
+add-mix mix3 Ni Cr Co V 
+add-mix mix4 Ni Cr Co V 
+add-mix mix5 Ni Cr Co V 
+add-mix mix6 Ni Cr Co V 
+add-mix mix7 Ni Cr Co V 
+add-mix mix8 Ni Cr Co V 
+add-mix mix9 Ni Cr Co V 
+add-mix mix10 Ni Cr Co V 
+add-mix mix11 Ni Cr Co V 
+add-mix mix12 Ni Cr Co V 
+add-mix mix13 Ni Cr Co V 
+add-mix mix14 Ni Cr Co V 
+add-mix mix15 Ni Cr Co V 
+add-mix mix16 Ni Cr Co V 
+basis kpoint-dependent
+coords-type Lattice
+core-overlap-check vector
+coulomb-interaction Periodic
+davidson-band-ratio 1.1
+dump End State IonicPositions Lattice Ecomponents MixGrad
+dump-name O.$VAR
+elec-cutoff 30
+elec-eigen-algo Davidson
+elec-ex-corr gga-x-rpbe gga-c-pbe
+elec-smearing Fermi 0.001
+electronic-minimize  \
+	dirUpdateScheme      FletcherReeves \
+	linminMethod         DirUpdateRecommended \
+	nIterations          1000 \
+	history              15 \
+	knormThreshold       0 \
+	energyDiffThreshold  1e-07 \
+	nEnergyDiff          5 \
+	alphaTstart          1 \
+	alphaTmin            1e-10 \
+	updateTestStepSize   yes \
+	alphaTreduceFactor   0.1 \
+	alphaTincreaseFactor 3 \
+	nAlphaAdjustMax      3 \
+	wolfeEnergy          0.0001 \
+	wolfeGradient        0.9 \
+	fdTest               no
+exchange-regularization WignerSeitzTruncated
+fluid None
+fluid-ex-corr (null) lda-PZ
+fluid-gummel-loop 10 1.000000e-05
+fluid-minimize  \
+	dirUpdateScheme      PolakRibiere \
+	linminMethod         DirUpdateRecommended \
+	nIterations          100 \
+	history              15 \
+	knormThreshold       0 \
+	energyDiffThreshold  0 \
+	nEnergyDiff          2 \
+	alphaTstart          1 \
+	alphaTmin            1e-10 \
+	updateTestStepSize   yes \
+	alphaTreduceFactor   0.1 \
+	alphaTincreaseFactor 3 \
+	nAlphaAdjustMax      3 \
+	wolfeEnergy          0.0001 \
+	wolfeGradient        0.9 \
+	fdTest               no
+fluid-solvent H2O 55.338 ScalarEOS \
+	epsBulk 78.4 \
+	pMol 0.92466 \
+	epsInf 1.77 \
+	Pvap 1.06736e-10 \
+	sigmaBulk 4.62e-05 \
+	Rvdw 2.61727 \
+	Res 1.42 \
+	tauNuc 343133 \
+	poleEl 15 7 1
+forces-output-coords Positions
+initial-state O.$VAR
+ion mix1  0.291653078454505   0.215052712800479   0.256896906330489   0.236397302414526   0.000000000000000   0.000000000000000   0.150000000000000 0
+ion mix2  0.268712299402138   0.258484638255229   0.195364551866217   0.277438510476416   0.500000000000000   0.000000000000000   0.150000000000000 0
+ion mix3  0.233076562841409   0.218683376355197   0.253829055353405   0.294411005449989   0.000000000000000   0.500000000000000   0.150000000000000 0
+ion mix4  0.244502618497323   0.246345367110537   0.266131885895488   0.243020128496652   0.500000000000000   0.500000000000000   0.150000000000000 0
+ion mix5  0.241833273990726   0.199392461282211   0.280387478154949   0.278386786572113   0.250000000000000   0.250000000000000   0.050000000000000 0
+ion mix6  0.252085728087792   0.287769077494980   0.241795690322341   0.218349504094887   0.250000000000000   0.750000000000000   0.050000000000000 0
+ion mix7  0.305162103975995   0.208435898479187   0.266924492398612   0.219477505146206  -0.250000000000000   0.250000000000000   0.050000000000000 0
+ion mix8  0.242788156244110   0.265352920366781   0.199055711479414   0.292803211909694  -0.250000000000000   0.750000000000000   0.050000000000000 0
+ion mix9  0.254429330889885   0.219396182625792   0.227231313033176   0.298943173451147   0.000000000000000   0.000000000000000  -0.050000000000000 0
+ion mix10  0.231947517123160   0.211280583880030   0.279379759916238   0.277392139080573   0.500000000000000   0.000000000000000  -0.050000000000000 0
+ion mix11  0.214332159839811   0.254298933127057   0.225124999684730   0.306243907348402   0.000000000000000   0.500000000000000  -0.050000000000000 0
+ion mix12  0.253737270964932   0.262487504047602   0.239290215318610   0.244485009668855   0.500000000000000   0.500000000000000  -0.050000000000000 0
+ion mix13  0.257024075344647   0.225073674778675   0.265790278502376   0.252111971374303   0.250000000000000   0.250000000000000  -0.150000000000000 0
+ion mix14  0.270066049807432   0.220104034578938   0.249640988888912   0.260188926724717   0.250000000000000   0.750000000000000  -0.150000000000000 0
+ion mix15  0.216088984035228   0.251476806460813   0.260386916693871   0.272047292810089  -0.250000000000000   0.250000000000000  -0.150000000000000 0
+ion mix16  0.283494331420002   0.237843493119456   0.229427652016099   0.249234523444444  -0.250000000000000   0.750000000000000  -0.150000000000000 0
+ion O  0.250000000000000   0.250000000000000   0.150000000000000 0
+ion O  0.250000000000000   0.750000000000000   0.150000000000000 0
+ion O -0.250000000000000   0.250000000000000   0.150000000000000 0
+ion O -0.250000000000000   0.750000000000000   0.150000000000000 0
+ion O  0.000000000000000   0.000000000000000   0.050000000000000 0
+ion O  0.500000000000000   0.000000000000000   0.050000000000000 0
+ion O  0.000000000000000   0.500000000000000   0.050000000000000 0
+ion O  0.500000000000000   0.500000000000000   0.050000000000000 0
+ion O  0.250000000000000   0.250000000000000  -0.050000000000000 0
+ion O  0.250000000000000   0.750000000000000  -0.050000000000000 0
+ion O -0.250000000000000   0.250000000000000  -0.050000000000000 0
+ion O -0.250000000000000   0.750000000000000  -0.050000000000000 0
+ion O  0.000000000000000   0.000000000000000  -0.150000000000000 0
+ion O  0.500000000000000   0.000000000000000  -0.150000000000000 0
+ion O  0.000000000000000   0.500000000000000  -0.150000000000000 0
+ion O  0.500000000000000   0.500000000000000  -0.150000000000000 0
+ion O  0.000000000000000   0.000000000000000   0.230000000000000 1
+ion-species SG15/$ID_ONCV_PBE.upf
+ion-width 0
+ionic-minimize  \
+	dirUpdateScheme      L-BFGS \
+	linminMethod         DirUpdateRecommended \
+	nIterations          1000 \
+	history              15 \
+	knormThreshold       0.0001 \
+	energyDiffThreshold  1e-05 \
+	nEnergyDiff          3 \
+	alphaTstart          1 \
+	alphaTmin            1e-10 \
+	updateTestStepSize   yes \
+	alphaTreduceFactor   0.1 \
+	alphaTincreaseFactor 3 \
+	nAlphaAdjustMax      3 \
+	wolfeEnergy          0.0001 \
+	wolfeGradient        0.9 \
+	fdTest               no
+kpoint   0.500000000000   0.500000000000   0.500000000000  1.00000000000000
+kpoint-folding 3 3 1 
+latt-move-scale 1 1 1
+latt-scale 1 1 1 
+lattice  \
+	   8.140000000000001    8.140000000000001    0.000000000000000  \
+	   8.140000000000001   -8.140000000000001    0.000000000000000  \
+	   0.000000000000000    0.000000000000000   40.700000000000003 
+lattice-minimize  \
+	dirUpdateScheme      L-BFGS \
+	linminMethod         DirUpdateRecommended \
+	nIterations          0 \
+	history              15 \
+	knormThreshold       0 \
+	energyDiffThreshold  1e-06 \
+	nEnergyDiff          2 \
+	alphaTstart          1 \
+	alphaTmin            1e-10 \
+	updateTestStepSize   yes \
+	alphaTreduceFactor   0.1 \
+	alphaTincreaseFactor 3 \
+	nAlphaAdjustMax      3 \
+	wolfeEnergy          0.0001 \
+	wolfeGradient        0.9 \
+	fdTest               no
+lcao-params -1 1e-06 0.001
+pcm-variant GLSSA13
+spintype no-spin
+subspace-rotation-factor 1 yes
+symmetries none
+symmetry-threshold 0.0001
+
+
+Applied RMS atom displacement 0 bohrs to make symmetries exact.
+
+---------- Initializing the Grid ----------
+R = 
+[         8.14         8.14            0  ]
+[         8.14        -8.14            0  ]
+[            0            0         40.7  ]
+unit cell volume = 5393.53
+G =
+[   0.385945   0.385945         -0  ]
+[   0.385945  -0.385945         -0  ]
+[         -0         -0   0.154378  ]
+Minimum fftbox size, Smin = [  60  60  204  ]
+Chosen fftbox size, S = [  60  60  210  ]
+
+---------- Exchange Correlation functional ----------
+Initialized LibXC exchange functional 'Hammer, Hansen, and Norskov'
+Initialized LibXC correlation functional 'Perdew, Burke & Ernzerhof'
+
+---------- Setting up pseudopotentials ----------
+Width of ionic core gaussian charges (only for fluid interactions / plotting) set to 0
+  Disabling overlap check for local pseudopotential.
+
+Reading pseudopotential file '/data2/jt577/jdftx_eat_withLibXC/build/pseudopotentials/SG15/Ni_ONCV_PBE.upf':
+  'Ni' pseudopotential, 'PBE' functional
+  Generated using ONCVPSP code by D. R. Hamann
+  Author: Martin Schlipf and Francois Gygi  Date: 150915.
+  18 valence electrons, 4 orbitals, 6 projectors, 1292 radial grid points, with lMax = 2
+  Transforming local potential to a uniform radial grid of dG=0.02 with 1419 points.
+  Transforming nonlocal projectors to a uniform radial grid of dG=0.02 with 528 points.
+    3S    l: 0   occupation:  2.0   eigenvalue: -4.081355
+    3P    l: 1   occupation:  6.0   eigenvalue: -2.623460
+    4S    l: 0   occupation:  2.0   eigenvalue: -0.207378
+    3D    l: 2   occupation:  8.0   eigenvalue: -0.326118
+  Transforming atomic orbitals to a uniform radial grid of dG=0.02 with 528 points.
+  WARNING: large normalization error in atomic orbital 1s (integral: 0.000006).
+  Core radius for overlap checks: 1.99 bohrs.
+  Reading pulay file /data2/jt577/jdftx_eat_withLibXC/build/pseudopotentials/SG15/Ni_ONCV_PBE.pulay ... using dE_dnG = -7.250568e-04 computed for Ecut = 30.
+
+Reading pseudopotential file '/data2/jt577/jdftx_eat_withLibXC/build/pseudopotentials/SG15/Cr_ONCV_PBE.upf':
+  'Cr' pseudopotential, 'PBE' functional
+  Generated using ONCVPSP code by D. R. Hamann
+  Author: Martin Schlipf and Francois Gygi  Date: 150915.
+  14 valence electrons, 4 orbitals, 6 projectors, 1160 radial grid points, with lMax = 2
+  Transforming local potential to a uniform radial grid of dG=0.02 with 1419 points.
+  Transforming nonlocal projectors to a uniform radial grid of dG=0.02 with 528 points.
+    3S    l: 0   occupation:  2.0   eigenvalue: -2.865131
+    3P    l: 1   occupation:  6.0   eigenvalue: -1.810600
+    4S    l: 0   occupation:  2.0   eigenvalue: -0.180525
+    3D    l: 2   occupation:  4.0   eigenvalue: -0.220312
+  Transforming atomic orbitals to a uniform radial grid of dG=0.02 with 528 points.
+  WARNING: large normalization error in atomic orbital 1s (integral: 0.000001).
+  Core radius for overlap checks: 2.10 bohrs.
+  Reading pulay file /data2/jt577/jdftx_eat_withLibXC/build/pseudopotentials/SG15/Cr_ONCV_PBE.pulay ... using dE_dnG = -9.817895e-06 computed for Ecut = 30.
+
+Reading pseudopotential file '/data2/jt577/jdftx_eat_withLibXC/build/pseudopotentials/SG15/Co_ONCV_PBE.upf':
+  'Co' pseudopotential, 'PBE' functional
+  Generated using ONCVPSP code by D. R. Hamann
+  Author: Martin Schlipf and Francois Gygi  Date: 150915.
+  17 valence electrons, 4 orbitals, 6 projectors, 1388 radial grid points, with lMax = 2
+  Transforming local potential to a uniform radial grid of dG=0.02 with 1419 points.
+  Transforming nonlocal projectors to a uniform radial grid of dG=0.02 with 528 points.
+    3S    l: 0   occupation:  2.0   eigenvalue: -3.763303
+    3P    l: 1   occupation:  6.0   eigenvalue: -2.412101
+    4S    l: 0   occupation:  2.0   eigenvalue: -0.201022
+    3D    l: 2   occupation:  7.0   eigenvalue: -0.301498
+  Transforming atomic orbitals to a uniform radial grid of dG=0.02 with 528 points.
+  Core radius for overlap checks: 1.94 bohrs.
+  Reading pulay file /data2/jt577/jdftx_eat_withLibXC/build/pseudopotentials/SG15/Co_ONCV_PBE.pulay ... using dE_dnG = -9.787391e-05 computed for Ecut = 30.
+
+Reading pseudopotential file '/data2/jt577/jdftx_eat_withLibXC/build/pseudopotentials/SG15/V_ONCV_PBE.upf':
+  'V' pseudopotential, 'PBE' functional
+  Generated using ONCVPSP code by D. R. Hamann
+  Author: Martin Schlipf and Francois Gygi  Date: 150915.
+  13 valence electrons, 4 orbitals, 6 projectors, 1536 radial grid points, with lMax = 2
+  Transforming local potential to a uniform radial grid of dG=0.02 with 1419 points.
+  Transforming nonlocal projectors to a uniform radial grid of dG=0.02 with 528 points.
+    3S    l: 0   occupation:  2.0   eigenvalue: -2.581105
+    3P    l: 1   occupation:  6.0   eigenvalue: -1.618486
+    4S    l: 0   occupation:  2.0   eigenvalue: -0.172804
+    3D    l: 2   occupation:  3.0   eigenvalue: -0.189795
+  Transforming atomic orbitals to a uniform radial grid of dG=0.02 with 528 points.
+  Core radius for overlap checks: 1.80 bohrs.
+  Reading pulay file /data2/jt577/jdftx_eat_withLibXC/build/pseudopotentials/SG15/V_ONCV_PBE.pulay ... using dE_dnG = -1.698632e-04 computed for Ecut = 30.
+  Disabling overlap check for local pseudopotential.
+  Disabling overlap check for local pseudopotential.
+  Disabling overlap check for local pseudopotential.
+  Disabling overlap check for local pseudopotential.
+  Disabling overlap check for local pseudopotential.
+  Disabling overlap check for local pseudopotential.
+  Disabling overlap check for local pseudopotential.
+  Disabling overlap check for local pseudopotential.
+  Disabling overlap check for local pseudopotential.
+  Disabling overlap check for local pseudopotential.
+  Disabling overlap check for local pseudopotential.
+  Disabling overlap check for local pseudopotential.
+  Disabling overlap check for local pseudopotential.
+  Disabling overlap check for local pseudopotential.
+  Disabling overlap check for local pseudopotential.
+
+Reading pseudopotential file '/data2/jt577/jdftx_eat_withLibXC/build/pseudopotentials/SG15/O_ONCV_PBE.upf':
+  'O' pseudopotential, 'PBE' functional
+  Generated using ONCVPSP code by D. R. Hamann
+  Author: Martin Schlipf and Francois Gygi  Date: 150915.
+  6 valence electrons, 2 orbitals, 4 projectors, 936 radial grid points, with lMax = 1
+  Transforming local potential to a uniform radial grid of dG=0.02 with 1419 points.
+  Transforming nonlocal projectors to a uniform radial grid of dG=0.02 with 528 points.
+    2S    l: 0   occupation:  2.0   eigenvalue: -0.880572
+    2P    l: 1   occupation:  4.0   eigenvalue: -0.331869
+  Transforming atomic orbitals to a uniform radial grid of dG=0.02 with 528 points.
+  Core radius for overlap checks: 1.29 bohrs.
+  Reading pulay file /data2/jt577/jdftx_eat_withLibXC/build/pseudopotentials/SG15/O_ONCV_PBE.pulay ... using dE_dnG = -8.209514e-03 computed for Ecut = 30.
+
+Initialized 21 species with 33 total atoms.
+
+Folded 1 k-points by 3x3x1 to 9 k-points.
+
+---------- Setting up k-points, bands, fillings ----------
+No reducable k-points. 
+Computing the number of bands and number of electrons
+Calculating initial fillings.
+nElectrons: 349.832777   nBands: 228   nStates: 9
+
+----- Setting up reduced wavefunction bases (one per k-point) -----
+average nbasis = 42312.000 , ideal nbasis = 42330.081
+
+---------- Setting up ewald sum ----------
+Optimum gaussian width for ewald sums = 3.906449 bohr.
+Real space sum over 605 unit cells with max indices [  5  5  2  ]
+Reciprocal space sum over 5915 terms with max indices [  6  6  17  ]
+
+---------- Allocating electronic variables ----------
+Initializing wave functions:  linear combination of atomic orbitals
+O pseudo-atom occupations:   s ( 2 )  p ( 4 )
+	FillingsUpdate:  mu: +7.739056827  nElectrons: 349.832777
+LCAOMinimize: Iter:   0  F: -1438.6722392326180398  |grad|_K:  1.120e-02  alpha:  1.000e+00
+LCAOMinimize: 	Wrong curvature in test step, increasing alphaT to 3.000000e+00.
+	FillingsUpdate:  mu: +0.869044951  nElectrons: 349.832777
+LCAOMinimize: Iter:   1  F: -1674.8732073666849374  |grad|_K:  1.529e-02  alpha: -1.673e-01  linmin:  2.336e-03  cgtest: -1.463e+00  t[s]:     38.90
+LCAOMinimize: 	Bad step direction: g.d > 0.
+LCAOMinimize: 	Undoing step.
+LCAOMinimize: 	Step failed: resetting search direction.
+	FillingsUpdate:  mu: +0.869044951  nElectrons: 349.832777
+LCAOMinimize: Iter:   2  F: -1674.8732073666831184  |grad|_K:  1.529e-02  alpha:  0.000e+00
+mpirun: Forwarding signal 18 to job
+slurmstepd-node3307: error: *** JOB 43748 ON node3307 CANCELLED AT 2025-05-01T18:40:16 ***

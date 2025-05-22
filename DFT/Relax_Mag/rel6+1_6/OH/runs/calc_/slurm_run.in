@@ -1,0 +1,11 @@
+#!/bin/bash
+#SBATCH -N 1               # Request 1 node
+#SBATCH -n 9 # Request 1 tasks (processes) on the node
+#SBATCH -c 4              # Request 1 CPUs per task
+#SBATCH -p hi_mem2         # Use the hi_mem partition
+#SBATCH -J rel6+1_6           # Job name
+#SBATCH -o slurm_out.o%j   # Output file
+#SBATCH --time=999:00:00   # Max run time
+module load mpi/openmpi-x86_64
+module load intel-mkl
+mpirun --bind-to none -n 9 /data2/jt577/jdftx_eat_withLibXC/build/jdftx -i /data2/jt577/May_2025/Relax_Mag_litU/rel6+1_6/OH/runs/calc_/run.in | tee /data2/jt577/May_2025/Relax_Mag_litU/rel6+1_6/OH/runs/calc_/run.out

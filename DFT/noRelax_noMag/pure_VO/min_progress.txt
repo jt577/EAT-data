@@ -1,0 +1,9 @@
+Initilizing minimization for species Ti Cu Ni Zn 
+
+Target: -0.4 eV
+Performing first surface calculations...
+Surface calculations successfully finished.
+Initial entropy parameter eta set to 1e-05
+_____________________________________________________________________
+Beginning minimzation
+

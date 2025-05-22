@@ -1,0 +1,24 @@
+/var/spool/slurmd/job44081/slurm_script: line 9: module: command not found
+/var/spool/slurmd/job44081/slurm_script: line 10: module: command not found
+--------------------------------------------------------------------------
+A call to mkdir was unable to create the desired directory:
+
+  Directory: /tmp/ompi.node3305.1123
+  Error:     No space left on device
+
+Please check to ensure you have adequate permissions to perform
+the desired operation.
+--------------------------------------------------------------------------
+[node3305:2746589] [[33518,0],0] ORTE_ERROR_LOG: Error in file ../../../orte/util/session_dir.c at line 107
+[node3305:2746589] [[33518,0],0] ORTE_ERROR_LOG: Error in file ../../../orte/util/session_dir.c at line 346
+--------------------------------------------------------------------------
+It looks like orte_init failed for some reason; your parallel process is
+likely to abort.  There are many reasons that a parallel process can
+fail during orte_init; some of which are due to configuration or
+environment problems.  This failure appears to be an internal failure;
+here's some additional information (which may only be relevant to an
+Open MPI developer):
+
+  orte_session_dir failed
+  --> Returned value Error (-1) instead of ORTE_SUCCESS
+--------------------------------------------------------------------------
