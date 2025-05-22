@@ -1,0 +1,1 @@
+# Effective-Atom-Theory-A-Novel-Approach-to-ab-initio-Materials-Design
