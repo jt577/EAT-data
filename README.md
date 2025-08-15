@@ -1,1 +1,3 @@
-# Effective-Atom-Theory-A-Novel-Approach-to-ab-initio-Materials-Design
+Effective Atom Theory: Gradient-Driven ab initio Materials Design
+
+This is a repository for 
