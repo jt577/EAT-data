@@ -1,3 +1,1 @@
-Effective Atom Theory: Gradient-Driven ab initio Materials Design
-
-This is a repository for 
+Code and data for the paper "Effective Atom Theory: Gradient-Driven ab initio Materials Design" are stored here. The "DFT" folder houses data and the "EAT_CODE" folder contains the code used to generate the data. A short tutorial on how to use JDFTx_EAT (the version of the DFT software package JDFTx that has effective atom theory (EAT)) is also included. To download JDFTx_EAT, visit https://github.com/StunningLlama/jdftx.
