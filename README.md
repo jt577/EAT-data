@@ -2,4 +2,4 @@ Code used for optimizations in the manuscript "Effective Atom Theory: Gradient-D
 
 The source code for the DFT version of EAT is located here: https://github.com/StunningLlama/jdftx. When downloading this codebase, checkout the jdftxmix branch.
 
-The MLIP (FAIRChem) implementation of EAT is here: . 
+The MLIP (FAIRChem) implementation of EAT is here: https://github.com/jt577/FAIRChem_EAT. 
