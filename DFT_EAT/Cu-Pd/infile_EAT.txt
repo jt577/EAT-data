@@ -1,0 +1,19 @@
+# Input file for Regular Effective Atom Theory
+
+dft_files 2
+/data2/jt577/2025/November_2025/Phase_Diagram/dft_alloy_2x1x1.txt                                      
+/data2/jt577/2025/November_2025/Phase_Diagram/dft_pure.txt
+dft_parallel 96 # Number of parallel threads for DFT calcs (typically one per k-point)
+
+n_iter  20                              # Max number of iterations of EAT to run (per anneal)
+q 1                                     # Tsallis q param (q=1 is Shannon entropy) 
+eta_init 1e-3                           # Initial eta when doing syntropization                                                                                       
+n_anneals 20                            # Number of anneals in syntropization
+anneal_mult 4                           # Entropy annealing multiplier
+BFGS_hist 50                            # Length of L-BFGS history 
+tol 1e-2                                # tolerance for BFGS minimization
+max_line_search 3                       # Maximum number of line search iterations before giving up and increasing eta due to supposed poor conditioning
+jitter 1e-2                             # Jitter for initial random x
+n_atoms 4                               # Number of effective atoms in system
+n_species 2                             # Number of species for each effective atom                                                                                                      
+n_alpha 2 2                             # constraint on how many atoms of each type we want
