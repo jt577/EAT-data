@@ -1,0 +1,47 @@
+# config.yaml
+n_trials: 100
+
+# Each composition is a list aligned with selected_elements order
+compositions:
+  - [0.5, 0.5]
+
+fix: true
+selected_elements: ["Na", "Cl"]
+
+initialization:
+  - alpha: 5.0    # recommend: 5.0 for all cases
+
+syntropization:
+  - Tsallis_q: 2.0 # recommend: 2.0 for all cases
+  - type: "forcing" # options: "forcing", "compacting"
+  - tau_init: 1.0e-3 # recommend: 1.0 for type compacting, 1e-3 (or just something small) for type forcing
+  - tau_mult: 1.2 # recommend: 0.9 for type compacting, 1.2 for type forcing
+  - gamma: 1.0 # recommend: 1.0 for compacting, irrelevant for forcing
+
+endmembers:
+  - fractions: [1, 0]
+    formation_energy_per_atom: 0.0
+  - fractions: [0, 1]
+    formation_energy_per_atom: 0.0
+
+# Lattice vectors
+lattice_vectors:
+  - [5.59, 0.00, 0.00]
+  - [0.00, 5.59, 0.00]
+  - [0.00, 0.00, 5.59]
+
+frac_coords_init:
+  - ["mix", 0.0,         0.0,         0.0  ]
+  - ["mix", 0.5,         0.0,         0.0  ]
+  - ["mix", 0.0,         0.5,         0.0  ]
+  - ["mix", 0.0,         0.0,         0.5  ]
+  - ["mix", 0.5,         0.5,         0.0  ]
+  - ["mix", 0.5,         0.0,         0.5  ]
+  - ["mix", 0.0,         0.5,         0.5  ]
+  - ["mix", 0.5,         0.5,         0.5  ]
+
+supercell_size: [2, 2, 4]
+
+# optional overrides (safe defaults if omitted)
+outdir: "out_NaCl_128"
+hull_db_filename: "hull_db.json"

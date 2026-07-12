@@ -1,0 +1,91 @@
+# config_botorch.yaml
+# Discrete (categorical) Bayesian optimization over fixed-count chemical orderings
+# using BoTorch + a deterministic repair-to-composition operator.
+
+# -----------------------------
+# Compositions (aligned with selected_elements)
+# -----------------------------
+compositions:
+  - [0.75, 0.25]
+
+fix: true
+selected_elements: ["Cu", "Pd"]
+
+# -----------------------------
+# FairChem model options
+# -----------------------------
+fairchem:
+  model_name: "uma-s-1"
+  task_name: "omat"
+
+# -----------------------------
+# Endmembers (seed hull DB so HullEnergyCalculator works)
+# These are formation energies per atom relative to your reference_energies.json.
+# If you only care about relative ordering energies (not absolute hull correctness),
+# keeping these at 0.0 is fine; otherwise set to true values.
+# -----------------------------
+endmembers:
+  - fractions: [1, 0]
+    formation_energy_per_atom: 0.0
+  - fractions: [0, 1]
+    formation_energy_per_atom: 0.0
+
+# -----------------------------
+# Lattice / structure template
+# "mix" means these sites are alloy sites.
+# -----------------------------
+lattice_vectors:
+  - [3.665, 0.0,  0.0]
+  - [0.0,  3.665, 0.0]
+  - [0.0,  0.0,  3.665]
+
+frac_coords_init:
+  - ["mix",  0.000,  0.000,  0.000]
+  - ["mix",  0.500,  0.500,  0.000]
+  - ["mix",  0.500,  0.000,  0.500]
+  - ["mix",  0.000,  0.500,  0.500]
+
+supercell_size: [2, 2, 4]
+
+# -----------------------------
+# Outputs
+# -----------------------------
+outdir: "out_botorch"
+hull_db_filename: "hull_db.json"
+
+# reference_json_path: "data/reference_energies.json"  # optional override
+
+# -----------------------------
+# Plotting / logging
+# -----------------------------
+plot_phase: true
+plot_hist: true
+plot_best: true
+plot: true
+
+# update plots every N *evaluations*
+update_every: 20
+
+# histogram controls
+hist_bins: 40        # int or "auto"
+hist_range: null     # null or [min,max] in eV/atom
+
+# -----------------------------
+# NEW: BoTorch discrete BO controls
+# -----------------------------
+bo:
+  seed: 0            # RNG seed for candidate generation + deterministic repair
+
+  # Evaluation budget per composition:
+  # n_init random repaired evaluations, then BO until n_total.
+  n_init: 50
+  n_total: 400
+
+  # Candidate set size per BO iteration (acquisition is maximized over this set)
+  # Larger = better BO decisions but more GP/acq compute.
+  n_candidates: 4096
+
+  # Add local neighborhood candidates around current best (swap-based)
+  # Set n_neighbors: 0 to disable this (pure global random candidate sets).
+  n_neighbors: 512
+  neighbor_swaps: 4

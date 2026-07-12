@@ -1,0 +1,75 @@
+seed: 7 # sets NumPy/Torch randomness for reproducible restarts and shocks
+n_trials: 20 # legacy number of independent runs when population.enabled is false
+
+population:
+  - enabled: true # turns on population basin hopping around the existing syntropizer
+  # - seed_parent_xsf: "/data2/jt577/2026/04.2026/structure_EAT/04.26/Bi2Se3_mp_lattice/lowest_Bi2Se3.xsf"
+  - initial_runs: 10 # number of independent generation-0 syntropizer runs
+  # - initial_lattice_vectors:
+  #     - [4.131442270000, 0.0, 0.0]
+  #     - [-2.065721140000, 3.577933960000, 0.0]
+  #     - [0.0, 0.0, 28.478625550000]
+  - max_generations: 5 # number of parent-restart generations after generation 0
+  - parents_per_generation: 5 # number of best archive members used as restart parents each generation
+  - children_per_parent: 3 # number of soft shocked children spawned from each selected parent
+  - keep_archive: 10 # number of best runs remembered for future parent selection
+  - memory_strength: 0.75 # parent-species/occupancy bias in children; 0=random, 1=copy parent preference
+  - selection_metric: "formation_energy" # parent ranking metric: formation_energy, energy_above_hull, or total_energy
+
+composition_mode: manual # manual, grid, or random composition selection
+compositions:
+  - [0.4, 0.6] # target fractions in selected_elements order
+
+fix: false # false lets species weights, cell, and fractional positions optimize
+selected_elements: ["Bi", "Se"] # EAT species columns and composition order
+
+initialization:
+  - alpha: 5.0 # Dirichlet concentration for random initial species weights; larger is more uniform
+  - cell_init_mode: "random" # input_cell starts from lattice_vectors, random samples from the random_cell_* bounds
+  - random_cell_length_min: 1.0 # minimum random cell length in Angstrom
+  - random_cell_length_max: 5.0 # maximum random cell length in Angstrom
+  - random_cell_angle_min_deg: 75.0 # minimum random cell angle in degrees
+  - random_cell_angle_max_deg: 105.0 # maximum random cell angle in degrees
+
+cell_bounds:
+  - length_min: 0.5 # absolute minimum cell length allowed during optimization/shocks
+  - length_max: 100.0 # absolute maximum cell length allowed during optimization/shocks
+  - angle_min_deg: 20.0 # absolute minimum cell angle allowed during optimization/shocks
+  - angle_max_deg: 160.0 # absolute maximum cell angle allowed during optimization/shocks
+
+syntropization:
+  - Tsallis_q: 2.0 # entropy shape parameter for species/null sharpening
+  - tau_init: 1.0e-3 # initial forcing weight multiplying total entropy
+  - tau_mult: 1.2 # entropy forcing multiplier applied each annealing stage
+  - first_stage_maxit: 300 # maximum PBFGS iterations for the initial relaxation stage
+  - stage_maxit: 100 # maximum PBFGS iterations per syntropization stage
+  - pbfgs_tol: 1.0e-3 # PBFGS convergence tolerance for syntropization and shock-relaxation stages
+  - abort_energy_above_hull: 1.0 # abort a bad trial if stage-end energy above hull exceeds this eV/atom value
+  - composition_penalty_multiplier: 0.25 # strength of target-composition penalty
+
+nulls:
+  - enabled: true # makes generated variable sites null/vacancy-capable
+  - num_sites: 16 # number of random null sites in the starting scaffold
+  - min_distance: 1.2 # minimum null separation enforced during placement/repair in Angstrom
+  - initial_occupancy_sum: 4.0 # total initial occupied-null mass; children are reset to this budget
+  - normalization_eps: 1.0e-8 # small denominator floor for null/composition normalization
+  - threshold: 1.0e-3 # null occupancy at/below this is treated as empty/dead
+
+escape:
+  - enabled: true # enables shocks when objective_no_entropy stagnates
+  - trials: 3 # number of shocked candidates tested per escape round
+  - position_sigma: 0.25 # Cartesian Angstrom position shock; also reused for population child restarts
+  - empty_probability_sigma: 0.35 # null empty-probability shock; also reused for child occupancy restarts
+  - species_probability_sigma: 0.35 # species-weight shock; also reused for child species restarts
+  - cell_length_sigma: 0.10 # cell-length shock in Angstrom; also reused for child restarts
+  - cell_angle_sigma_deg: 5.0 # cell-angle shock in degrees; also reused for child restarts
+  - trial_maxit: 80 # PBFGS iterations used to relax each escape trial
+  - stagnation_window: 10 # recent PBFGS objective_no_entropy samples required to be flat before shocking
+  - min_shock_interval: 5 # minimum annealing-stage gap between shock attempts; 1 preserves old behavior
+  - max_attempts_per_stage: 3 # accepted escape rounds allowed inside one annealing stage
+  - accept_tol: 1.0e-3 # minimum objective_no_entropy improvement required to accept a shock
+
+supercell_size: [1, 1, 1] # repeats the initial site scaffold before optimization
+
+outdir: "out" # directory for logs, histories, plots, and hull DB
+hull_db_filename: "hull_db.json" # hull database file stored inside outdir
